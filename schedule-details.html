@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деталі розкладу</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="schedule.css"> <!-- Ті самі стилі, що і для основного розкладу -->
+    <script src="schedule-details.js" defer></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="schedule.html" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    Розклад
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="saved.html" class="nav-link active">
+                    <i class="fas fa-save"></i>
+                    Збережені
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="rating.html" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    Рейтинговий бал
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="rating-section">
+            <h1 class="main-title"><i class="fas fa-table"></i> Деталі розкладу</h1>
+            <div id="scheduleDetails"></div> <!-- Сюди буде вставлено таблицю -->
+        </section>
+    </main>
+</body>
+</html>

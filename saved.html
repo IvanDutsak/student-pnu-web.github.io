@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Збережені матеріали</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="saved.js" defer></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="schedule.html" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    Розклад
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="saved.html" class="nav-link active">
+                    <i class="fas fa-save"></i>
+                    Збережені
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="rating.html" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    Рейтинговий бал
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section class="rating-section">
+            <h1 class="main-title">
+                <i class="fas fa-archive"></i>
+                Збережені матеріали
+            </h1>
+
+            <div class="saved-content">
+                <div class="saved-category">
+                    <h2 class="section-title">
+                        <i class="fas fa-table"></i>
+                        Збережені розклади
+                    </h2>
+                    <div id="savedSchedulesList" class="saved-items-container"></div>
+                </div>
+
+                <div class="saved-category">
+                    <h2 class="section-title">
+                        <i class="fas fa-star-half-alt"></i>
+                        Збережені рейтинги
+                    </h2>
+                    <div id="savedRatingsList" class="saved-items-container"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
