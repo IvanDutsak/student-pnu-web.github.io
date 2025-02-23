@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рейтинговий бал</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="rating.js" defer></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="schedule.html" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    Розклад
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="saved.html" class="nav-link">
+                    <i class="fas fa-save"></i>
+                    Збережені
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="rating.html" class="nav-link active">
+                    <i class="fas fa-star"></i>
+                    Рейтинговий бал
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section class="rating-section">
+            <h1 class="main-title">
+                <i class="fas fa-calculator"></i>
+                Рейтинговий бал
+            </h1>
+            
+            <div class="controls-wrapper">
+                <button class="control-btn success" onclick="saveLocally()">
+                    <i class="fas fa-save"></i>
+                    Зберегти
+                </button>
+                <button class="control-btn warning" onclick="exportToPDF()">
+                    <i class="fas fa-file-pdf"></i>
+                    Експорт PDF
+                </button>
+                <button class="control-btn danger" onclick="clearData()">
+                    <i class="fas fa-trash"></i>
+                    Очистити
+                </button>
+            </div>
+
+            <div class="input-section">
+                <h2 class="section-title">
+                    <i class="fas fa-book-open"></i>
+                    Додати предмет
+                </h2>
+                
+                <div class="input-group">
+                    <label for="subjectName" class="input-label">Назва предмету:</label>
+                    <div class="autocomplete-wrapper">
+                        <input 
+                            type="text" 
+                            id="subjectName" 
+                            class="subject-input"
+                            placeholder="Введіть назву предмету..."
+                            oninput="showSuggestions(this.value)"
+                        >
+                        <!-- Список підказок повинен бути ВСЕРЕДИНІ autocomplete-wrapper -->
+                        <ul id="suggestions" class="suggestions-list"></ul>
+                    </div>
+                </div>
+                
+                <!-- Поле оцінки йде ПІСЛЯ блоку з автодоповненням -->
+                <div class="input-group">
+                    <label for="subjectScore" class="input-label">Оцінка:</label>
+                    <input 
+                        type="number" 
+                        id="subjectScore" 
+                        class="subject-input"
+                        min="0" 
+                        max="100" 
+                        placeholder="0-100"
+                    >
+                </div>
+
+                <div class="button-group">
+                    <button class="control-btn primary" onclick="addSubject()">
+                        <i class="fas fa-plus-circle"></i>
+                        Додати предмет
+                    </button>
+                    <button class="control-btn primary" onclick="calculateRating()">
+                        <i class="fas fa-calculator"></i>
+                        Розрахувати
+                    </button>
+                </div>
+            </div>
+
+            <div class="added-subjects">
+                <h2 class="section-title">
+                    <i class="fas fa-list-ul"></i>
+                    Додані предмети
+                </h2>
+                
+                <div class="subjects-container">
+                    <div class="subject-category exam-subjects">
+                        <h3 class="section-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Екзамени
+                        </h3>
+                        <ul id="examList" class="subject-list"></ul>
+                    </div>
+                    
+                    <div class="subject-category credit-subjects">
+                        <h3 class="section-title">
+                            <i class="fas fa-clipboard-check"></i>
+                            Заліки
+                        </h3>
+                        <ul id="creditList" class="subject-list"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-table" id="results">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Предмет</th>
+                            <th>Бали</th>
+                            <th>Кредити</th>
+                            <th>Тип</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                
+                <div class="rating-summary">
+                    <div>Екзамени: <span id="examRating">0</span></div>
+                    <div>Заліки: <span id="creditRating">0</span></div>
+                    <div class="total">Загальний: <span id="totalRating">0</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

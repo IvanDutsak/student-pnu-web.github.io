@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Загальні стилі -->
+    <link rel="stylesheet" href="schedule.css"> <!-- Специфічні стилі -->
+    <!-- ПРАВИЛЬНИЙ ПОРЯДОК: data, потім logic -->
+    <script src="schedule_data.js" defer></script>
+    <script src="schedule.js" defer></script>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="schedule.html" class="nav-link active">
+                    <i class="fas fa-calendar-alt"></i>
+                    Розклад
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="saved.html" class="nav-link">
+                    <i class="fas fa-save"></i>
+                    Збережені
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="rating.html" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    Рейтинговий бал
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="rating-section">
+             <h1 class="main-title">
+                <i class="fas fa-calendar-alt"></i>
+                Розклад
+            </h1>
+
+            <div class="faculty-selection">
+                <h2 class="section-title"><i class="fas fa-university"></i> Оберіть факультет</h2>
+                <div id="faculties" class="button-group"></div>
+            </div>
+
+            <div class="group-selection" style="display: none;">
+                <h2 class="section-title"><i class="fas fa-users"></i> Оберіть групу</h2>
+                 <div id="groups" class="button-group"></div>
+            </div>
+
+            <div class="schedule-view" style="display: none;">
+                <h2 class="section-title"><i class="fas fa-table"></i> Розклад занять</h2>
+
+                <!-- Фільтри -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="date-from">Дата з:</label>
+                        <input type="date" id="date-from">
+                    </div>
+                    <div class="filter-group">
+                        <label for="date-to">Дата по:</label>
+                        <input type="date" id="date-to">
+                    </div>
+                    <div class="filter-group">
+                         <label for="teacher-search">Пошук за викладачем:</label>
+                         <!-- Обгортка для автодоповнення -->
+                         <div class="autocomplete-wrapper">
+                            <input type="text" id="teacher-search" placeholder="Введіть прізвище...">
+                            <div id="teacher-suggestions" class="suggestions-list" style="display:none;"></div>
+                        </div>
+                    </div>
+
+                    <button class="control-btn primary" onclick="applyFilters()"><i class="fas fa-filter"></i> Застосувати</button>
+                </div>
+
+                <table id="scheduleTable" class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Предмет</th>
+                            <th>Викладач</th>
+                            <th>Група</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button class="control-btn success" onclick="saveSchedule()">
+                    <i class="fas fa-save"></i> Зберегти розклад
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
