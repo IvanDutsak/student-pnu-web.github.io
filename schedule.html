@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Розклад</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Загальні стилі -->
-    <link rel="stylesheet" href="schedule.css"> <!-- Специфічні стилі -->
-    <!-- ПРАВИЛЬНИЙ ПОРЯДОК: data, потім logic -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="schedule.css">
     <script src="schedule_data.js" defer></script>
     <script src="schedule.js" defer></script>
 </head>
@@ -33,12 +32,18 @@
                     Рейтинговий бал
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="profile.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    Профіль
+                </a>
+            </li>
         </ul>
     </nav>
 
     <main class="container">
         <section class="rating-section">
-             <h1 class="main-title">
+            <h1 class="main-title">
                 <i class="fas fa-calendar-alt"></i>
                 Розклад
             </h1>
@@ -50,14 +55,14 @@
 
             <div class="group-selection" style="display: none;">
                 <h2 class="section-title"><i class="fas fa-users"></i> Оберіть групу</h2>
-                 <div id="groups" class="button-group"></div>
+                <div id="groups" class="button-group"></div>
             </div>
 
             <div class="schedule-view" style="display: none;">
                 <h2 class="section-title"><i class="fas fa-table"></i> Розклад занять</h2>
 
                 <!-- Фільтри -->
-                <div class="filters">
+                <div class="filters schedule-filters">
                     <div class="filter-group">
                         <label for="date-from">Дата з:</label>
                         <input type="date" id="date-from">
@@ -67,15 +72,18 @@
                         <input type="date" id="date-to">
                     </div>
                     <div class="filter-group">
-                         <label for="teacher-search">Пошук за викладачем:</label>
-                         <!-- Обгортка для автодоповнення -->
-                         <div class="autocomplete-wrapper">
+                        <label for="teacher-search">Пошук за викладачем:</label>
+                        <div class="autocomplete-wrapper">
                             <input type="text" id="teacher-search" placeholder="Введіть прізвище...">
                             <div id="teacher-suggestions" class="suggestions-list" style="display:none;"></div>
                         </div>
                     </div>
-
-                    <button class="control-btn primary" onclick="applyFilters()"><i class="fas fa-filter"></i> Застосувати</button>
+                    <button class="control-btn primary" onclick="applyFilters()">
+                        <i class="fas fa-filter"></i> Застосувати
+                    </button>
+                    <button class="control-btn success" onclick="saveSchedule()">
+                        <i class="fas fa-save"></i> Зберегти розклад
+                    </button>
                 </div>
 
                 <table id="scheduleTable" class="results-table">
@@ -89,9 +97,6 @@
                     </thead>
                     <tbody></tbody>
                 </table>
-                <button class="control-btn success" onclick="saveSchedule()">
-                    <i class="fas fa-save"></i> Зберегти розклад
-                </button>
             </div>
         </section>
     </main>

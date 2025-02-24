@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль студента</title>
+    <link rel="stylesheet" href="profile.css">
+    <!-- Додаємо Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="schedule.html" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    Розклад
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="saved.html" class="nav-link">
+                    <i class="fas fa-save"></i>
+                    Збережені
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="rating.html" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    Рейтинговий бал
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="profile.html" class="nav-link active">
+                    <i class="fas fa-user"></i>
+                    Профіль
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Крок 1: Вибір факультету -->
+        <div id="step-faculty" class="rating-section active-step">
+            <h2 class="section-title">Оберіть ваш факультет</h2>
+            <div class="button-group faculties">
+                <button class="control-btn primary" data-faculty="КН">Комп'ютерні науки</button>
+                <button class="control-btn primary" data-faculty="ІПЗ">Інженерія програмного забезпечення</button>
+                <button class="control-btn primary" data-faculty="ІСТ">Інформаційні системи та технології</button>
+            </div>
+        </div>
+
+        <!-- Крок 2: Вибір групи -->
+        <div id="step-group" class="rating-section">
+            <h2 class="section-title">Оберіть вашу групу</h2>
+            <div class="button-group groups"></div>
+            <button class="control-btn warning" onclick="previousStep('step-group')">Назад</button>
+        </div>
+
+        <!-- Крок 3: Вибір семестру -->
+        <div id="step-semester" class="rating-section">
+            <h2 class="section-title">Оберіть семестр</h2>
+            <div class="button-group semesters">
+                <button class="control-btn primary" data-semester="1">Перший семестр</button>
+                <button class="control-btn primary" data-semester="2">Другий семестр</button>
+            </div>
+            <button class="control-btn warning" onclick="previousStep('step-semester')">Назад</button>
+        </div>
+
+        <!-- Крок 4: Список предметів -->
+        <div id="step-subjects" class="rating-section">
+            <h2 class="section-title">Предмети вашого семестру</h2>
+            <div class="subjects-container"></div>
+            <button class="control-btn warning" onclick="previousStep('step-subjects')">Назад</button>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -8,26 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const tbody = document.createElement('tbody');
-    const table = document.createElement('table'); //Створюємо таблицю
-    table.id = "scheduleTable";  //потрібні стилі
+    const table = document.createElement('table');
+    table.id = "scheduleTable";
     table.classList.add("results-table");
 
-      // Додавання заголовка таблиці
     const thead = document.createElement('thead');
     thead.innerHTML = `
         <tr>
-            <th>Дата</th>
+            <th>Час</th>
             <th>Предмет</th>
             <th>Викладач</th>
             <th>Група</th>
         </tr>
     `;
-     table.appendChild(thead);
+    table.appendChild(thead);
 
-
+    const tbody = document.createElement('tbody');
     scheduleData.schedule.forEach(day => {
-        // Рядок-заголовок для дня
         const dayHeaderRow = document.createElement('tr');
         dayHeaderRow.classList.add("day-header", "day-separator");
         const dayHeaderCell = document.createElement('td');
@@ -36,40 +33,39 @@ document.addEventListener('DOMContentLoaded', () => {
         dayHeaderRow.appendChild(dayHeaderCell);
         tbody.appendChild(dayHeaderRow);
 
-        let lessonCounter = 1;
+        const timeSlots = {
+            1: "09:00-10:20", 2: "10:35-11:55", 3: "12:20-13:40", 4: "13:50-15:10",
+            5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
+        };
 
-        day.lessons.forEach(lesson => {
-           if (lesson.subject) {
-                const row = document.createElement('tr');
+        for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
+            const lesson = day.lessons.find(l => l.number === lessonNumber) || {};
+            const row = document.createElement('tr');
 
-                const timeCell = document.createElement('td');
-                timeCell.innerHTML = `<span class="time-slot">${lessonCounter} пара<br>${lesson.time}</span>`;
-                row.appendChild(timeCell);
+            const timeCell = document.createElement('td');
+            timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара<br>${timeSlots[lessonNumber]}</span>`;
+            row.appendChild(timeCell);
 
-                const subjectCell = document.createElement('td');
-                subjectCell.textContent = lesson.subject;
-                if (lesson.details) {
-                    subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
-                }
-                row.appendChild(subjectCell);
-
-                const teacherCell = document.createElement('td');
-                teacherCell.textContent = lesson.teacher;
-                row.appendChild(teacherCell);
-
-                const groupCell = document.createElement('td');
-                groupCell.textContent = lesson.group || scheduleData.group; //  Група з даних
-                row.appendChild(groupCell);
-                tbody.appendChild(row);
-                lessonCounter++;
-            } else {
-                // Порожній рядок, якщо немає даних
-                const row = document.createElement('tr');
-                row.innerHTML = `<td>${day.date}</td><td></td><td></td><td></td>`;
-                tbody.appendChild(row);
+            const subjectCell = document.createElement('td');
+            subjectCell.textContent = lesson.subject || '';
+            if (lesson.details) {
+                subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
             }
-        });
+            row.appendChild(subjectCell);
+
+            const teacherCell = document.createElement('td');
+            teacherCell.textContent = lesson.teacher || '';
+            row.appendChild(teacherCell);
+
+            const groupCell = document.createElement('td');
+            // Відображаємо групу лише якщо є предмет
+            groupCell.textContent = lesson.subject ? (lesson.group || scheduleData.group) : '';
+            row.appendChild(groupCell);
+
+            tbody.appendChild(row);
+        }
     });
+
     table.appendChild(tbody);
-    document.getElementById('scheduleDetails').appendChild(table); // Додаємо таблицю в контейнер
+    document.getElementById('scheduleDetails').appendChild(table);
 });

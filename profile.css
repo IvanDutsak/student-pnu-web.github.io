@@ -1,0 +1,272 @@
+/* profile.css */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #6c5ce7;
+    --success-color: #00b894;
+    --warning-color: #fdcb6e;
+    --danger-color: #d63031;
+    --light-gray: #f8f9fa;
+    --dark-gray: #2d3436;
+    --text-color: #2d3436;
+    --transition-speed: 0.3s;
+}
+
+/* Базові стилі */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Навігація */
+.main-nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 1.5rem;
+}
+
+.nav-link {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all var(--transition-speed) ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для кроків */
+.rating-section {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.rating-section.active-step {
+    display: block;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+/* Стилі для кнопок */
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.control-btn {
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all var(--transition-speed) ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.control-btn.primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.control-btn.warning {
+    background: var(--warning-color);
+    color: var(--text-color);
+}
+.control-btn.success {
+     background-color: var(--success-color);
+    color: white;
+ }
+
+.control-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для списку предметів (вертикальне розташування) */
+/* .subjects-container {  Закоментовано, бо використовуємо інший підхід
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}*/
+
+.subject-category-group {
+    margin-bottom: 1.5rem; /* Відступ між групами */
+}
+
+.subject-category-group h3 {
+    margin-bottom: 0.5rem; /* Відступ від заголовка до списку */
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.25rem;
+}
+
+.subject-item {
+    padding: 1rem; /* Зменшив трохи відступи */
+    background: var(--light-gray);
+    border-radius: 12px;
+    display: block; /* Кожен елемент з нового рядка */
+    margin-bottom: 0.75rem; /* Відступ між елементами */
+    animation: slideIn 0.4s ease;
+}
+
+
+.subject-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-color);
+    margin-right: 1rem; /* Відступ від чекбокса до тексту */
+    vertical-align: middle; /* Вирівнювання по центру */
+}
+
+/* Стилі для підсумкового профілю */
+.profile-summary {
+   background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.profile-summary h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.profile-summary p {
+   margin-bottom: 0.5rem;
+}
+
+.profile-summary ul {
+  list-style: none;
+   padding-left: 0;
+}
+.profile-summary li{
+    margin-bottom: 0.3rem;
+}
+
+
+/* Анімації */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .button-group {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .control-btn {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    .subject-item {
+        padding: 1rem; /* Зменшив трохи відступи */
+    }
+    .profile-summary h2{
+        font-size: 1.7rem;
+    }
+}
+
+
+.control-btn.danger {
+    background: var(--danger-color);
+    color: white;
+}
+
+.subgroups {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.subgroups label {
+    display: block;
+    margin-bottom: 3px;
+}

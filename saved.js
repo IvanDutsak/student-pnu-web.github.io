@@ -4,70 +4,61 @@ function loadSavedItems() {
     const schedulesList = document.getElementById('savedSchedulesList');
     if (!schedulesList) return;
 
-    
-
     if (Object.keys(savedSchedules).length === 0) {
         schedulesList.innerHTML = '<div class="empty-message">Немає збережених розкладів</div>';
-        return;
-    }
-    schedulesList.innerHTML = '';
+    } else {
+        schedulesList.innerHTML = '';
+        
+        // === ЗЧИТУЄМО schedulesData ===
+        const schedulesData = JSON.parse(localStorage.getItem('schedulesData')) || {};
+        
+        for (const key in savedSchedules) {
+            let isValidKey = false;
 
-    // === ЗЧИТУЄМО schedulesData ===
-    const schedulesData = JSON.parse(localStorage.getItem('schedulesData'));
-    if (!schedulesData) {
-      console.error("Error: schedulesData not found in localStorage!");
-      return; //  Якщо даних немає, виходимо
-    }
-    // ===============================
+            // Перевіряємо тільки якщо schedulesData існує
+            if (schedulesData) {
+                for (const groupKey in schedulesData) {
+                    if (key.startsWith(groupKey + "_")) {
+                        isValidKey = true;
+                        break;
+                    }
+                }
+            }
 
-    for (const key in savedSchedules) {
-        // Перевіряємо, чи ключ починається з однієї з відомих груп
-        let isValidKey = false;
+            if (!isValidKey) {
+                console.warn("Skipping invalid key:", key);
+                continue;
+            }
 
-        for (const groupKey in schedulesData) { //  Тепер schedulesData доступна!
-
-            if (key.startsWith(groupKey + "_")) {
-                isValidKey = true;
-                break;
+            const scheduleData = savedSchedules[key];
+            if (scheduleData && scheduleData.name && scheduleData.group) {
+                const item = document.createElement('div');
+                item.className = 'saved-item';
+                item.innerHTML = `
+                    <div class="saved-item-header">
+                        <i class="fas fa-calendar-day"></i>
+                        <div>
+                            <h3>${scheduleData.name}</h3>
+                            <p>Група: ${scheduleData.group}</p>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button class="control-btn primary" onclick="showScheduleDetails('${key}')">
+                            Перейти
+                        </button>
+                         <button class="control-btn danger" onclick="deleteSchedule('${key}', this)">
+                            <i class="fas fa-trash"></i> Видалити
+                        </button>
+                    </div>
+                `;
+                schedulesList.appendChild(item);
+            } else {
+                console.warn(`Invalid schedule data for key: ${key}`, scheduleData);
             }
         }
-
-        if (!isValidKey) {
-          console.warn("Skipping invalid key:", key);
-          continue; // Пропускаємо цей ключ, якщо він не валідний
-        }
-
-
-        const scheduleData = savedSchedules[key];
-
-        if (scheduleData && scheduleData.name && scheduleData.group) {
-            const item = document.createElement('div');
-            item.className = 'saved-item';
-            item.innerHTML = `
-                <div class="saved-item-header">
-                    <i class="fas fa-calendar-day"></i>
-                    <div>
-                        <h3>${scheduleData.name}</h3>
-                        <p>Група: ${scheduleData.group}</p>
-                    </div>
-                </div>
-                <div class="button-group">
-                    <button class="control-btn primary" onclick="showScheduleDetails('${key}')">
-                        Перейти
-                    </button>
-                     <button class="control-btn danger" onclick="deleteSchedule('${key}', this)">
-                        <i class="fas fa-trash"></i> Видалити
-                    </button>
-                </div>
-            `;
-            schedulesList.appendChild(item);
-        } else {
-            console.warn(`Invalid schedule data for key: ${key}`, scheduleData);
-        }
     }
 
-
-    // === Збережені рейтинги === (без змін, але для повноти)
+    // === Збережені рейтинги ===
     const savedRatings = Object.keys(localStorage)
         .filter(key => key.startsWith('rating_'))
         .map(key => ({
@@ -77,34 +68,35 @@ function loadSavedItems() {
         }));
 
     const ratingsList = document.getElementById('savedRatingsList');
-     if (!ratingsList) return; //перевірка
+    if (!ratingsList) return;
 
-    ratingsList.innerHTML = savedRatings.length > 0
-        ? ''
-        : '<div class="empty-message">Немає збережених рейтингів</div>';
-
-    savedRatings.forEach(rating => {
-        const item = document.createElement('div');
-        item.className = 'saved-item';
-        item.innerHTML = `
-            <div class="saved-item-header">
-                <i class="fas fa-chart-line"></i>
-                <div>
-                    <h3>${rating.name}</h3>
-                    <p>Загальний рейтинг: ${rating.data.R?.toFixed(2) || 'Н/Д'}</p>
+    if (savedRatings.length === 0) {
+        ratingsList.innerHTML = '<div class="empty-message">Немає збережених рейтингів</div>';
+    } else {
+        ratingsList.innerHTML = '';
+        savedRatings.forEach(rating => {
+            const item = document.createElement('div');
+            item.className = 'saved-item';
+            item.innerHTML = `
+                <div class="saved-item-header">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                        <h3>${rating.name}</h3>
+                        <p>Загальний рейтинг: ${rating.data.R?.toFixed(2) || 'Н/Д'}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="button-group">
-                <button class="control-btn primary" onclick="showRatingDetails('${rating.key}')">
-                    Деталі
-                </button>
-                <button class="control-btn danger" onclick="deleteRating('${rating.key}', this)">
-                    <i class="fas fa-trash"></i> Видалити
-                </button>
-            </div>
-        `;
-        ratingsList.appendChild(item);
-    });
+                <div class="button-group">
+                    <button class="control-btn primary" onclick="showRatingDetails('${rating.key}')">
+                        Деталі
+                    </button>
+                    <button class="control-btn danger" onclick="deleteRating('${rating.key}', this)">
+                        <i class="fas fa-trash"></i> Видалити
+                    </button>
+                </div>
+            `;
+            ratingsList.appendChild(item);
+        });
+    }
 }
 
 function deleteRating(key, button) {

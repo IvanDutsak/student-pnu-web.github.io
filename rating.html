@@ -31,6 +31,12 @@
                     Рейтинговий бал
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="profile.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    Профіль
+                </a>
+            </li>
         </ul>
     </nav>
     
@@ -59,7 +65,7 @@
             <div class="input-section">
                 <h2 class="section-title">
                     <i class="fas fa-book-open"></i>
-                    Додати предмет
+                    Додавання предметів
                 </h2>
                 
                 <div class="input-group">
@@ -93,11 +99,7 @@
                 <div class="button-group">
                     <button class="control-btn primary" onclick="addSubject()">
                         <i class="fas fa-plus-circle"></i>
-                        Додати предмет
-                    </button>
-                    <button class="control-btn primary" onclick="calculateRating()">
-                        <i class="fas fa-calculator"></i>
-                        Розрахувати
+                        Зберегти дані предмета
                     </button>
                 </div>
             </div>
@@ -124,6 +126,14 @@
                         </h3>
                         <ul id="creditList" class="subject-list"></ul>
                     </div>
+                </div>
+
+                <!-- Нова позиція для кнопки "Розрахувати" -->
+                <div class="button-group">
+                    <button class="control-btn primary" onclick="calculateRating()">
+                        <i class="fas fa-calculator"></i>
+                        Розрахувати
+                    </button>
                 </div>
             </div>
 

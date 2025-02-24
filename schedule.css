@@ -126,6 +126,7 @@ body {
     align-items: center;
     gap: 0.5rem;
     margin: 0 0.5rem;
+    margin-top: 1.48rem;
 }
 
 .control-btn.primary {
@@ -324,6 +325,22 @@ body {
 
 /* Адаптивність */
 @media (max-width: 768px) {
+
+    .filters {
+        flex-direction: column; /* Розташовуємо елементи вертикально на мобільних */
+        align-items: flex-start; /* Вирівнюємо по верхньому краю */
+    }
+
+    .filters .filter-group {
+        width: 100%; /* Робимо поля вводу на всю ширину */
+    }
+
+    .filters .control-btn {
+        width: 100%; /* Робимо кнопки на всю ширину */
+        margin-top: 0.5rem; /* Додаємо відступ зверху для кнопок */
+    }
+
+
     .nav-list {
         flex-direction: column;
         align-items: center;
@@ -630,10 +647,20 @@ body {
 /* Фільтри */
 .filters {
     display: flex;
-    flex-wrap: wrap; /* Щоб фільтри переносилися на новий рядок */
+    flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1rem;
-    align-items: center; /* Вирівнювання по вертикалі */
+    align-items: center; /* Вирівнюємо по центру вертикально */
+    justify-content: space-between; /* Розподіляємо елементи по ширині */
+}
+
+.filters.schedule-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .filter-group {
@@ -688,4 +715,10 @@ body {
 
 .suggestions-list li:hover {
     background-color: #f8f9fa; /* Світло-сірий фон при наведенні */
+}
+
+
+.not-selected {
+    color: #888;
+    font-style: italic;
 }
