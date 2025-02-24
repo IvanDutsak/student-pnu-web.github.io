@@ -102,10 +102,10 @@ function showSuggestions(inputText) {
         suggestions.appendChild(li);
     });
 
-    suggestions.style.display = 'block'; // Показуємо список
+    suggestions.style.display = 'block';
 }
 
-// Додавання предмету
+// Додавання предмету з перевіркою на дублікати
 function addSubject() {
     const subjectName = document.getElementById('subjectName').value.trim();
     const subjectScore = parseInt(document.getElementById('subjectScore').value);
@@ -121,20 +121,30 @@ function addSubject() {
         return;
     }
 
+    // Перевірка на дублікати
+    const isAlreadyAdded = 
+        addedExamSubjects.some(subj => subj.name === subjectName) ||
+        addedCreditSubjects.some(subj => subj.name === subjectName);
+
+    if (isAlreadyAdded) {
+        alert('Цей предмет уже додано!');
+        return;
+    }
+
     const [credits, type] = subject;
     if (type === "Екзамен") {
         addedExamSubjects.push({ 
             name: subjectName, 
             score: subjectScore, 
             credits,
-            type // Додаємо тип
+            type
         });
     } else if (type === "Залік") {
         addedCreditSubjects.push({ 
             name: subjectName, 
             score: subjectScore, 
             credits,
-            type // Додаємо тип
+            type
         });
     }
 
@@ -143,7 +153,17 @@ function addSubject() {
     document.getElementById('subjectScore').value = '';
 }
 
-// Оновлення списків доданих предметів
+// Видалення предмету
+function removeSubject(subjectName, isExam) {
+    if (isExam) {
+        addedExamSubjects = addedExamSubjects.filter(subj => subj.name !== subjectName);
+    } else {
+        addedCreditSubjects = addedCreditSubjects.filter(subj => subj.name !== subjectName);
+    }
+    updateAddedSubjectsList();
+}
+
+// Оновлення списків доданих предметів з кнопками видалення
 function updateAddedSubjectsList() {
     const examList = document.getElementById('examList');
     const creditList = document.getElementById('creditList');
@@ -152,58 +172,59 @@ function updateAddedSubjectsList() {
 
     addedExamSubjects.forEach(subject => {
         const li = document.createElement('li');
-        li.textContent = `${subject.name}: ${subject.score} балів, ${subject.credits} кредитів`;
+        li.innerHTML = `
+            ${subject.name}: ${subject.score} балів, ${subject.credits} кредитів
+            <button class="remove-btn" onclick="removeSubject('${subject.name}', true)">
+                <i class="fas fa-times"></i>
+            </button>
+        `;
         examList.appendChild(li);
     });
 
     addedCreditSubjects.forEach(subject => {
         const li = document.createElement('li');
-        li.textContent = `${subject.name}: ${subject.score} балів, ${subject.credits} кредитів`;
+        li.innerHTML = `
+            ${subject.name}: ${subject.score} балів, ${subject.credits} кредитів
+            <button class="remove-btn" onclick="removeSubject('${subject.name}', false)">
+                <i class="fas fa-times"></i>
+            </button>
+        `;
         creditList.appendChild(li);
     });
 }
 
-// Розрахунок рейтингу
+// Розрахунок рейтингу (залишається без змін)
 function calculateRating() {
-    // Перевірка на наявність доданих предметів
     if (addedExamSubjects.length === 0 && addedCreditSubjects.length === 0) {
         alert('Додайте хоча б один предмет.');
         return;
     }
 
-    // Ініціалізація змінних для розрахунків
-    let examTotal = 0;    // Сума (бал * кредити) для екзаменів
-    let examCredits = 0;  // Загальна кількість кредитів для екзаменів
-    let creditTotal = 0;  // Сума (бал * кредити) для заліків
-    let creditCredits = 0;// Загальна кількість кредитів для заліків
+    let examTotal = 0;
+    let examCredits = 0;
+    let creditTotal = 0;
+    let creditCredits = 0;
 
-    // Розрахунок для екзаменаційних предметів
     addedExamSubjects.forEach(subject => {
         examTotal += subject.score * subject.credits;
         examCredits += subject.credits;
     });
 
-    // Розрахунок для залікових предметів
     addedCreditSubjects.forEach(subject => {
         creditTotal += subject.score * subject.credits;
         creditCredits += subject.credits;
     });
 
-    // Обчислення рейтингів
-    const R_e = examCredits > 0 ? examTotal / examCredits : 0;  // Рейтинг екзаменів
-    const R_z = creditCredits > 0 ? creditTotal / creditCredits : 0; // Рейтинг заліків
-    
-    // Обчислення загального рейтингу
+    const R_e = examCredits > 0 ? examTotal / examCredits : 0;
+    const R_z = creditCredits > 0 ? creditTotal / creditCredits : 0;
     const totalCredits = examCredits + creditCredits;
     const R = totalCredits > 0 
         ? (2 * R_e * examCredits + R_z * creditCredits) / (2 * examCredits + creditCredits) 
         : 0;
 
-    // Оновлення таблиці результатів
     const tbody = document.querySelector('.results-table tbody');
-    tbody.innerHTML = ''; // Очищення таблиці
+    tbody.innerHTML = '';
 
-    // Додавання рядків для екзаменів
     addedExamSubjects.forEach(subject => {
         tbody.innerHTML += `
             <tr>
@@ -215,7 +236,6 @@ function calculateRating() {
         `;
     });
 
-    // Додавання рядків для заліків
     addedCreditSubjects.forEach(subject => {
         tbody.innerHTML += `
             <tr>
@@ -227,12 +247,10 @@ function calculateRating() {
         `;
     });
 
-    // Оновлення підсумкових значень
     document.getElementById('examRating').textContent = R_e.toFixed(2);
     document.getElementById('creditRating').textContent = R_z.toFixed(2);
     document.getElementById('totalRating').textContent = R.toFixed(2);
 
-    // Збереження даних для експорту
     window.examData = addedExamSubjects;
     window.creditData = addedCreditSubjects;
     window.R_e = R_e;
@@ -240,7 +258,7 @@ function calculateRating() {
     window.R = R;
 }
 
-// Експорт до PDF
+// Експорт до PDF, Очищення даних, Збереження локально (залишаються без змін)
 async function exportToPDF() {
     const resultsElement = document.querySelector("#results");
     
@@ -271,7 +289,6 @@ async function exportToPDF() {
     }
 }
 
-// Очищення даних
 function clearData() {
     addedExamSubjects = [];
     addedCreditSubjects = [];
@@ -279,7 +296,6 @@ function clearData() {
     document.getElementById('results').innerHTML = '';
 }
 
-// Збереження локально
 function saveLocally() {
     const name = prompt("Введіть назву для збереження рейтингу:");
     if (!name) return;
@@ -287,17 +303,16 @@ function saveLocally() {
     const data = {
         examSubjects: addedExamSubjects.map(subj => ({
             ...subj,
-            type: "Екзамен" // Явно вказуємо тип
+            type: "Екзамен"
         })),
         creditSubjects: addedCreditSubjects.map(subj => ({
             ...subj,
-            type: "Залік" // Явно вказуємо тип
+            type: "Залік"
         })),
         R_e: window.R_e,
         R_z: window.R_z,
         R: window.R,
         timestamp: new Date().toISOString(),
-        // Додаємо HTML для швидкого відображення
         html: document.getElementById('results').outerHTML
     };
 
@@ -305,7 +320,7 @@ function saveLocally() {
     alert(`Рейтинг "${name}" збережено!`);
 }
 
-// Ховаємо пропозиції при кліку поза полем
+// Обробники подій (залишаються без змін)
 document.addEventListener('click', (e) => {
     if (!document.getElementById('subjectName').contains(e.target) && 
         !document.getElementById('suggestions').contains(e.target)) {
@@ -313,7 +328,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Відновлення даних при завантаженні
 document.addEventListener('DOMContentLoaded', () => {
     const savedData = localStorage.getItem('currentRating');
     if (savedData) {

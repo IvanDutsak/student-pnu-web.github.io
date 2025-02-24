@@ -486,37 +486,63 @@ function resetFilters() {
 }
 
 // --- Функція експорту розкладу у PDF ---
-// --- Функція експорту розкладу у PDF ---
 async function exportScheduleToPDF() {
-    const scheduleTable = document.getElementById('scheduleTable');
-    if (!scheduleTable || scheduleTable.querySelector('tbody').children.length === 0) {
-        alert('Немає розкладу для збереження у PDF. Спочатку виберіть групу та застосуйте фільтри, якщо потрібно.');
+   const activeGroupBtn = document.querySelector('.group-btn.active');
+    if (!activeGroupBtn) {
+        alert('Будь ласка, оберіть групу перед збереженням у PDF.');
         return;
     }
 
+    // Якщо немає фільтрів, показуємо повний розклад
+    if (!document.getElementById('date-from').value && 
+        !document.getElementById('date-to').value && 
+        !document.getElementById('teacher-search').value) {
+        showFullSchedule();
+    } else {
+        applyFilters(); // Інакше застосовуємо фільтри
+    }
+
+    // Додаємо невелику затримку для завершення рендерингу
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    const scheduleTable = document.getElementById('scheduleTable');
+    if (!scheduleTable || scheduleTable.querySelector('tbody').children.length === 0) {
+        alert('Немає розкладу для збереження у PDF.');
+        return;
+    }
+
+    console.log('Таблиця перед експортом:', scheduleTable.innerHTML); // Додаємо логування
+    const tbodyRows = scheduleTable.querySelector('tbody').children.length;
+    console.log('Кількість рядків у tbody:', tbodyRows);
+
     try {
         const canvas = await html2canvas(scheduleTable, {
-            scale: 2, // Збільшуємо якість зображення
+            scale: 2,
             useCORS: true,
-            logging: false
+            logging: true, // Увімкніть логування для html2canvas
         });
 
+        console.log('Розмір canvas:', canvas.width, canvas.height); // Перевірка розміру canvas
+
         const imgData = canvas.toDataURL("image/png");
+        if (!imgData || imgData === 'data:,') {
+            throw new Error('Зображення не створено або порожнє');
+        }
+
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF('p', 'mm', 'a4');
 
         const pageWidth = doc.internal.pageSize.getWidth();
         const pageHeight = doc.internal.pageSize.getHeight();
-        const imgWidth = pageWidth - 20; // Залишаємо поля 10 мм з кожного боку
+        const imgWidth = pageWidth - 20;
         const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
         let heightLeft = imgHeight;
-        let position = 10; // Початкова позиція зверху
+        let position = 10;
 
         doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
-        heightLeft -= (pageHeight - 20); // Віднімаємо висоту сторінки, враховуючи поля
+        heightLeft -= (pageHeight - 20);
 
-        // Додаємо нові сторінки, якщо розклад не вміщається на одній
         while (heightLeft > 0) {
             position = heightLeft - imgHeight;
             doc.addPage();
@@ -524,34 +550,25 @@ async function exportScheduleToPDF() {
             heightLeft -= (pageHeight - 20);
         }
 
-        // Формуємо назву файлу
         const groupKey = document.querySelector('.group-btn.active')?.dataset.group || 'Розклад';
         const dateFrom = document.getElementById('date-from').value;
         const dateTo = document.getElementById('date-to').value;
 
-        let fileName;
+        let fileName = groupKey;
         if (dateFrom && dateTo) {
-            // Якщо є обидві дати, форматуємо їх і додаємо до назви
-            const formattedDateFrom = formatDate(dateFrom);
-            const formattedDateTo = formatDate(dateTo);
-            fileName = `${groupKey}_Фільтрація_${formattedDateFrom}-${formattedDateTo}`;
+            fileName += `_Фільтрація_${formatDate(dateFrom)}-${formatDate(dateTo)}`;
         } else if (dateFrom) {
-            // Якщо є тільки дата "з", додаємо тільки її
-            const formattedDateFrom = formatDate(dateFrom);
-            fileName = `${groupKey}_Фільтрація_з_${formattedDateFrom}`;
+            fileName += `_Фільтрація_з_${formatDate(dateFrom)}`;
         } else if (dateTo) {
-            // Якщо є тільки дата "до", додаємо тільки її
-            const formattedDateTo = formatDate(dateTo);
-            fileName = `${groupKey}_Фільтрація_до_${formattedDateTo}`;
+            fileName += `_Фільтрація_до_${formatDate(dateTo)}`;
         } else {
-            // Якщо немає фільтрів за датами, просто назва групи
-            fileName = `${groupKey}_розклад`;
+            fileName += '_розклад';
         }
 
         doc.save(`${fileName}.pdf`);
     } catch (error) {
         console.error('Помилка при створенні PDF:', error);
-        alert('Не вдалося створити PDF. Перевірте консоль для деталей.');
+        alert('Не вдалося завантажити PDF. Розклад можна завантажити тільки з фільтром до 2 місяців');
     }
 }
 

@@ -47,6 +47,7 @@ body {
     justify-content: center;
     padding: 1rem 0;
     list-style: none;
+    gap: 1rem; /* Відступи між елементами */
 }
 
 .nav-item {
@@ -113,9 +114,10 @@ body {
 
 /* Стилі для кнопок */
 .button-group {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    display: flex; /* Змінено на flex */
+    flex-wrap: wrap; /* Дозволяємо перенесення */
+    justify-content: center; /* Центруємо кнопки */
+    gap: 1rem; /* Додаємо відступи між кнопками */
     margin: 2rem 0;
 }
 
@@ -130,6 +132,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
+    /* margin-bottom: 0.5rem;  Прибрано, бо є gap */
 }
 
 .control-btn.primary {
@@ -152,13 +155,6 @@ body {
 }
 
 /* Стилі для списку предметів (вертикальне розташування) */
-/* .subjects-container {  Закоментовано, бо використовуємо інший підхід
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}*/
-
 .subject-category-group {
     margin-bottom: 1.5rem; /* Відступ між групами */
 }
@@ -235,9 +231,9 @@ body {
 
 /* Адаптивність */
 @media (max-width: 768px) {
-    .button-group {
+    /* .button-group {  Закоментовано, бо тепер використовуємо flexbox
         grid-template-columns: 1fr;
-    }
+    } */
 
     .section-title {
         font-size: 1.5rem;
