@@ -402,6 +402,65 @@ function saveSchedule() {
 }
 
 
+function showFullSchedule() {
+    const activeGroupBtn = document.querySelector('.group-btn.active');
+    if (!activeGroupBtn) {
+        alert('Будь ласка, оберіть групу перед переглядом розкладу.');
+        return;
+    }
+
+    const groupKey = activeGroupBtn.dataset.group;
+    const groupData = schedulesData[groupKey];
+    if (!groupData) {
+        console.error('[SCHEDULE] Помилка: група', groupKey, 'не знайдена');
+        return;
+    }
+    const schedule = groupData.schedule;
+    const tbody = document.querySelector('#scheduleTable tbody');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+
+    const timeSlots = {
+        1: "09:00-10:20", 2: "10:35-11:55", 3: "12:20-13:40", 4: "13:50-15:10",
+        5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
+    };
+
+    schedule.forEach(day => {
+        const dayHeaderRow = tbody.insertRow();
+        dayHeaderRow.classList.add("day-header");
+        const dayHeaderCell = dayHeaderRow.insertCell();
+        dayHeaderCell.colSpan = 4;
+        dayHeaderCell.textContent = `${day.date} (${day.day})`;
+
+        for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
+            const lesson = (day.lessons || []).find(l => 
+                l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
+            ) || {};
+
+            const row = tbody.insertRow();
+            const timeCell = row.insertCell();
+            timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара<br>${timeSlots[lessonNumber]}</span>`;
+            const subjectCell = row.insertCell();
+            const teacherCell = row.insertCell();
+            const groupCell = row.insertCell();
+
+            if (lesson.subject) {
+                subjectCell.textContent = lesson.subject;
+                if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
+                const lessonSubgroup = extractSubgroup(lesson.subject);
+                if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
+                teacherCell.textContent = lesson.teacher || '';
+                groupCell.textContent = lesson.group || groupKey;
+            }
+        }
+    });
+
+    document.querySelector('.schedule-view').style.display = 'block';
+}
+
+
+
+
 // --- Функція застосування фільтрів ---
 function applyFilters() {
     const activeGroupBtn = document.querySelector('.group-btn.active');

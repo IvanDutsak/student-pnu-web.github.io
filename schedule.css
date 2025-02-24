@@ -116,7 +116,8 @@ body {
     justify-content: center;
     gap: 0.5rem;
     padding: 0.75rem 1.25rem;
-    min-width: 120px;
+    min-width: 200px;
+    max-width: 250px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -125,7 +126,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
     margin-top: 1.48rem;
 }
 
@@ -148,6 +149,19 @@ body {
     background: var(--danger-color);
     color: white;
 }
+
+
+.control-btn.secondary {
+    background: #7f8c8d; /* Сірий колір, можна змінити на інший */
+    color: white;
+}
+
+.control-btn.secondary:hover {
+    background: #95a5a6; /* Трохи світліший сірий при наведенні */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 .control-btn:hover {
     transform: translateY(-2px);
@@ -647,11 +661,11 @@ body {
 /* Фільтри */
 .filters {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Запобігаємо перенесенню кнопок на новий рядок на великих екранах */
     gap: 1rem;
     margin-bottom: 1rem;
-    align-items: center; /* Вирівнюємо по центру вертикально */
-    justify-content: space-between; /* Розподіляємо елементи по ширині */
+    align-items: center;
+    justify-content: flex-start; /* Вирівнюємо кнопки ліворуч */
 }
 
 .filters.schedule-filters {
