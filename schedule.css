@@ -2,16 +2,7 @@
     schedule.css - Специфічні стилі для сторінки розкладу
 */
 
-/* ---  Імпорт загальних стилів (якщо потрібно перевизначити) --- */
-
-/*  Можна імпортувати styles.css, але краще не треба, бо тоді не буде
-    можливості створити унікальний дизайн для schedule.html.
-    Замість імпорту, я скопіював всі стилі з styles.css сюди.
-*/
-/* @import url('styles.css'); */
-
-
-/* ---  Базові стилі (скопійовані з styles.css) --- */
+/* --- Базові стилі (скопійовані з styles.css) --- */
 
 :root {
     --primary-color: #4a90e2;
@@ -43,6 +34,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 80px; /* Додано відступ зверху, щоб вміст не ховався під панеллю */
 }
 
 /* Навігація */
@@ -50,8 +42,10 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: fixed; /* Змінено з sticky на fixed */
     top: 0;
+    left: 0; /* Додано, щоб панель розтягувалася по всій ширині */
+    width: 100%; /* Додано, щоб панель займала всю ширину */
     z-index: 1000;
 }
 
@@ -150,18 +144,16 @@ body {
     color: white;
 }
 
-
 .control-btn.secondary {
-    background: #7f8c8d; /* Сірий колір, можна змінити на інший */
+    background: #7f8c8d;
     color: white;
 }
 
 .control-btn.secondary:hover {
-    background: #95a5a6; /* Трохи світліший сірий при наведенні */
+    background: #95a5a6;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 .control-btn:hover {
     transform: translateY(-2px);
@@ -294,6 +286,8 @@ body {
     padding: 1rem 1.5rem;
     text-align: left;
     border-bottom: 1px solid #eee;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .results-table thead {
@@ -339,21 +333,21 @@ body {
 
 /* Адаптивність */
 @media (max-width: 768px) {
-
     .filters {
-        flex-direction: column; /* Розташовуємо елементи вертикально на мобільних */
-        align-items: flex-start; /* Вирівнюємо по верхньому краю */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .filters .filter-group {
-        width: 100%; /* Робимо поля вводу на всю ширину */
+        width: 100%;
     }
 
     .filters .control-btn {
-        width: 100%; /* Робимо кнопки на всю ширину */
-        margin-top: 0.5rem; /* Додаємо відступ зверху для кнопок */
+        width: auto;
+        max-width: 250px;
+        align-self: center;
+        margin-top: 0.5rem;
     }
-
 
     .nav-list {
         flex-direction: column;
@@ -361,7 +355,7 @@ body {
     }
 
     .nav-item {
-        margin: 0.5rem 0;
+        margin: 1rem 0;
     }
 
     .subjects-container {
@@ -397,60 +391,48 @@ body {
     .rating-summary {
         grid-template-columns: 1fr;
     }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    #scheduleTable td {
+        font-size: 0.9em;
+    }
 }
 
 .autocomplete-wrapper {
-    position: relative; /* Додано для коректного позиціонування */
+    position: relative;
     width: 100%;
 }
 
 .suggestions-list {
     position: absolute;
-    top: 100%; /* З'являється під полем введення */
+    top: 100%;
     left: 0;
     right: 0;
-    z-index: 1000; /* Забезпечує перекриття інших елементів */
-    margin-top: 5px; /* Невеликий відступ від поля */
-    width: 100% !important; /* Фіксує ширину підказок */
-}
-
-
-
-.autocomplete-wrapper {
-    position: relative; /* Важливо для абсолютного позиціонування списку */
-    width: 100%;
-    margin-bottom: 0; /* Щоб не було зайвого відступу до поля оцінки */
-}
-
-.suggestions-list {
-    position: absolute;
-    top: calc(100% + 5px); /* 5px відступ від поля введення */
-    left: 0;
-    right: 0;
-    width: 100%;
+    z-index: 1000;
+    margin-top: 5px;
+    width: 100% !important;
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Щоб список був поверх інших елементів */
     max-height: 250px;
     overflow-y: auto;
-    display: none;
     padding: 0;
-    margin: 0;
+    list-style: none;
 }
 
 .suggestions-list li {
     padding: 12px 16px;
     cursor: pointer;
-    list-style: none;
+    transition: background-color 0.2s;
 }
 
 .suggestions-list li:hover {
-    background: #f8f9fa;
+    background-color: #f8f9fa;
 }
-
-
 
 /* Збережені матеріали */
 .saved-content {
@@ -516,23 +498,22 @@ body {
 
 /* --- Специфічні стилі для schedule.html --- */
 
-/* Приклад: Зміна кольору фону для секції вибору факультету */
 .faculty-selection {
-    background-color: #f0f8ff; /* Світло-блакитний */
-    border: 1px solid #add8e6; /* Світло-синій */
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-.group-selection{
-     background-color: #f0f8ff; /* Світло-блакитний */
-    border: 1px solid #add8e6; /* Світло-синій */
+    background-color: #f0f8ff;
+    border: 1px solid #add8e6;
     padding: 1rem;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
 
-/* Стилі для кнопок факультетів/груп (якщо це кнопки) */
+.group-selection {
+    background-color: #f0f8ff;
+    border: 1px solid #add8e6;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
 #faculties button,
 #groups button {
     background-color: var(--primary-color);
@@ -568,104 +549,68 @@ body {
     background-color: var(--primary-color);
     color: white;
 }
-#scheduleTable th {
-     border: 1px solid white;
-}
-
-#scheduleTable tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-
-/* Таблиця розкладу */
-#scheduleTable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-#scheduleTable th,
-#scheduleTable td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-#scheduleTable thead {
-    background-color: var(--primary-color);
-    color: white;
-}
 
 #scheduleTable th {
     border: 1px solid white;
 }
 
-
 #scheduleTable tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Додаємо стилі для кращого вигляду */
-
 .schedule-view {
-    margin-top: 2rem; /* Відступ від кнопок */
+    margin-top: 2rem;
 }
 
 #scheduleTable thead th {
-    padding: 10px; /* Збільшуємо відступи в заголовку */
+    padding: 10px;
     font-weight: 600;
 }
 
 #scheduleTable td {
     padding: 10px;
-    vertical-align: top; /* Вирівнюємо вміст по верхньому краю */
+    vertical-align: top;
 }
 
-/* Стилі для дати і дня тижня */
 .day-header {
-    background-color: #e0e0e0; /* Світло-сірий фон */
+    background-color: #e0e0e0;
     font-weight: bold;
     padding: 8px;
     border-bottom: 2px solid #ccc;
-    margin-top: 1rem; /* Відступ від попереднього дня */
+    margin-top: 1rem;
     border-radius: 4px;
-
 }
 
 .time-slot {
     color: #555;
     font-size: 0.9em;
     margin-bottom: 4px;
-    display: block; /* Щоб час був окремим рядком */
+    display: block;
 }
 
-/* Стилі для назви предмету */
-#scheduleTable td:nth-child(2) { /* Друга колонка (Предмет) */
+#scheduleTable td:nth-child(2) {
     font-weight: 500;
 }
 
-/* Стилі для деталей (аудиторія і т.д.) */
 #scheduleTable td small {
     color: #777;
-    display: block; /* Щоб деталі були під назвою предмету */
+    display: block;
     margin-top: 4px;
     font-size: 0.85em;
 }
-/* Додаємо межі між днями */
+
 #scheduleTable tbody tr.day-separator {
-    border-top: 3px solid var(--primary-color); /* Товста межа */
+    border-top: 3px solid var(--primary-color);
 }
-
-
 
 /* Фільтри */
 .filters {
     display: flex;
-    flex-wrap: nowrap; /* Запобігаємо перенесенню кнопок на новий рядок на великих екранах */
+    flex-wrap: nowrap;
     gap: 1rem;
     margin-bottom: 1rem;
     align-items: center;
-    justify-content: flex-start; /* Вирівнюємо кнопки ліворуч */
+    justify-content: flex-start;
 }
 
 .filters.schedule-filters {
@@ -679,8 +624,7 @@ body {
 
 .filter-group {
     display: flex;
-    flex-direction: column; /* Елементи фільтра один під одним */
-    /*margin-right: 1rem;  Можна використати gap замість margin-right */
+    flex-direction: column;
 }
 
 .filters label {
@@ -696,43 +640,44 @@ body {
     font-size: 1rem;
 }
 
-
-
 .autocomplete-wrapper {
-    position: relative; /* Додано для коректного позиціонування */
+    position: relative;
     width: 100%;
 }
 
 .suggestions-list {
     position: absolute;
-    top: 100%; /* З'являється під полем введення */
+    top: 100%;
     left: 0;
     right: 0;
-    z-index: 1000; /* Забезпечує перекриття інших елементів */
-    margin-top: 5px; /* Невеликий відступ від поля */
-    /*width: 100% !important;  Фіксує ширину підказок */
+    z-index: 1000;
+    margin-top: 5px;
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     max-height: 250px;
     overflow-y: auto;
-    padding: 0; /*Забираємо padding, додаємо до елементів списку */
-    list-style: none;  /*Забираємо маркери списку*/
+    padding: 0;
+    list-style: none;
 }
-/* Стилі для окремих пунктів списку */
+
 .suggestions-list li {
-    padding: 12px 16px; /* Робимо клікабельну область більшою */
+    padding: 12px 16px;
     cursor: pointer;
-    transition: background-color 0.2s; /* Плавна зміна фону */
+    transition: background-color 0.2s;
 }
 
 .suggestions-list li:hover {
-    background-color: #f8f9fa; /* Світло-сірий фон при наведенні */
+    background-color: #f8f9fa;
 }
-
 
 .not-selected {
     color: #888;
     font-style: italic;
 }
+
+
+
+
+

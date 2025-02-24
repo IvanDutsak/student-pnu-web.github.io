@@ -251,7 +251,8 @@ body {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
+    overflow-x: auto; /* Додаємо горизонтальний скролл, якщо вміст перевищує ширину */
+    max-width: 100%; /* Забезпечуємо, що таблиця не виходить за межі контейнера */
 }
 
 .results-table table {
@@ -346,6 +347,15 @@ body {
     
     .suggestions-list {
         width: 100% !important;
+    }
+
+    .results-table {
+        font-size: 0.9rem;
+    }
+
+    .results-table th,
+    .results-table td {
+        padding: 0.75rem 1rem;
     }
 
     .rating-summary {
@@ -492,17 +502,21 @@ body {
     color: white;
     border: none;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 24px; /* Збільшуємо розмір для кращої видимості */
+    height: 24px; /* Збільшуємо розмір для кращої видимості */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 14px; /* Збільшуємо шрифт для символу */
     padding: 0;
     margin-left: 10px;
+    transition: background-color 0.3s ease; /* Додаємо плавний перехід */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Додаємо тінь для об’ємності */
 }
 
 .remove-btn:hover {
     background-color: #cc0000;
+    transform: translateY(-1px); /* Легке підняття при наведенні для ефекту */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Збільшуємо тінь при наведенні */
 }

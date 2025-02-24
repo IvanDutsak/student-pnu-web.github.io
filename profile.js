@@ -403,6 +403,17 @@ function showStep(stepId) {
     document.getElementById(stepId).classList.add('active-step');
 }
 
+function previousStep(currentStepId) {
+    // Масив кроків у потрібному порядку
+    const steps = ["step-faculty", "step-group", "step-semester", "step-subjects"];
+    const currentIndex = steps.indexOf(currentStepId);
+    if (currentIndex > 0) {
+        const previousStepId = steps[currentIndex - 1];
+        showStep(previousStepId);
+    }
+}
+
+
 // Ініціалізація
 loadState();
 if (!window.currentState.faculty) {
