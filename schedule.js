@@ -20,19 +20,34 @@ function isDateInRange(date, from, to) {
     return true;
 }
 
+function normalizeSubgroup(subgroup) {
+    if (!subgroup) return '';
+    return subgroup
+        .toLowerCase()
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
 // --- Функції для витягнення підгрупи та основної назви предмета ---
-
-
 function extractCoreSubject(subject) {
     if (!subject) return '';
     let core = subject
         .replace(/^\(підгр\. \d+\)\s*/, '') // Видаляємо "(підгр. 1)"
-        .replace(/^Збірна група КН\(зб\)\d+\.\d+\s*/, '') // Видаляємо "Збірна група КН(зб)2.19"
-        .replace(/^Потік КН-\d+, КН-\д+\s*/, ''); // Видаляємо "Потік КН-31, КН-32"
-    return core.trim();
+        .replace(/^Збірна група \S+\s*/, '') // Видаляємо "Збірна група КН(зб)2.23"
+        .replace(/^Потік \S+\s*/, '') // Видаляємо "Потік КН-31, КН-32"
+        .replace(/\s*\((Л|Лекція|Лаб|Сем|ПрС)\)$/, '') // Видаляємо "(Л)", "(Лекція)", "(Лаб)", "(Сем)", "(ПрС)" в кінці
+        .replace(/\n/g, ' ') // Замінюємо переноси рядків на пробіли
+        .trim();
+    return core;
 }
 
-
+function normalizeSubject(subject) {
+    return (subject || '')
+        .toLowerCase()
+        .replace(/[^a-zа-яіїєґ0-9\s]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
 
 function extractSubgroup(subject) {
     if (!subject) return '';
@@ -177,31 +192,6 @@ function showSchedule(groupKey) {
         5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
     };
 
-    const normalizeSubject = (subject) => {
-        return (subject || '')
-            .toLowerCase()
-            .replace(/[^a-zа-яіїєґ0-9\s]/g, '')
-            .replace(/\s+/g, ' ')
-            .trim();
-    };
-
-    const normalizeSubgroup = (subgroup) => {
-        if (!subgroup) return '';
-        let normalized = subgroup
-            .replace(/\s+/g, ' ')
-            .trim()
-            .toLowerCase()
-            .replace(/\(\л\)/i, '(лекція)') // Нормалізуємо "(Л)" як "(лекція)", нечутливо до регістру
-            .replace(/\(\лаб\)/i, '(лабораторна)'); // Нормалізуємо "(Лаб)" як "(лабораторна)"
-
-        // Видаляємо частину "(Лекція)", "(Лабораторна)" тощо, щоб дозволити співпадання з короткими версіями
-        const numberMatch = normalized.match(/^\d+\.\d+/);
-        if (numberMatch) {
-            return numberMatch[0]; // Повертаємо лише число, наприклад, "2.20"
-        }
-        return normalized;
-    };
-
     schedule.forEach(day => {
         if (!isDateInRange(day.date, dateFrom, dateTo)) return;
 
@@ -224,20 +214,23 @@ function showSchedule(groupKey) {
             const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 || 
                 Object.keys(window.currentState.selectedSubjects).some(subject => {
                     const normalizedSelectedSubject = normalizeSubject(subject);
-                    return lessonSubjectLower.includes(normalizedSelectedSubject);
+                    return lessonSubjectLower.includes(normalizedSelectedSubject) || 
+                           normalizedSelectedSubject.includes(lessonSubjectLower);
                 });
 
-            const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => 
-                lessonSubjectLower.includes(normalizeSubject(subject))
-            );
+            const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
+                const normalizedSelectedSubject = normalizeSubject(subject);
+                return lessonSubjectLower.includes(normalizedSelectedSubject) || 
+                       normalizedSelectedSubject.includes(lessonSubjectLower);
+            });
             const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
             const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
             const isSubgroupMatch = selectedSubgroups.length === 0 || 
                                     selectedSubgroups.some(selectedSubgroup => {
                                         const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
                                         return normalizedSelectedSubgroup === normalizedLessonSubgroup || 
-                                               (normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) || 
-                                                normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup));
+                                               normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) || 
+                                               normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
                                     });
 
             const isTeacherMatch = !teacherSearch || (lesson.teacher && lesson.teacher.toLowerCase().includes(teacherSearch));
@@ -295,31 +288,6 @@ function saveSchedule() {
         5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
     };
 
-    const normalizeSubject = (subject) => {
-        return (subject || '')
-            .toLowerCase()
-            .replace(/[^a-zа-яіїєґ0-9\s]/g, '')
-            .replace(/\s+/g, ' ')
-            .trim();
-    };
-
-    const normalizeSubgroup = (subgroup) => {
-        if (!subgroup) return '';
-        let normalized = subgroup
-            .replace(/\s+/g, ' ')
-            .trim()
-            .toLowerCase()
-            .replace(/\(\л\)/i, '(лекція)') // Нормалізуємо "(Л)" як "(лекція)", нечутливо до регістру
-            .replace(/\(\лаб\)/i, '(лабораторна)'); // Нормалізуємо "(Лаб)" як "(лабораторна)"
-
-        // Видаляємо частину "(Лекція)", "(Лабораторна)" тощо, щоб дозволити співпадання з короткими версіями
-        const numberMatch = normalized.match(/^\d+\.\d+/);
-        if (numberMatch) {
-            return numberMatch[0]; // Повертаємо лише число, наприклад, "2.20"
-        }
-        return normalized;
-    };
-
     const schedule = groupData.schedule
         .filter(day => isDateInRange(day.date, dateFrom, dateTo))
         .map(day => {
@@ -337,20 +305,23 @@ function saveSchedule() {
                     const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 || 
                         Object.keys(window.currentState.selectedSubjects).some(subject => {
                             const normalizedSelectedSubject = normalizeSubject(subject);
-                            return lessonSubjectLower.includes(normalizedSelectedSubject);
+                            return lessonSubjectLower.includes(normalizedSelectedSubject) || 
+                                   normalizedSelectedSubject.includes(lessonSubjectLower);
                         });
 
-                    const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => 
-                        lessonSubjectLower.includes(normalizeSubject(subject))
-                    );
+                    const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
+                        const normalizedSelectedSubject = normalizeSubject(subject);
+                        return lessonSubjectLower.includes(normalizedSelectedSubject) || 
+                               normalizedSelectedSubject.includes(lessonSubjectLower);
+                    });
                     const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
                     const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
                     const isSubgroupMatch = selectedSubgroups.length === 0 || 
                                             selectedSubgroups.some(selectedSubgroup => {
                                                 const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
                                                 return normalizedSelectedSubgroup === normalizedLessonSubgroup || 
-                                                       (normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) || 
-                                                        normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup));
+                                                       normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) || 
+                                                       normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
                                             });
 
                     const isTeacherMatch = !teacherSearch || (lesson.teacher && lesson.teacher.toLowerCase().includes(teacherSearch));
@@ -401,7 +372,7 @@ function saveSchedule() {
     alert('Розклад успішно збережено!');
 }
 
-
+// --- Функція відображення повного розкладу ---
 function showFullSchedule() {
     const activeGroupBtn = document.querySelector('.group-btn.active');
     if (!activeGroupBtn) {
@@ -457,9 +428,6 @@ function showFullSchedule() {
 
     document.querySelector('.schedule-view').style.display = 'block';
 }
-
-
-
 
 // --- Функція застосування фільтрів ---
 function applyFilters() {

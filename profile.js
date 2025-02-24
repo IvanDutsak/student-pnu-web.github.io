@@ -7,7 +7,6 @@ const groups = {
 
 
 
-
 // Дані про предмети з підгрупами для "Автоматично обраних предметів"
 const subjectsData = {
     "фізична культура": { displayName: "Фізична культура", credits: null, assessment: null, semester: "1,2,3,4", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
@@ -62,7 +61,7 @@ const subjectsData = {
     "основи розробки комп'ютерних ігор": { displayName: "Основи розробки комп’ютерних ігор", credits: 6, assessment: "Залік", semester: "5", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
     "технології проектування комп'ютерних ігор (unity)": { displayName: "Технології проектування комп’ютерних ігор (Unity)", credits: 6, assessment: "Залік", semester: "6", subgroups: ["2.19 (Лекція)", "2.20", "2.21"] },
     "web-програмування (javascript)": { displayName: "WEB – програмування (JavaScript)", credits: 6, assessment: "Залік", semester: "6", subgroups: ["2.23 (Лекція)", "2.24", "2.25", "2.26"] },
-    "алгоритми на графах": { displayName: "Алгоритми на графах", credits: 3, assessment: "Залік", semester: "6", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
+    "алгоритми на графах": { displayName: "Алгоритми на графах", credits: 3, assessment: "Залік", semester: "6", subgroups: ["2.28 (Лекція)", "2.28"] },
     "доповнена реальність, симулятори та людино-машинні інтерфейси": { displayName: "Доповнена реальність, симулятори та людино-машинні інтерфейси", credits: 6, assessment: "Залік", semester: "7", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
     "веб-програмування (php)": { displayName: "Веб-програмування (PHP)", credits: 6, assessment: "Залік", semester: "7", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
     "серверне програмування": { displayName: "Серверне програмування", credits: 6, assessment: "Залік", semester: "7", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
@@ -70,7 +69,7 @@ const subjectsData = {
     "проектування систем глибинного навчання": { displayName: "Проектування систем глибинного навчання", credits: 6, assessment: "Залік", semester: "8", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
     "шаблони проектування пз": { displayName: "Шаблони проектування ПЗ", credits: 3, assessment: "Залік", semester: "5", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
     "програмування мобільних додатків (android)": { displayName: "Програмування мобільних додатків (Android)", credits: 6, assessment: "Залік", semester: "5", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
-    "технології розробки мобільних додатків": { displayName: "Технології розробки мобільних додатків", credits: 6, assessment: "Залік", semester: "6", subgroups: ["Підгрупа 1", "Підгрупа 2"] },
+    "технології розробки мобільних додатків": { displayName: "Технології розробки мобільних додатків", credits: 6, assessment: "Залік", semester: "6", subgroups: ["2.22(Лекція)", "2.22"] },
     "програмування ios": { displayName: "Програмування iOS", credits: 6, assessment: "Залік", semester: "6" },
     "крос-платформне програмування (python)": { displayName: "Крос-платформне програмування (Python)", credits: 3, assessment: "Залік", semester: "6", subgroups: ["2.29 (Лекція)", "2.30", "2.31", "2.32"] },
     "python для data science": { displayName: "Python для Data Science", credits: 6, assessment: "Залік", semester: "7", subgroups: ["2.29 (Лекція)", "2.30", "2.31", "2.32"] },
