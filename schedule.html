@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="schedule.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
     <script src="schedule_data.js" defer></script>
     <script src="schedule.js" defer></script>
 </head>
@@ -86,6 +88,12 @@
                     </button>
                     <button class="control-btn success" onclick="saveSchedule()">
                         <i class="fas fa-save"></i> Зберегти розклад
+                    </button>
+                    <button class="control-btn warning" onclick="resetFilters()">
+                        <i class="fas fa-undo"></i> Скинути фільтр
+                    </button>
+                    <button class="control-btn success" onclick="exportScheduleToPDF()">
+                        <i class="fas fa-file-pdf"></i> Зберегти у PDF
                     </button>
                 </div>
 

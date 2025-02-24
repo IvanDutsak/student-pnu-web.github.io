@@ -85,6 +85,9 @@ window.currentState = {
     group: null,
     semester: null,
     selectedSubjects: {}, // { "предмет": ["підгрупа1", "підгрупа2", ...] }
+    dateFrom: '',
+    dateTo: '',
+    teacherSearch: ''
 };
 
 
@@ -96,20 +99,16 @@ const normalizeSubgroup = (subgroup) => {
         .replace(/\s+/g, ' ')
         .trim()
         .toLowerCase()
-        .replace(/\(\л\)/i, '(лекція)') // Нормалізуємо "(Л)" як "(лекція)", нечутливо до регістру
-        .replace(/\(\лаб\)/i, '(лабораторна)'); // Нормалізуємо "(Лаб)" як "(лабораторна)"
-
-    // Видаляємо частину "(Лекція)", "(Лабораторна)" тощо, щоб дозволити співпадання з короткими версіями
+        .replace(/\(\л\)/i, '(лекція)')
+        .replace(/\(\лаб\)/i, '(лабораторна)');
     const numberMatch = normalized.match(/^\d+\.\d+/);
-    if (numberMatch) {
-        return numberMatch[0]; // Повертаємо лише число, наприклад, "2.20"
-    }
+    if (numberMatch) return numberMatch[0];
     return normalized;
 };
 
 // Функція завантаження даних з localStorage
 function loadState() {
-    const savedState = localStorage.getItem('studentProfileState');
+    const savedState = localStorage.getItem('appState');
     console.log('[PROFILE] Завантажено з localStorage:', savedState);
     if (savedState) {
         window.currentState = JSON.parse(savedState);
@@ -132,8 +131,8 @@ function loadState() {
 // Функція збереження даних в localStorage
 function saveState() {
     console.log('[PROFILE] Зберігаю стан:', window.currentState);
-    localStorage.setItem('studentProfileState', JSON.stringify(window.currentState));
-    console.log('[PROFILE] Збережено в localStorage:', localStorage.getItem('studentProfileState'));
+    localStorage.setItem('appState', JSON.stringify(window.currentState));
+    console.log('[PROFILE] Збережено в localStorage:', localStorage.getItem('appState'));
 }
 
 // Обробник вибору факультету
@@ -378,6 +377,7 @@ function showProfile() {
 function clearSubjects() {
     window.currentState.selectedSubjects = {};
     saveState();
+    localStorage.clear();
     location.reload();
 }
 
