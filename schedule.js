@@ -510,7 +510,6 @@ function showFullSchedule() {
         dayHeaderCell.colSpan = 4;
         dayHeaderCell.style.cursor = 'pointer';
 
-        // Додаємо стрілочку і тут
         dayHeaderCell.innerHTML = `${day.date} (${day.day}) <span class="toggle-arrow">▼</span>`;
 
         let lessonRows = [];
@@ -521,7 +520,6 @@ function showFullSchedule() {
             lessonRows.forEach(row => {
                 row.style.display = isDayExpanded ? '' : 'none';
             });
-            // Змінюємо стрілочку і тут при кліку
             const arrowSpan = dayHeaderCell.querySelector('.toggle-arrow');
             arrowSpan.textContent = isDayExpanded ? '▼' : '▶';
         });
@@ -534,7 +532,8 @@ function showFullSchedule() {
             const row = tbody.insertRow();
             lessonRows.push(row);
             const timeCell = row.insertCell();
-            timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара<br>${timeSlots[lessonNumber]}</span>`;
+            // Змінили формат відображення часу, щоб він відповідав showSchedule (без <br>)
+            timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
             const subjectCell = row.insertCell();
             const teacherCell = row.insertCell();
             const groupCell = row.insertCell();
@@ -552,6 +551,7 @@ function showFullSchedule() {
 
     document.querySelector('.schedule-view').style.display = 'block';
 }
+
 
 // Додана допоміжна функція для перевірки, чи урок повинен відображатися з урахуванням фільтрів
 function shouldDisplayLesson(lesson, teacherSearch) {
