@@ -487,22 +487,20 @@ function resetFilters() {
 
 // --- Функція експорту розкладу у PDF ---
 async function exportScheduleToPDF() {
-   const activeGroupBtn = document.querySelector('.group-btn.active');
+    const activeGroupBtn = document.querySelector('.group-btn.active');
     if (!activeGroupBtn) {
         alert('Будь ласка, оберіть групу перед збереженням у PDF.');
         return;
     }
 
-    // Якщо немає фільтрів, показуємо повний розклад
     if (!document.getElementById('date-from').value && 
         !document.getElementById('date-to').value && 
         !document.getElementById('teacher-search').value) {
         showFullSchedule();
     } else {
-        applyFilters(); // Інакше застосовуємо фільтри
+        applyFilters();
     }
 
-    // Додаємо невелику затримку для завершення рендерингу
     await new Promise(resolve => setTimeout(resolve, 500));
 
     const scheduleTable = document.getElementById('scheduleTable');
@@ -511,18 +509,12 @@ async function exportScheduleToPDF() {
         return;
     }
 
-    console.log('Таблиця перед експортом:', scheduleTable.innerHTML); // Додаємо логування
-    const tbodyRows = scheduleTable.querySelector('tbody').children.length;
-    console.log('Кількість рядків у tbody:', tbodyRows);
-
     try {
         const canvas = await html2canvas(scheduleTable, {
             scale: 2,
             useCORS: true,
-            logging: true, // Увімкніть логування для html2canvas
+            logging: true,
         });
-
-        console.log('Розмір canvas:', canvas.width, canvas.height); // Перевірка розміру canvas
 
         const imgData = canvas.toDataURL("image/png");
         if (!imgData || imgData === 'data:,') {
@@ -605,4 +597,87 @@ document.addEventListener('DOMContentLoaded', () => {
             suggestionsDiv.style.display = 'none';
         }
     });
+
+    function showScheduleForDays(days) {
+        const today = new Date();
+        const dateFrom = today.toISOString().split('T')[0];
+        const futureDate = new Date(today);
+        futureDate.setDate(today.getDate() + days);
+        const dateTo = futureDate.toISOString().split('T')[0];
+
+        document.getElementById('date-from').value = dateFrom;
+        document.getElementById('date-to').value = dateTo;
+        applyFilters();
+    }
+
+    function showScheduleForMonth() {
+        const today = new Date();
+        const dateFrom = today.toISOString().split('T')[0];
+        const futureDate = new Date(today);
+        futureDate.setMonth(today.getMonth() + 1);
+        const dateTo = futureDate.toISOString().split('T')[0];
+
+        document.getElementById('date-from').value = dateFrom;
+        document.getElementById('date-to').value = dateTo;
+        applyFilters();
+    }
+
+    // Поява кнопки прокрутки вгору/вниз із анімацією
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        const arrow = scrollToTopBtn.querySelector('.toggle-arrow');
+        const scrollTop = document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollBottom = scrollHeight - clientHeight - scrollTop;
+
+        if (scrollTop > 20 || scrollBottom > 20) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+
+        // Логіка для зміни напрямку стрілки
+        if (scrollBottom < clientHeight / 2) {
+            // Білянизу сторінки — стрілка вгору
+            scrollToTopBtn.dataset.direction = "up";
+            arrow.classList.remove('down');
+        } else if (scrollTop < clientHeight / 2) {
+            // Біляверху сторінки — стрілка вниз
+            scrollToTopBtn.dataset.direction = "down";
+            arrow.classList.add('down');
+        } else {
+            // В середині сторінки — стрілка вниз (за замовчуванням)
+            scrollToTopBtn.dataset.direction = "down";
+            arrow.classList.add('down');
+        }
+    }
+
+    // Функція для плавної прокрутки вгору/вниз
+    document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+        const direction = this.dataset.direction;
+        if (direction === "up") {
+            scrollToTop();
+        } else {
+            scrollToBottom();
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
 });

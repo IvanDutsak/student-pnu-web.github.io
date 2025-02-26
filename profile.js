@@ -120,13 +120,19 @@ function loadState() {
             showStep('step-subjects');
         } else if (window.currentState.group) {
             showGroups(window.currentState.faculty);
-            showStep('step-group');
+            showStep('step-semester');
         } else if (window.currentState.faculty) {
             showGroups(window.currentState.faculty);
             showStep('step-group');
+        } else {
+           showStep('step-faculty');
         }
     }
+    else {
+        showStep('step-faculty');
+    }
 }
+
 
 // Функція збереження даних в localStorage
 function saveState() {
@@ -134,6 +140,27 @@ function saveState() {
     localStorage.setItem('appState', JSON.stringify(window.currentState));
     console.log('[PROFILE] Збережено в localStorage:', localStorage.getItem('appState'));
 }
+
+window.addEventListener('beforeunload', function(event) {
+    if (window.location.pathname.endsWith('profile.html')) {
+        localStorage.removeItem('appState');
+    }
+});
+
+function clearProfileState() {
+    const path = window.location.pathname;
+    if(path.includes('profile.html')){
+        const savedState = localStorage.getItem('appState');
+        if (savedState) {
+            const currentState = JSON.parse(savedState);
+            if(!currentState.faculty){
+                localStorage.removeItem('appState');
+            }
+        }
+    }
+}
+
+
 
 // Обробник вибору факультету
 document.querySelectorAll('[data-faculty]').forEach(btn => {
@@ -330,12 +357,48 @@ function showSubjects(semester, group) {
     if (otherSubjects.length > 0) {
         const otherSubjectsDiv = document.createElement('div');
         otherSubjectsDiv.className = 'subject-category-group';
-        otherSubjectsDiv.innerHTML = '<h3>Інші предмети (виберіть за бажанням):</h3>';
-        container.appendChild(otherSubjectsDiv);
+        
+        // Створюємо заголовок із стрілочкою
+        const title = document.createElement('h3');
+        title.innerHTML = 'Інші предмети (виберіть за бажанням): <span class="toggle-arrow">▶</span>';
+        title.style.cursor = 'pointer'; // Курсор показує, що це клікабельно
+        otherSubjectsDiv.appendChild(title);
+        
+        // Створюємо контейнер для списку предметів
+        const subjectsList = document.createElement('div');
+        subjectsList.className = 'subjects-list';
+        subjectsList.style.display = 'none'; // Список прихований за замовчуванням
+        otherSubjectsDiv.appendChild(subjectsList);
+        
+        // Додаємо предмети до списку
         otherSubjects.forEach(subjectData => {
-            otherSubjectsDiv.appendChild(createSubjectDiv(subjectData, false));
+            subjectsList.appendChild(createSubjectDiv(subjectData, false));
+        });
+        
+        // Додаємо групу до контейнера
+        container.appendChild(otherSubjectsDiv);
+        
+        // Функція для оновлення стрілочки
+        const updateArrow = () => {
+            const arrow = title.querySelector('.toggle-arrow');
+            if (subjectsList.style.display === 'none') {
+                arrow.textContent = '▶';
+            } else {
+                arrow.textContent = '▼';
+            }
+        };
+        
+        // Обробник кліку на заголовок
+        title.addEventListener('click', () => {
+            if (subjectsList.style.display === 'none') {
+                subjectsList.style.display = 'block';
+            } else {
+                subjectsList.style.display = 'none';
+            }
+            updateArrow(); // Оновлюємо стрілочку
         });
     }
+
     const confirmButton = document.createElement('button');
     confirmButton.className = 'control-btn success';
     confirmButton.textContent = 'Підтвердити';
@@ -344,6 +407,9 @@ function showSubjects(semester, group) {
         // Видаляємо цей виклик, оскільки стан вже має бути збережено
         // saveState();
     });
+
+
+    
     container.appendChild(confirmButton);
 }
 
@@ -413,9 +479,9 @@ function previousStep(currentStepId) {
     }
 }
 
-
 // Ініціалізація
 loadState();
+clearProfileState();
 if (!window.currentState.faculty) {
     showStep('step-faculty');
 }

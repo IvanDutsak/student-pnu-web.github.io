@@ -64,6 +64,15 @@
 
                 <!-- Фільтри -->
                 <div class="filters schedule-filters">
+                    <!-- Кнопки 7 днів і 1 місяць -->
+                    <div class="filter-group">
+                        <button class="control-btn primary" onclick="showScheduleForDays(7)">
+                            <i class="fas fa-calendar-week"></i> 7 днів
+                        </button>
+                        <button class="control-btn primary" onclick="showScheduleForMonth()">
+                            <i class="fas fa-calendar-days"></i> 1 місяць
+                        </button>
+                    </div>
                     <div class="filter-group">
                         <label for="date-from">Дата з:</label>
                         <input type="date" id="date-from">
@@ -119,5 +128,35 @@
             </div>
         </section>
     </main>
+    <script>
+        function showScheduleForDays(days) {
+            const today = new Date();
+            const dateFrom = today.toISOString().split('T')[0]; // Сьогоднішня дата
+            const futureDate = new Date(today);
+            futureDate.setDate(today.getDate() + days);
+            const dateTo = futureDate.toISOString().split('T')[0]; // Дата через 'days' днів
+
+            document.getElementById('date-from').value = dateFrom;
+            document.getElementById('date-to').value = dateTo;
+            applyFilters();
+        }
+
+        function showScheduleForMonth() {
+           const today = new Date();
+            const dateFrom = today.toISOString().split('T')[0];
+            const futureDate = new Date(today);
+            futureDate.setMonth(today.getMonth() + 1);
+            const dateTo = futureDate.toISOString().split('T')[0];
+
+            document.getElementById('date-from').value = dateFrom;
+            document.getElementById('date-to').value = dateTo;
+            applyFilters();
+        }
+    </script>
+
+<button id="scrollToTopBtn" class="scroll-to-top-btn" data-direction="up">
+    <span class="toggle-arrow"><i class="fas fa-arrow-up"></i></span>
+</button>
+
 </body>
 </html>

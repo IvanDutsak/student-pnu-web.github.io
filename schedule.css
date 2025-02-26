@@ -46,7 +46,6 @@ body {
     top: 0;
     left: 0; /* Додано, щоб панель розтягувалася по всій ширині */
     width: 100%; /* Додано, щоб панель займала всю ширину */
-    z-index: 1000;
 }
 
 .nav-list {
@@ -678,6 +677,36 @@ body {
 }
 
 
+/* стрілочка */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #4a90e2; /* Синій колір */
+    border: none;
+    border-radius: 50%; /* Кругла кнопка */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    display: none; /* Приховано за замовчуванням */
+}
 
+.scroll-to-top-btn:hover {
+    background-color: #357abd; /* Темніший колір при наведенні */
+}
 
+.toggle-arrow {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s ease; /* Плавне обертання */
+}
 
+.toggle-arrow.down {
+    transform: rotate(180deg); /* Обертання на 180 градусів */
+}
+
+.scroll-to-top-btn.show {
+    display: block; /* Показуємо кнопку */
+}

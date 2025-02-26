@@ -34,13 +34,17 @@ body {
 
 /* Навігація */
 .main-nav {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: white; /* Білий фон */
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    z-index: auto !important;
+    /* Видаляємо overflow, щоб не виникало небажаних ефектів */
+  }
+  
+
 
 .nav-list {
     display: flex;
@@ -265,4 +269,37 @@ body {
 .subgroups label {
     display: block;
     margin-bottom: 3px;
+}
+
+
+
+.other-subjects-container {
+    transition: all 0.3s ease;
+}
+
+#toggleOtherSubjectsBtn i {
+    margin-left: 8px;
+}
+
+.other-subjects-wrapper {
+    margin-top: 1rem;
+}
+
+
+.subject-category-group h3 {
+    cursor: pointer; /* Курсор у вигляді руки */
+    display: flex; /* Розташовуємо текст і стрілочку горизонтально */
+    align-items: center; /* Вирівнюємо вертикально */
+    justify-content: space-between; /* Текст зліва, стрілочка справа */
+    padding: 10px; /* Відступи для зручності */
+    background-color: #f0f0f0; /* Легкий фон */
+    border-radius: 5px; /* Закруглені кути */
+}
+
+.subject-category-group h3:hover {
+    background-color: #e0e0e0; /* Ефект при наведенні */
+}
+
+.toggle-arrow {
+    font-size: 1.2em; /* Розмір стрілочки */
 }
