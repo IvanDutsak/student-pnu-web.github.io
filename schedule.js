@@ -214,7 +214,8 @@ function showSchedule(groupKey) {
         dayHeaderCell.style.cursor = 'pointer';
 
         // Додаємо стрілочку тут
-        dayHeaderCell.innerHTML = `${day.date} (${day.day}) <span class="toggle-arrow">▼</span>`;
+        dayHeaderCell.innerHTML = `${day.date.trim()} (${day.day.trim()}) <span class="toggle-arrow">▼</span>`;
+
 
         let lessonRows = [];
         let isDayExpanded = true;

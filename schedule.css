@@ -435,7 +435,6 @@ body {
     }
 
     #scheduleTable td:before {
-        content: attr(data-label) ": ";
         font-weight: bold;
         display: inline-block;
         width: auto;
@@ -921,7 +920,6 @@ body {
     }
 
     #scheduleTable td:before {
-        content: attr(data-label) ": ";
         font-weight: bold;
         display: inline-block;
         width: auto;
