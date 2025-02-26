@@ -288,6 +288,12 @@ function showSchedule(groupKey) {
 
 
             if (lesson.subject && shouldDisplay) {
+                // Додаємо класи до комірок, щоб CSS міг застосувати ::before контент
+                timeCell.classList.add('lesson-cell');
+                subjectCell.classList.add('lesson-cell');
+                teacherCell.classList.add('lesson-cell');
+                groupCell.classList.add('lesson-cell');
+
                 subjectCell.textContent = lesson.subject;
                 if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
                 if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;

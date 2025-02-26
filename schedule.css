@@ -434,26 +434,32 @@ body {
         padding: 10px; /* Added padding to cards */
     }
 
-    #scheduleTable td:before {
+    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:before {
         font-weight: bold;
         display: inline-block;
         width: auto;
-        min-width: 80px; /* Slightly reduced min-width for labels */
+        min-width: 80px;
         margin-right: 5px;
         vertical-align: top;
     }
 
-    #scheduleTable td:nth-child(1), /* Time Slot */
-    #scheduleTable td:nth-child(2), /* Subject */
-    #scheduleTable td:nth-child(3), /* Teacher */
-    #scheduleTable td:nth-child(4)  /* Group */
-    {
-        width: auto;
-        display: block;
-        border: none;
-        padding: 0; /* Removed padding from individual TDs, padding is on TR now */
+    /* Підписи для мобільної версії - тільки для комірок з класом .lesson-cell */
+    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:nth-child(1):before {
+        content: "Час:"; /* Для колонки часу (номер пари) */
     }
 
+    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:nth-child(2):before {
+        content: "Предмет:"; /* Для колонки предмету */
+    }
+
+    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:nth-child(3):before {
+        content: "Викладач:"; /* Для колонки викладача */
+    }
+
+    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:nth-child(4):before {
+        content: "Група:"; /* Для колонки групи */
+    }
+    
     #scheduleTable tbody tr.empty-slot { /* Styles for empty slots */
         padding: 5px 10px; /* Reduced padding for empty slots */
         margin-bottom: 10px; /* Reduced margin for empty slots */
