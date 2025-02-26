@@ -109,26 +109,16 @@ const normalizeSubgroup = (subgroup) => {
 // Функція завантаження даних з localStorage
 function loadState() {
     const savedState = localStorage.getItem('appState');
-    console.log('[PROFILE] Завантажено з localStorage:', savedState);
     if (savedState) {
         window.currentState = JSON.parse(savedState);
-        console.log('[PROFILE] Завантажено стан:', window.currentState);
-        if (Object.keys(window.currentState.selectedSubjects).length > 0) {
+        // Якщо є всі дані, показуємо профіль
+        if (window.currentState.faculty && window.currentState.group && window.currentState.semester && window.currentState.selectedSubjects) {
             showProfile();
-        } else if (window.currentState.semester) {
-            showSubjects(window.currentState.semester, window.currentState.group);
-            showStep('step-subjects');
-        } else if (window.currentState.group) {
-            showGroups(window.currentState.faculty);
-            showStep('step-semester');
-        } else if (window.currentState.faculty) {
-            showGroups(window.currentState.faculty);
-            showStep('step-group');
         } else {
-           showStep('step-faculty');
+            // Якщо даних немає, показуємо вибір факультету
+            showStep('step-faculty');
         }
-    }
-    else {
+    } else {
         showStep('step-faculty');
     }
 }
@@ -138,14 +128,8 @@ function loadState() {
 function saveState() {
     console.log('[PROFILE] Зберігаю стан:', window.currentState);
     localStorage.setItem('appState', JSON.stringify(window.currentState));
-    console.log('[PROFILE] Збережено в localStorage:', localStorage.getItem('appState'));
 }
 
-window.addEventListener('beforeunload', function(event) {
-    if (window.location.pathname.endsWith('profile.html')) {
-        localStorage.removeItem('appState');
-    }
-});
 
 function clearProfileState() {
     const path = window.location.pathname;
@@ -404,8 +388,7 @@ function showSubjects(semester, group) {
     confirmButton.textContent = 'Підтвердити';
     confirmButton.addEventListener('click', () => {
         showProfile();
-        // Видаляємо цей виклик, оскільки стан вже має бути збережено
-        // saveState();
+         saveState();
     });
 
 
@@ -437,6 +420,7 @@ function showProfile() {
             <button class="control-btn danger" onclick="clearSubjects()">Очистити предмети</button>
         </div>
     `;
+    saveState();
 }
 
 // Функція очищення предметів

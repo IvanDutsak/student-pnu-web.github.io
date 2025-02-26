@@ -1,6 +1,4 @@
-/*
-    schedule.css - Специфічні стилі для сторінки розкладу
-*/
+/* schedule.css - Специфічні стилі для сторінки розкладу */
 
 /* --- Базові стилі (скопійовані з styles.css) --- */
 
@@ -398,7 +396,121 @@ body {
     #scheduleTable td {
         font-size: 0.9em;
     }
+
+    /* --- Мобільні стилі для таблиці (компактні картки) --- */
+    #scheduleTable {
+        table-layout: auto;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.9em;
+    }
+
+    #scheduleTable thead {
+        display: none; /* Hide table headers on mobile */
+    }
+
+    #scheduleTable th,
+    #scheduleTable td {
+        border: none; /* Remove borders from individual cells */
+        padding: 0; /* Remove padding from cells */
+        text-align: left;
+        word-wrap: break-word;
+        overflow: visible;
+        text-overflow: clip;
+        white-space: normal;
+        display: block; /* Each cell as a block element */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #scheduleTable tbody tr {
+        margin-bottom: 15px; /* Increased margin between lesson cards for better spacing */
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: white; /* Added background for cards */
+        padding: 10px; /* Added padding to cards */
+    }
+
+    #scheduleTable td:before {
+        content: attr(data-label) ": ";
+        font-weight: bold;
+        display: inline-block;
+        width: auto;
+        min-width: 80px; /* Slightly reduced min-width for labels */
+        margin-right: 5px;
+        vertical-align: top;
+    }
+
+    #scheduleTable td:nth-child(1), /* Time Slot */
+    #scheduleTable td:nth-child(2), /* Subject */
+    #scheduleTable td:nth-child(3), /* Teacher */
+    #scheduleTable td:nth-child(4)  /* Group */
+    {
+        width: auto;
+        display: block;
+        border: none;
+        padding: 0; /* Removed padding from individual TDs, padding is on TR now */
+    }
+
+    #scheduleTable tbody tr.empty-slot { /* Styles for empty slots */
+        padding: 5px 10px; /* Reduced padding for empty slots */
+        margin-bottom: 10px; /* Reduced margin for empty slots */
+        border-color: #eee; /* Lighter border for empty slots */
+        background-color: #f8f9fa; /* Lighter background for empty slots */
+        color: #777; /* Grey text for empty slots */
+    }
+
+    #scheduleTable tbody tr.empty-slot td {
+        padding: 0; /* No padding for cells in empty slots */
+    }
+
+    #scheduleTable tbody tr.empty-slot td:before {
+        content: none; /* Hide labels for empty slots */
+    }
+
+    .day-header {
+        position: sticky;
+        top: 5px; /* Adjusted top value to be higher, less cut-off */
+        z-index: 101;
+        background-color: #e0e0e0;
+        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.3);
+        padding: 8px; /* Keep day header padding */
+        margin-top: 1rem; /* Keep day header margin */
+        border-radius: 4px; /* Keep day header border-radius */
+    }
+
+    .time-slot {
+        font-size: 1em;
+        margin-bottom: 2px;
+        display: inline-block; /* Changed to inline-block */
+    }
+
+    #scheduleTable td:nth-child(2) {
+        font-weight: 500; /* Keep subject font-weight */
+    }
+
+    #scheduleTable tbody tr:nth-child(even) {
+        background-color: white; /* Ensure even rows have white background in card layout */
+    }
+
+    /* Стиль для дати в мобільному розкладі - Right Style */
+    .mobile-lesson-date-right {
+        font-size: 1em;
+        color: #777;
+        float: right; /* Float to the right */
+        text-align: right; /* Align text to the right */
+        display: inline-block; /* Ensure inline layout */
+        margin-top: 0; /* Видалено margin-top, для вирівнювання по вертикалі */
+        vertical-align: baseline; /* Вирівнювання по базовій лінії, щоб текст був на одному рівні */
+        white-space: nowrap; /* Prevent date from wrapping */
+        margin-left: 10px; /* Add some left margin to separate from time */
+    }
+    /* --- Кінець мобільних стилів таблиці (компактні картки) --- */
 }
+
 
 .autocomplete-wrapper {
     position: relative;
@@ -532,7 +644,8 @@ body {
 
 /* Таблиця розкладу */
 #scheduleTable {
-    width: 100%;
+    table-layout: fixed; /* Важливо: фіксує розмітку таблиці */
+    width: 100%; /* Займає 100% ширини батьківського контейнера */
     border-collapse: collapse;
     margin-top: 1rem;
 }
@@ -542,34 +655,32 @@ body {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    word-wrap: break-word; /* Дозволяє переносити довгі слова */
+    overflow: hidden; /* Приховує вміст, що виходить за межі */
+    text-overflow: ellipsis; /* Додає три крапки для обрізаного тексту (опціонально) */
+    /* width: 25%; !* Початковий розподіл ширини по колонках (можна налаштувати) *! */ /* Коментуємо фіксовану ширину колонок тут */
 }
 
-#scheduleTable thead {
-    background-color: var(--primary-color);
-    color: white;
+#scheduleTable th:nth-child(1), /* Для колонки "Дата" */
+#scheduleTable td:nth-child(1) {
+    width: 15%; /* Ширина колонки "Дата" */
 }
 
-#scheduleTable th {
-    border: 1px solid white;
+#scheduleTable th:nth-child(2), /* Для колонки "Предмет" */
+#scheduleTable td:nth-child(2) {
+    width: 45%; /* Ширина колонки "Предмет" */
 }
 
-#scheduleTable tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+#scheduleTable th:nth-child(3), /* Для колонки "Викладач" */
+#scheduleTable td:nth-child(3) {
+    width: 25%; /* Ширина колонки "Викладач" */
 }
 
-.schedule-view {
-    margin-top: 2rem;
+#scheduleTable th:nth-child(4), /* Для колонки "Група" */
+#scheduleTable td:nth-child(4) {
+    width: 15%; /* Ширина колонки "Група" */
 }
 
-#scheduleTable thead th {
-    padding: 10px;
-    font-weight: 600;
-}
-
-#scheduleTable td {
-    padding: 10px;
-    vertical-align: top;
-}
 
 .day-header {
     background-color: #e0e0e0;
@@ -709,4 +820,190 @@ body {
 
 .scroll-to-top-btn.show {
     display: block; /* Показуємо кнопку */
+}
+
+
+
+.table-wrapper.desktop-table.fixed-height { /* Додано клас fixed-height для ідентифікації */
+    margin-top: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow-x: auto; /* Додано горизонтальну прокрутку, якщо контент буде ширшим за таблицю */
+    width: 100%; /* Займає 100% ширини батьківського контейнера */
+    max-width: 1200px; /* Максимальна ширина таблиці, можна змінити за потреби */
+    margin-left: auto; /* Центрування таблиці по горизонталі */
+    margin-right: auto; /* Центрування таблиці по горизонталі */
+}
+
+.table-wrapper.desktop-table.fixed-height table {
+    width: 100%; /* Таблиця займає 100% ширини обгортки */
+    border-collapse: collapse;
+}
+
+/* --- Десктопні стилі для таблиці (фіксована ширина) --- */
+@media (min-width: 769px) {
+    #scheduleTable {
+        table-layout: fixed; /* Фіксована розмітка таблиці тільки для десктопів */
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+
+    #scheduleTable th,
+    #scheduleTable td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #scheduleTable th:nth-child(1),
+    #scheduleTable td:nth-child(1) {
+        width: 15%; /* Ширина колонки "Дата" на десктопі */
+    }
+
+    #scheduleTable th:nth-child(2),
+    #scheduleTable td:nth-child(2) {
+        width: 45%; /* Ширина колонки "Предмет" на десктопі */
+    }
+
+    #scheduleTable th:nth-child(3),
+    #scheduleTable td:nth-child(3) {
+        width: 25%; /* Ширина колонки "Викладач" на десктопі */
+    }
+
+    #scheduleTable th:nth-child(4),
+    #scheduleTable td:nth-child(4) {
+        width: 15%; /* Ширина колонки "Група" на десктопі */
+    }
+}
+/* --- Кінець десктопних стилів таблиці --- */
+
+/* --- Мобільні стилі для таблиці (компактні картки) --- */
+@media (max-width: 768px) {
+    #scheduleTable {
+        table-layout: auto;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.9em;
+    }
+
+    #scheduleTable thead {
+        display: none; /* Hide table headers on mobile */
+    }
+
+    #scheduleTable th,
+    #scheduleTable td {
+        border: none; /* Remove borders from individual cells */
+        padding: 0; /* Remove padding from cells */
+        text-align: left;
+        word-wrap: break-word;
+        overflow: visible;
+        text-overflow: clip;
+        white-space: normal;
+        display: block; /* Each cell as a block element */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #scheduleTable tbody tr {
+        margin-bottom: 15px; /* Increased margin between lesson cards for better spacing */
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: white; /* Added background for cards */
+        padding: 10px; /* Added padding to cards */
+    }
+
+    #scheduleTable td:before {
+        content: attr(data-label) ": ";
+        font-weight: bold;
+        display: inline-block;
+        width: auto;
+        min-width: 80px; /* Slightly reduced min-width for labels */
+        margin-right: 5px;
+        vertical-align: top;
+    }
+
+    #scheduleTable td:nth-child(1), /* Time Slot */
+    #scheduleTable td:nth-child(2), /* Subject */
+    #scheduleTable td:nth-child(3), /* Teacher */
+    #scheduleTable td:nth-child(4)  /* Group */
+    {
+        width: auto;
+        display: block;
+        border: none;
+        padding: 0; /* Removed padding from individual TDs, padding is on TR now */
+    }
+
+    #scheduleTable tbody tr.empty-slot { /* Styles for empty slots */
+        padding: 5px 10px; /* Reduced padding for empty slots */
+        margin-bottom: 10px; /* Reduced margin for empty slots */
+        border-color: #eee; /* Lighter border for empty slots */
+        background-color: #f8f9fa; /* Lighter background for empty slots */
+        color: #777; /* Grey text for empty slots */
+    }
+
+    #scheduleTable tbody tr.empty-slot td {
+        padding: 0; /* No padding for cells in empty slots */
+    }
+
+    #scheduleTable tbody tr.empty-slot td:before {
+        content: none; /* Hide labels for empty slots */
+    }
+
+    .day-header {
+        position: sticky;
+        top: 5px; /* Adjusted top value to be higher, less cut-off */
+        z-index: 101;
+        background-color: #e0e0e0;
+        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.3);
+        padding: 8px; /* Keep day header padding */
+        margin-top: 1rem; /* Keep day header margin */
+        border-radius: 4px; /* Keep day header border-radius */
+    }
+
+    .time-slot {
+        font-size: 1em;
+        margin-bottom: 2px;
+        display: inline-block; /* Changed to inline-block */
+    }
+
+    #scheduleTable td:nth-child(2) {
+        font-weight: 500; /* Keep subject font-weight */
+    }
+
+    #scheduleTable tbody tr:nth-child(even) {
+        background-color: white; /* Ensure even rows have white background in card layout */
+    }
+
+    /* Стиль для дати в мобільному розкладі - Right Style */
+    .mobile-lesson-date-right {
+        font-size: 1em;
+        color: #777;
+        float: right; /* Float to the right */
+        text-align: right; /* Align text to the right */
+        display: inline-block; /* Ensure inline layout */
+        margin-top: 0; /* Видалено margin-top, для вирівнювання по вертикалі */
+        vertical-align: baseline; /* Вирівнювання по базовій лінії, щоб текст був на одному рівні */
+        white-space: nowrap; /* Prevent date from wrapping */
+        margin-left: 10px; /* Add some left margin to separate from time */
+        position: relative; /* Added relative positioning */
+        top: -0.3em; /* Slightly adjust vertical position upwards */
+    }
+    /* --- Кінець мобільних стилів таблиці (компактні картки) --- */
+}
+
+.day-header .toggle-arrow {
+    font-size: 0.8em; /* Розмір стрілочки, можна налаштувати */
+    margin-left: 10px; /* Відступ від тексту дати */
+    transition: transform 0.2s ease; /* Анімація обертання (якщо потрібно) */
+    display: inline-block; /* Щоб можна було керувати відступами */
+    vertical-align: middle; /* Вирівнювання по вертикалі з текстом */
+    color: var(--secondary-color);
 }

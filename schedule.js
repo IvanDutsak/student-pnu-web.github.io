@@ -1,3 +1,4 @@
+// shedule.js
 window.currentState = {
     faculty: null,
     group: null,
@@ -17,6 +18,12 @@ function formatDate(dateString) {
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const year = date.getFullYear();
     return `${day}.${month}.${year}`;
+}
+
+function getDayOfWeek(dateString) {
+    const date = new Date(dateString.split('.').reverse().join('-'));
+    const daysOfWeek = ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота'];
+    return daysOfWeek[date.getDay()];
 }
 
 function isDateInRange(date, from, to) {
@@ -200,16 +207,30 @@ function showSchedule(groupKey) {
     };
 
     schedule.forEach(day => {
-        if (!isDateInRange(day.date, dateFrom, dateTo)) return;
-
         const dayHeaderRow = tbody.insertRow();
         dayHeaderRow.classList.add("day-header");
         const dayHeaderCell = dayHeaderRow.insertCell();
         dayHeaderCell.colSpan = 4;
-        dayHeaderCell.textContent = `${day.date} (${day.day})`;
+        dayHeaderCell.style.cursor = 'pointer';
+
+        // Додаємо стрілочку тут
+        dayHeaderCell.innerHTML = `${day.date} (${day.day}) <span class="toggle-arrow">▼</span>`;
+
+        let lessonRows = [];
+        let isDayExpanded = true;
+
+        dayHeaderRow.addEventListener('click', () => {
+            isDayExpanded = !isDayExpanded;
+            lessonRows.forEach(row => {
+                row.style.display = isDayExpanded ? '' : 'none';
+            });
+            // Змінюємо стрілочку при кліку
+            const arrowSpan = dayHeaderCell.querySelector('.toggle-arrow');
+            arrowSpan.textContent = isDayExpanded ? '▼' : '▶';
+        });
 
         for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
-            const lesson = (day.lessons || []).find(l => 
+            const lesson = (day.lessons || []).find(l =>
                 l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
             ) || {};
 
@@ -217,25 +238,25 @@ function showSchedule(groupKey) {
             const lessonSubjectLower = normalizeSubject(coreSubject);
             const lessonSubgroup = extractSubgroup(lesson.subject);
 
-            const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 || 
+            const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 ||
                 Object.keys(window.currentState.selectedSubjects).some(subject => {
                     const normalizedSelectedSubject = normalizeSubject(subject);
-                    return lessonSubjectLower.includes(normalizedSelectedSubject) || 
-                           normalizedSelectedSubject.includes(lessonSubjectLower);
+                    return lessonSubjectLower.includes(normalizedSelectedSubject) ||
+                           normalizedSelectedSubject.includes(normalizedSelectedSubject);
                 });
 
             const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
                 const normalizedSelectedSubject = normalizeSubject(subject);
-                return lessonSubjectLower.includes(normalizedSelectedSubject) || 
-                       normalizedSelectedSubject.includes(lessonSubjectLower);
-            });
+                return lessonSubjectLower.includes(normalizedSelectedSubject) ||
+                       normalizedSelectedSubject.includes(normalizedSelectedSubject);
+                });
             const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
             const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
-            const isSubgroupMatch = selectedSubgroups.length === 0 || 
+            const isSubgroupMatch = selectedSubgroups.length === 0 ||
                                     selectedSubgroups.some(selectedSubgroup => {
                                         const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
-                                        return normalizedSelectedSubgroup === normalizedLessonSubgroup || 
-                                               normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) || 
+                                        return normalizedSelectedSubgroup === normalizedLessonSubgroup ||
+                                               normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) ||
                                                normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
                                     });
 
@@ -243,11 +264,27 @@ function showSchedule(groupKey) {
             const shouldDisplay = isSubjectSelected && isTeacherMatch && isSubgroupMatch;
 
             const row = tbody.insertRow();
+            row.classList.toggle('empty-slot', !lesson.subject || !shouldDisplay);
+            lessonRows.push(row);
+
             const timeCell = row.insertCell();
-            timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара<br>${timeSlots[lessonNumber]}</span>`;
+            timeCell.setAttribute('data-label', 'Час');
+
+            const isMobileView = window.innerWidth <= 768;
+            if (isMobileView) {
+                timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
+            } else {
+                timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
+            }
+
+
             const subjectCell = row.insertCell();
+            subjectCell.setAttribute('data-label', 'Предмет');
             const teacherCell = row.insertCell();
+            teacherCell.setAttribute('data-label', 'Викладач');
             const groupCell = row.insertCell();
+            groupCell.setAttribute('data-label', 'Група');
+
 
             if (lesson.subject && shouldDisplay) {
                 subjectCell.textContent = lesson.subject;
@@ -255,12 +292,17 @@ function showSchedule(groupKey) {
                 if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
                 teacherCell.textContent = lesson.teacher || '';
                 groupCell.textContent = lesson.group || groupKey;
+            } else {
+                subjectCell.textContent = '';
+                teacherCell.textContent = '';
+                groupCell.textContent = '';
             }
         }
     });
 
     document.querySelector('.schedule-view').style.display = 'block';
 }
+
 
 // --- Функція збереження розкладу ---
 function saveSchedule() {
@@ -291,34 +333,34 @@ function saveSchedule() {
         .map(day => {
             const filteredLessons = [];
             for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
-                const lesson = (day.lessons || []).find(l => 
+                const lesson = (day.lessons || []).find(l =>
                     l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
                 ) || {};
-                
+
                 if (lesson.subject) {
                     const coreSubject = extractCoreSubject(lesson.subject);
                     const lessonSubjectLower = normalizeSubject(coreSubject);
                     const lessonSubgroup = extractSubgroup(lesson.subject);
 
-                    const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 || 
+                    const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 ||
                         Object.keys(window.currentState.selectedSubjects).some(subject => {
                             const normalizedSelectedSubject = normalizeSubject(subject);
-                            return lessonSubjectLower.includes(normalizedSelectedSubject) || 
-                                   normalizedSelectedSubject.includes(lessonSubjectLower);
+                            return lessonSubjectLower.includes(normalizedSelectedSubject) ||
+                                   normalizedSelectedSubject.includes(normalizedSelectedSubject);
                         });
 
                     const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
                         const normalizedSelectedSubject = normalizeSubject(subject);
-                        return lessonSubjectLower.includes(normalizedSelectedSubject) || 
-                               normalizedSelectedSubject.includes(lessonSubjectLower);
-                    });
+                        return lessonSubjectLower.includes(normalizedSelectedSubject) ||
+                               normalizedSelectedSubject.includes(normalizedSelectedSubject);
+                        });
                     const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
                     const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
-                    const isSubgroupMatch = selectedSubgroups.length === 0 || 
+                    const isSubgroupMatch = selectedSubgroups.length === 0 ||
                                             selectedSubgroups.some(selectedSubgroup => {
                                                 const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
-                                                return normalizedSelectedSubgroup === normalizedLessonSubgroup || 
-                                                       normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) || 
+                                                return normalizedSelectedSubgroup === normalizedLessonSubgroup ||
+                                                       normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) ||
                                                        normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
                                             });
 
@@ -437,14 +479,31 @@ function showFullSchedule() {
         dayHeaderRow.classList.add("day-header");
         const dayHeaderCell = dayHeaderRow.insertCell();
         dayHeaderCell.colSpan = 4;
-        dayHeaderCell.textContent = `${day.date} (${day.day})`;
+        dayHeaderCell.style.cursor = 'pointer';
+
+        // Додаємо стрілочку і тут
+        dayHeaderCell.innerHTML = `${day.date} (${day.day}) <span class="toggle-arrow">▼</span>`;
+
+        let lessonRows = [];
+        let isDayExpanded = true;
+
+        dayHeaderRow.addEventListener('click', () => {
+            isDayExpanded = !isDayExpanded;
+            lessonRows.forEach(row => {
+                row.style.display = isDayExpanded ? '' : 'none';
+            });
+            // Змінюємо стрілочку і тут при кліку
+            const arrowSpan = dayHeaderCell.querySelector('.toggle-arrow');
+            arrowSpan.textContent = isDayExpanded ? '▼' : '▶';
+        });
 
         for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
-            const lesson = (day.lessons || []).find(l => 
+            const lesson = (day.lessons || []).find(l =>
                 l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
             ) || {};
 
             const row = tbody.insertRow();
+            lessonRows.push(row);
             const timeCell = row.insertCell();
             timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара<br>${timeSlots[lessonNumber]}</span>`;
             const subjectCell = row.insertCell();
@@ -463,6 +522,40 @@ function showFullSchedule() {
     });
 
     document.querySelector('.schedule-view').style.display = 'block';
+}
+
+// Додана допоміжна функція для перевірки, чи урок повинен відображатися з урахуванням фільтрів
+function shouldDisplayLesson(lesson, teacherSearch) {
+    if (!lesson.subject) return false;
+
+    const coreSubject = extractCoreSubject(lesson.subject);
+    const lessonSubjectLower = normalizeSubject(coreSubject);
+    const lessonSubgroup = extractSubgroup(lesson.subject);
+
+    const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 ||
+        Object.keys(window.currentState.selectedSubjects).some(subject => {
+            const normalizedSelectedSubject = normalizeSubject(subject);
+            return lessonSubjectLower.includes(normalizedSelectedSubject) ||
+                   normalizedSelectedSubject.includes(normalizedSelectedSubject);
+        });
+
+    const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
+        const normalizedSelectedSubject = normalizeSubject(subject);
+        return lessonSubjectLower.includes(normalizedSelectedSubject) ||
+               normalizedSelectedSubject.includes(normalizedSelectedSubject);
+        });
+    const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
+    const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
+    const isSubgroupMatch = selectedSubgroups.length === 0 ||
+                            selectedSubgroups.some(selectedSubgroup => {
+                                const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
+                                return normalizedSelectedSubgroup === normalizedLessonSubgroup ||
+                                       normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) ||
+                                       normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
+                            });
+
+    const isTeacherMatch = !teacherSearch || (lesson.teacher && lesson.teacher.toLowerCase().includes(teacherSearch));
+    return isSubjectSelected && isTeacherMatch && isSubgroupMatch;
 }
 
 // --- Функція застосування фільтрів ---
@@ -493,8 +586,8 @@ async function exportScheduleToPDF() {
         return;
     }
 
-    if (!document.getElementById('date-from').value && 
-        !document.getElementById('date-to').value && 
+    if (!document.getElementById('date-from').value &&
+        !document.getElementById('date-to').value &&
         !document.getElementById('teacher-search').value) {
         showFullSchedule();
     } else {
