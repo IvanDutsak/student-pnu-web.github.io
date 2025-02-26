@@ -187,6 +187,7 @@ function showSchedule(groupKey) {
     window.currentState.group = groupKey;
     saveState();
 
+    // Перевіряємо наявність даних для групи
     const groupData = schedulesData[groupKey];
     if (!groupData) {
         console.error('[SCHEDULE] Помилка: група', groupKey, 'не знайдена');
@@ -195,41 +196,55 @@ function showSchedule(groupKey) {
     const schedule = groupData.schedule;
     const tbody = document.querySelector('#scheduleTable tbody');
     if (!tbody) return;
+
+    // Очищаємо вміст таблиці
     tbody.innerHTML = '';
 
+    // Створюємо DocumentFragment для оптимізації
+    const fragment = document.createDocumentFragment();
+
+    // Зчитуємо значення фільтрів один раз
     const dateFrom = document.getElementById('date-from').value;
     const dateTo = document.getElementById('date-to').value;
     const teacherSearch = document.getElementById('teacher-search').value.toLowerCase();
 
+    // Часові слоти для пар
     const timeSlots = {
         1: "09:00-10:20", 2: "10:35-11:55", 3: "12:20-13:40", 4: "13:50-15:10",
         5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
     };
 
+    // Обробляємо кожен день у розкладі
     schedule.forEach(day => {
-        const dayHeaderRow = tbody.insertRow();
+        // Перевіряємо, чи день входить у діапазон дат
+        if (!isDateInRange(day.date, dateFrom, dateTo)) {
+            return; // Пропускаємо день, якщо він не в діапазоні
+        }
+
+        // Створюємо заголовок дня
+        const dayHeaderRow = document.createElement('tr');
         dayHeaderRow.classList.add("day-header");
-        const dayHeaderCell = dayHeaderRow.insertCell();
+        const dayHeaderCell = document.createElement('td');
         dayHeaderCell.colSpan = 4;
         dayHeaderCell.style.cursor = 'pointer';
-
-        // Додаємо стрілочку тут
         dayHeaderCell.innerHTML = `${day.date.trim()} (${day.day.trim()}) <span class="toggle-arrow">▼</span>`;
-
+        dayHeaderRow.appendChild(dayHeaderCell);
+        fragment.appendChild(dayHeaderRow);
 
         let lessonRows = [];
         let isDayExpanded = true;
 
+        // Додаємо обробник кліку для розгортання/згортання
         dayHeaderRow.addEventListener('click', () => {
             isDayExpanded = !isDayExpanded;
             lessonRows.forEach(row => {
                 row.style.display = isDayExpanded ? '' : 'none';
             });
-            // Змінюємо стрілочку при кліку
             const arrowSpan = dayHeaderCell.querySelector('.toggle-arrow');
             arrowSpan.textContent = isDayExpanded ? '▼' : '▶';
         });
 
+        // Обробляємо пари (уроки) для кожного дня
         for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
             const lesson = (day.lessons || []).find(l =>
                 l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
@@ -239,56 +254,52 @@ function showSchedule(groupKey) {
             const lessonSubjectLower = normalizeSubject(coreSubject);
             const lessonSubgroup = extractSubgroup(lesson.subject);
 
+            // Перевіряємо відповідність вибраним предметам
             const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 ||
                 Object.keys(window.currentState.selectedSubjects).some(subject => {
                     const normalizedSelectedSubject = normalizeSubject(subject);
                     return lessonSubjectLower.includes(normalizedSelectedSubject) ||
-                           normalizedSelectedSubject.includes(normalizedSelectedSubject);
+                           normalizedSelectedSubject.includes(lessonSubjectLower);
                 });
 
             const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
                 const normalizedSelectedSubject = normalizeSubject(subject);
                 return lessonSubjectLower.includes(normalizedSelectedSubject) ||
-                       normalizedSelectedSubject.includes(normalizedSelectedSubject);
-                });
+                       normalizedSelectedSubject.includes(lessonSubjectLower);
+            });
             const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
             const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
             const isSubgroupMatch = selectedSubgroups.length === 0 ||
-                                    selectedSubgroups.some(selectedSubgroup => {
-                                        const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
-                                        return normalizedSelectedSubgroup === normalizedLessonSubgroup ||
-                                               normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) ||
-                                               normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
-                                    });
+                selectedSubgroups.some(selectedSubgroup => {
+                    const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
+                    return normalizedSelectedSubgroup === normalizedLessonSubgroup ||
+                           normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) ||
+                           normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
+                });
 
+            // Перевіряємо відповідність викладачу
             const isTeacherMatch = !teacherSearch || (lesson.teacher && lesson.teacher.toLowerCase().includes(teacherSearch));
             const shouldDisplay = isSubjectSelected && isTeacherMatch && isSubgroupMatch;
 
-            const row = tbody.insertRow();
+            // Створюємо рядок для пари
+            const row = document.createElement('tr');
             row.classList.toggle('empty-slot', !lesson.subject || !shouldDisplay);
             lessonRows.push(row);
 
-            const timeCell = row.insertCell();
+            const timeCell = document.createElement('td');
             timeCell.setAttribute('data-label', 'Час');
-
             const isMobileView = window.innerWidth <= 768;
-            if (isMobileView) {
-                timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
-            } else {
-                timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
-            }
+            timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
 
-
-            const subjectCell = row.insertCell();
+            const subjectCell = document.createElement('td');
             subjectCell.setAttribute('data-label', 'Предмет');
-            const teacherCell = row.insertCell();
+            const teacherCell = document.createElement('td');
             teacherCell.setAttribute('data-label', 'Викладач');
-            const groupCell = row.insertCell();
+            const groupCell = document.createElement('td');
             groupCell.setAttribute('data-label', 'Група');
 
-
+            // Заповнюємо клітинки, якщо є дані та вони відповідають фільтрам
             if (lesson.subject && shouldDisplay) {
-                // Додаємо класи до комірок, щоб CSS міг застосувати ::before контент
                 timeCell.classList.add('lesson-cell');
                 subjectCell.classList.add('lesson-cell');
                 teacherCell.classList.add('lesson-cell');
@@ -304,9 +315,20 @@ function showSchedule(groupKey) {
                 teacherCell.textContent = '';
                 groupCell.textContent = '';
             }
+
+            // Додаємо клітинки до рядка
+            row.appendChild(timeCell);
+            row.appendChild(subjectCell);
+            row.appendChild(teacherCell);
+            row.appendChild(groupCell);
+            fragment.appendChild(row);
         }
     });
 
+    // Додаємо всі рядки до таблиці одним викликом
+    tbody.appendChild(fragment);
+
+    // Показуємо таблицю
     document.querySelector('.schedule-view').style.display = 'block';
 }
 
