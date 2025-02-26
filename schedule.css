@@ -499,7 +499,6 @@ body {
     .mobile-lesson-date-right {
         font-size: 1em;
         color: #777;
-        float: right; /* Float to the right */
         text-align: right; /* Align text to the right */
         display: inline-block; /* Ensure inline layout */
         margin-top: 0; /* Видалено margin-top, для вирівнювання по вертикалі */
@@ -984,7 +983,6 @@ body {
     .mobile-lesson-date-right {
         font-size: 1em;
         color: #777;
-        float: right; /* Float to the right */
         text-align: right; /* Align text to the right */
         display: inline-block; /* Ensure inline layout */
         margin-top: 0; /* Видалено margin-top, для вирівнювання по вертикалі */
