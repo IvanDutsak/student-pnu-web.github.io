@@ -632,8 +632,14 @@ async function exportScheduleToPDF() {
     }
 
     try {
+        // Виявлення, чи це iOS (включаючи iPhone)
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+        // Встановлюємо масштаб: 1 для iOS (iPhone), 2 для ПК та Android
+        const scale = isIOS ? 1 : 2;
+
         const canvas = await html2canvas(scheduleTable, {
-            scale: 2,
+            scale: scale,
             useCORS: true,
             logging: true,
         });
@@ -644,7 +650,7 @@ async function exportScheduleToPDF() {
         }
 
         const { jsPDF } = window.jspdf;
-        const doc = new jsPDF('p', 'mm', 'a4');
+        const doc = new jsPDF('p', `mm`, 'a4');
 
         const pageWidth = doc.internal.pageSize.getWidth();
         const pageHeight = doc.internal.pageSize.getHeight();
