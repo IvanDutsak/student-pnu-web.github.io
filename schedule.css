@@ -1,6 +1,4 @@
-/* schedule.css - Специфічні стилі для сторінки розкладу */
-
-/* --- Базові стилі (скопійовані з styles.css) --- */
+/* schedule.css */
 
 :root {
     --primary-color: #4a90e2;
@@ -31,8 +29,9 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    padding-top: 80px; /* Додано відступ зверху, щоб вміст не ховався під панеллю */
+    /* Було: padding-top: 80px; – при фіксованому меню.
+       Якщо меню не фіксоване, цей відступ не потрібен */
+    padding: 20px; 
 }
 
 /* Навігація */
@@ -40,10 +39,11 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Змінено з sticky на fixed */
-    top: 0;
-    left: 0; /* Додано, щоб панель розтягувалася по всій ширині */
-    width: 100%; /* Додано, щоб панель займала всю ширину */
+    /* Було: position: fixed; top: 0; left: 0; */
+    /* Повертаємо статичне позиціонування, щоб меню не "їхало" за прокруткою */
+    position: static;
+    width: 100%; 
+    z-index: 1000; /* можна залишити, якщо колись знадобиться шар зверху */
 }
 
 .nav-list {
@@ -434,32 +434,26 @@ body {
         padding: 10px; /* Added padding to cards */
     }
 
-    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:before {
+    #scheduleTable td:before {
         font-weight: bold;
         display: inline-block;
         width: auto;
-        min-width: 80px;
+        min-width: 80px; /* Slightly reduced min-width for labels */
         margin-right: 5px;
         vertical-align: top;
     }
 
-    /* Підписи для мобільної версії - тільки для комірок з класом .lesson-cell */
-    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:nth-child(1):before {
-        content: "Час:"; /* Для колонки часу (номер пари) */
+    #scheduleTable td:nth-child(1), /* Time Slot */
+    #scheduleTable td:nth-child(2), /* Subject */
+    #scheduleTable td:nth-child(3), /* Teacher */
+    #scheduleTable td:nth-child(4)  /* Group */
+    {
+        width: auto;
+        display: block;
+        border: none;
+        padding: 0; /* Removed padding from individual TDs, padding is on TR now */
     }
 
-    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:nth-child(2):before {
-        content: "Предмет:"; /* Для колонки предмету */
-    }
-
-    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:nth-child(3):before {
-        content: "Викладач:"; /* Для колонки викладача */
-    }
-
-    #scheduleTable tbody tr:not(.day-header) td.lesson-cell:nth-child(4):before {
-        content: "Група:"; /* Для колонки групи */
-    }
-    
     #scheduleTable tbody tr.empty-slot { /* Styles for empty slots */
         padding: 5px 10px; /* Reduced padding for empty slots */
         margin-bottom: 10px; /* Reduced margin for empty slots */
@@ -511,10 +505,11 @@ body {
         vertical-align: baseline; /* Вирівнювання по базовій лінії, щоб текст був на одному рівні */
         white-space: nowrap; /* Prevent date from wrapping */
         margin-left: 10px; /* Add some left margin to separate from time */
+        position: relative; /* Added relative positioning */
+        top: -0.3em; /* Slightly adjust vertical position upwards */
     }
     /* --- Кінець мобільних стилів таблиці (компактні картки) --- */
 }
-
 
 .autocomplete-wrapper {
     position: relative;
@@ -649,7 +644,7 @@ body {
 /* Таблиця розкладу */
 #scheduleTable {
     table-layout: fixed; /* Важливо: фіксує розмітку таблиці */
-    width: 100%; /* Займає 100% ширини батьківського контейнера */
+    width: 100%;        /* Займає 100% ширини батьківського контейнера */
     border-collapse: collapse;
     margin-top: 1rem;
 }
@@ -660,9 +655,8 @@ body {
     padding: 8px;
     text-align: left;
     word-wrap: break-word; /* Дозволяє переносити довгі слова */
-    overflow: hidden; /* Приховує вміст, що виходить за межі */
+    overflow: hidden;      /* Приховує вміст, що виходить за межі */
     text-overflow: ellipsis; /* Додає три крапки для обрізаного тексту (опціонально) */
-    /* width: 25%; !* Початковий розподіл ширини по колонках (можна налаштувати) *! */ /* Коментуємо фіксовану ширину колонок тут */
 }
 
 #scheduleTable th:nth-child(1), /* Для колонки "Дата" */
@@ -684,7 +678,6 @@ body {
 #scheduleTable td:nth-child(4) {
     width: 15%; /* Ширина колонки "Група" */
 }
-
 
 .day-header {
     background-color: #e0e0e0;
@@ -791,7 +784,6 @@ body {
     font-style: italic;
 }
 
-
 /* стрілочка */
 .scroll-to-top-btn {
     position: fixed;
@@ -826,8 +818,6 @@ body {
     display: block; /* Показуємо кнопку */
 }
 
-
-
 .table-wrapper.desktop-table.fixed-height { /* Додано клас fixed-height для ідентифікації */
     margin-top: 2rem;
     background: white;
@@ -837,7 +827,7 @@ body {
     width: 100%; /* Займає 100% ширини батьківського контейнера */
     max-width: 1200px; /* Максимальна ширина таблиці, можна змінити за потреби */
     margin-left: auto; /* Центрування таблиці по горизонталі */
-    margin-right: auto; /* Центрування таблиці по горизонталі */
+    margin-right: auto;/* Центрування таблиці по горизонталі */
 }
 
 .table-wrapper.desktop-table.fixed-height table {
@@ -1002,10 +992,10 @@ body {
 }
 
 .day-header .toggle-arrow {
-    font-size: 0.8em; /* Розмір стрілочки, можна налаштувати */
-    margin-left: 10px; /* Відступ від тексту дати */
-    transition: transform 0.2s ease; /* Анімація обертання (якщо потрібно) */
-    display: inline-block; /* Щоб можна було керувати відступами */
-    vertical-align: middle; /* Вирівнювання по вертикалі з текстом */
+    font-size: 0.8em;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+    display: inline-block;
+    vertical-align: middle;
     color: var(--secondary-color);
 }

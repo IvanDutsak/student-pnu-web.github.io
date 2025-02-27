@@ -35,7 +35,7 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: sticky; /* Залишаємо sticky для десктопів */
     top: 0;
     z-index: 1000;
 }
@@ -310,6 +310,12 @@ body {
 
 /* Адаптивність */
 @media (max-width: 768px) {
+    /* Перезаписуємо sticky, щоб на мобільних навігація не прилипала */
+    .main-nav {
+        position: static !important;
+        top: auto !important;
+    }
+
     .nav-list {
         flex-direction: column;
         align-items: center;
@@ -370,33 +376,15 @@ body {
 
 .suggestions-list {
     position: absolute;
-    top: 100%; /* З'являється під полем введення */
+    top: calc(100% + 5px);
     left: 0;
     right: 0;
-    z-index: 1000; /* Забезпечує перекриття інших елементів */
-    margin-top: 5px; /* Невеликий відступ від поля */
-    width: 100% !important; /* Фіксує ширину підказок */
-}
-
-
-
-.autocomplete-wrapper {
-    position: relative; /* Важливо для абсолютного позиціонування списку */
-    width: 100%;
-    margin-bottom: 0; /* Щоб не було зайвого відступу до поля оцінки */
-}
-
-.suggestions-list {
-    position: absolute;
-    top: calc(100% + 5px); /* 5px відступ від поля введення */
-    left: 0;
-    right: 0;
-    width: 100%;
+    width: 100% !important;
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Щоб список був поверх інших елементів */
+    z-index: 1000;
     max-height: 250px;
     overflow-y: auto;
     display: none;
@@ -413,8 +401,6 @@ body {
 .suggestions-list li:hover {
     background: #f8f9fa;
 }
-
-
 
 /* Збережені матеріали */
 .saved-content {
@@ -488,7 +474,6 @@ body {
     text-align: center;
     justify-content: center;
 }
-
 
 .subject-list li {
     display: flex;
