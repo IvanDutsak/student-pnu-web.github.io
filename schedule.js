@@ -187,7 +187,6 @@ function showSchedule(groupKey) {
     window.currentState.group = groupKey;
     saveState();
 
-    // Перевіряємо наявність даних для групи
     const groupData = schedulesData[groupKey];
     if (!groupData) {
         console.error('[SCHEDULE] Помилка: група', groupKey, 'не знайдена');
@@ -196,32 +195,25 @@ function showSchedule(groupKey) {
     const schedule = groupData.schedule;
     const tbody = document.querySelector('#scheduleTable tbody');
     if (!tbody) return;
-
-    // Очищаємо вміст таблиці
     tbody.innerHTML = '';
 
-    // Створюємо DocumentFragment для оптимізації
     const fragment = document.createDocumentFragment();
 
-    // Зчитуємо значення фільтрів один раз
     const dateFrom = document.getElementById('date-from').value;
     const dateTo = document.getElementById('date-to').value;
     const teacherSearch = document.getElementById('teacher-search').value.toLowerCase();
 
-    // Часові слоти для пар
     const timeSlots = {
         1: "09:00-10:20", 2: "10:35-11:55", 3: "12:20-13:40", 4: "13:50-15:10",
         5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
     };
 
-    // Обробляємо кожен день у розкладі
-    schedule.forEach(day => {
-        // Перевіряємо, чи день входить у діапазон дат
-        if (!isDateInRange(day.date, dateFrom, dateTo)) {
-            return; // Пропускаємо день, якщо він не в діапазоні
-        }
+    // Перевірка мобільного перегляду
+    const isMobileView = window.innerWidth <= 768;
 
-        // Створюємо заголовок дня
+    schedule.forEach(day => {
+        if (!isDateInRange(day.date, dateFrom, dateTo)) return;
+
         const dayHeaderRow = document.createElement('tr');
         dayHeaderRow.classList.add("day-header");
         const dayHeaderCell = document.createElement('td');
@@ -234,17 +226,13 @@ function showSchedule(groupKey) {
         let lessonRows = [];
         let isDayExpanded = true;
 
-        // Додаємо обробник кліку для розгортання/згортання
         dayHeaderRow.addEventListener('click', () => {
             isDayExpanded = !isDayExpanded;
-            lessonRows.forEach(row => {
-                row.style.display = isDayExpanded ? '' : 'none';
-            });
+            lessonRows.forEach(row => { row.style.display = isDayExpanded ? '' : 'none'; });
             const arrowSpan = dayHeaderCell.querySelector('.toggle-arrow');
             arrowSpan.textContent = isDayExpanded ? '▼' : '▶';
         });
 
-        // Обробляємо пари (уроки) для кожного дня
         for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
             const lesson = (day.lessons || []).find(l =>
                 l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
@@ -254,7 +242,6 @@ function showSchedule(groupKey) {
             const lessonSubjectLower = normalizeSubject(coreSubject);
             const lessonSubgroup = extractSubgroup(lesson.subject);
 
-            // Перевіряємо відповідність вибраним предметам
             const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 ||
                 Object.keys(window.currentState.selectedSubjects).some(subject => {
                     const normalizedSelectedSubject = normalizeSubject(subject);
@@ -277,18 +264,15 @@ function showSchedule(groupKey) {
                            normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
                 });
 
-            // Перевіряємо відповідність викладачу
             const isTeacherMatch = !teacherSearch || (lesson.teacher && lesson.teacher.toLowerCase().includes(teacherSearch));
             const shouldDisplay = isSubjectSelected && isTeacherMatch && isSubgroupMatch;
 
-            // Створюємо рядок для пари
             const row = document.createElement('tr');
             row.classList.toggle('empty-slot', !lesson.subject || !shouldDisplay);
             lessonRows.push(row);
 
             const timeCell = document.createElement('td');
             timeCell.setAttribute('data-label', 'Час');
-            const isMobileView = window.innerWidth <= 768;
             timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
 
             const subjectCell = document.createElement('td');
@@ -298,25 +282,30 @@ function showSchedule(groupKey) {
             const groupCell = document.createElement('td');
             groupCell.setAttribute('data-label', 'Група');
 
-            // Заповнюємо клітинки, якщо є дані та вони відповідають фільтрам
             if (lesson.subject && shouldDisplay) {
                 timeCell.classList.add('lesson-cell');
                 subjectCell.classList.add('lesson-cell');
-                teacherCell.classList.add('lesson-cell');
-                groupCell.classList.add('lesson-cell');
-
-                subjectCell.textContent = lesson.subject;
-                if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
-                if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
-                teacherCell.textContent = lesson.teacher || '';
-                groupCell.textContent = lesson.group || groupKey;
+                teacherCell.classList.add('lesson-cell', 'group-color'); // Додаємо клас group-color
+                groupCell.classList.add('lesson-cell', 'group-color');   // Якщо group вже має цей клас
+                if (isMobileView) {
+                    subjectCell.innerHTML = `<span class="mobile-label">Предмет: </span>` + lesson.subject;
+                    if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
+                    if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
+                    teacherCell.innerHTML = `<span class="mobile-label">Викладач: </span>` + (lesson.teacher || '');
+                    groupCell.innerHTML = `<span class="mobile-label">Група: </span>` + (lesson.group || groupKey);
+                } else {
+                    subjectCell.textContent = lesson.subject;
+                    if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
+                    if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
+                    teacherCell.textContent = lesson.teacher || '';
+                    groupCell.textContent = lesson.group || groupKey;
+                }
             } else {
                 subjectCell.textContent = '';
                 teacherCell.textContent = '';
                 groupCell.textContent = '';
             }
 
-            // Додаємо клітинки до рядка
             row.appendChild(timeCell);
             row.appendChild(subjectCell);
             row.appendChild(teacherCell);
@@ -325,12 +314,10 @@ function showSchedule(groupKey) {
         }
     });
 
-    // Додаємо всі рядки до таблиці одним викликом
     tbody.appendChild(fragment);
-
-    // Показуємо таблицю
     document.querySelector('.schedule-view').style.display = 'block';
 }
+
 
 
 // --- Функція збереження розкладу ---
@@ -503,13 +490,15 @@ function showFullSchedule() {
         5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
     };
 
+    // Перевірка мобільного перегляду
+    const isMobileView = window.innerWidth <= 768;
+
     schedule.forEach(day => {
         const dayHeaderRow = tbody.insertRow();
         dayHeaderRow.classList.add("day-header");
         const dayHeaderCell = dayHeaderRow.insertCell();
         dayHeaderCell.colSpan = 4;
         dayHeaderCell.style.cursor = 'pointer';
-
         dayHeaderCell.innerHTML = `${day.date} (${day.day}) <span class="toggle-arrow">▼</span>`;
 
         let lessonRows = [];
@@ -517,9 +506,7 @@ function showFullSchedule() {
 
         dayHeaderRow.addEventListener('click', () => {
             isDayExpanded = !isDayExpanded;
-            lessonRows.forEach(row => {
-                row.style.display = isDayExpanded ? '' : 'none';
-            });
+            lessonRows.forEach(row => { row.style.display = isDayExpanded ? '' : 'none'; });
             const arrowSpan = dayHeaderCell.querySelector('.toggle-arrow');
             arrowSpan.textContent = isDayExpanded ? '▼' : '▶';
         });
@@ -532,25 +519,38 @@ function showFullSchedule() {
             const row = tbody.insertRow();
             lessonRows.push(row);
             const timeCell = row.insertCell();
-            // Змінили формат відображення часу, щоб він відповідав showSchedule (без <br>)
             timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
+
             const subjectCell = row.insertCell();
             const teacherCell = row.insertCell();
             const groupCell = row.insertCell();
 
             if (lesson.subject) {
-                subjectCell.textContent = lesson.subject;
-                if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
-                const lessonSubgroup = extractSubgroup(lesson.subject);
-                if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
-                teacherCell.textContent = lesson.teacher || '';
-                groupCell.textContent = lesson.group || groupKey;
+                if (isMobileView) {
+                    subjectCell.innerHTML = `<span class="mobile-label">Предмет: </span>` + lesson.subject;
+                    if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
+                    const lessonSubgroup = extractSubgroup(lesson.subject);
+                    if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
+                    teacherCell.innerHTML = `<span class="mobile-label">Викладач: </span>` + (lesson.teacher || '');
+                    groupCell.innerHTML = `<span class="mobile-label">Група: </span>` + (lesson.group || groupKey);
+                } else {
+                    subjectCell.textContent = lesson.subject;
+                    if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
+                    const lessonSubgroup = extractSubgroup(lesson.subject);
+                    if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
+                    teacherCell.textContent = lesson.teacher || '';
+                    groupCell.textContent = lesson.group || groupKey;
+                }
+                // Додаємо класи для застосування однакового кольору
+                teacherCell.classList.add('lesson-cell', 'group-color');
+                groupCell.classList.add('lesson-cell', 'group-color');
             }
         }
     });
 
     document.querySelector('.schedule-view').style.display = 'block';
 }
+
 
 
 // Додана допоміжна функція для перевірки, чи урок повинен відображатися з урахуванням фільтрів
