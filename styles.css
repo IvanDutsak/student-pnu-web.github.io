@@ -100,16 +100,12 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.25rem; 
-    min-width: 120px;
+    min-width: 200px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
     transition: all var(--transition-speed) ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
     margin: 0 0.5rem;
 }
 
@@ -406,16 +402,64 @@ body {
     }
 
     .results-table {
-        font-size: 0.9rem;
+        margin: 0;
+        padding: 0;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .results-table table {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
     }
 
     .results-table th,
     .results-table td {
-        padding: 0.75rem 1rem;
+        padding: 8px;
+        font-size: 0.9rem;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    .results-table th:nth-child(1),
+    .results-table td:nth-child(1) {
+        width: 40%;
+    }
+
+    .results-table th:nth-child(2),
+    .results-table td:nth-child(2) {
+        width: 20%;
+    }
+
+    .results-table th:nth-child(3),
+    .results-table td:nth-child(3) {
+        width: 20%;
+    }
+
+    .results-table th:nth-child(4),
+    .results-table td:nth-child(4) {
+        width: 20%;
     }
 
     .rating-summary {
-        grid-template-columns: 1fr;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .rating-summary div {
+        text-align: left;
+        padding: 0.5rem;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+    }
+
+    .rating-summary .total {
+        font-size: 1.1rem;
+        background: rgba(0, 184, 148, 0.1);
     }
 
     /* Додаткові фікси для збережених елементів */
@@ -432,6 +476,74 @@ body {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .saved-item-header p {
+        font-size: 0.9rem;
+        margin: 0.25rem 0;
+    }
+
+    /* Приховуємо деталі про кількість екзаменів та заліків на мобільних */
+    .saved-item-header p span.details-count {
+        display: none;
+    }
+
+    /* Показуємо тільки загальну кількість предметів */
+    .saved-item-header p span.total-count {
+        display: inline;
+    }
+
+    /* Стилі для кнопки розрахунку на мобільних */
+    .rating-section .control-btn {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* Контейнер для кнопки розрахунку */
+    .calculate-btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Специфічні стилі для кнопки розрахунку */
+    .calculate-btn-container .control-btn {
+        width: 100%;
+        margin: 0;
+        border-radius: 8px;
+        height: 48px;
+        font-size: 1.1rem;
+    }
+
+    /* Змінюємо відступи для контейнера результатів */
+    .results-table {
+        margin-top: 1rem;
+    }
+
+    /* Стилі для кнопок в input-section */
+    .input-section .button-group {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .input-section .button-group .control-btn {
+        width: 100%;
+        margin: 0;
+        padding: 12px;
+        border-radius: 8px;
+        height: 48px;
+        font-size: 1.1rem;
+    }
+
+    .input-section .control-btn {
+        margin: 0;
     }
 }
 
@@ -888,4 +1000,25 @@ body {
 [data-theme="dark"] .saved-item-header h3,
 [data-theme="dark"] .saved-item-header p {
     color: #f5f6fa;
+}
+
+/* Стилі для кнопки розрахунку на десктопі */
+@media (min-width: 769px) {
+    .calculate-btn-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    .calculate-btn-container .control-btn {
+        width: auto;
+        min-width: 200px;
+        margin: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 10px;
+        font-size: 1rem;
+        flex: 1;
+        max-width: none;
+    }
 }

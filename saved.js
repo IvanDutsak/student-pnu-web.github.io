@@ -82,7 +82,8 @@ function loadSavedItems() {
                         <p>
                             Загальний рейтинг: ${rating.totalRating}
                             <br>
-                            Предметів: ${totalSubjects} (${examCount} екзаменів, ${creditCount} заліків)
+                            <span class="total-count">Предметів: ${totalSubjects}</span>
+                            <span class="details-count"> (${examCount} екзаменів, ${creditCount} заліків)</span>
                             <br>
                             Дата: ${rating.date}
                         </p>

@@ -462,11 +462,6 @@ function saveSchedule() {
                             const normalizedSelectedSubject = normalizeSubject(subject);
                             const match = lessonSubjectLower.includes(normalizedSelectedSubject) ||
                                          normalizedSelectedSubject.includes(lessonSubjectLower);
-                            console.log('[FILTER] Порівняння:', {
-                                урок: lessonSubjectLower,
-                                обраний: normalizedSelectedSubject,
-                                співпадіння: match
-                            });
                             return match;
                         });
 
@@ -483,11 +478,6 @@ function saveSchedule() {
                                                 const match = normalizedSelectedSubgroup === normalizedLessonSubgroup ||
                                                              normalizedSelectedSubgroup.includes(normalizedLessonSubgroup) ||
                                                              normalizedLessonSubgroup.includes(normalizedSelectedSubgroup);
-                                                console.log('[FILTER] Порівняння підгруп:', {
-                                                    урок: normalizedLessonSubgroup,
-                                                    обрана: normalizedSelectedSubgroup,
-                                                    співпадіння: match
-                                                });
                                                 return match;
                                             });
 
@@ -525,6 +515,20 @@ function saveSchedule() {
     }
 
     const savedSchedules = JSON.parse(localStorage.getItem('savedSchedules')) || {};
+    
+    // Перевіряємо, чи існує розклад з такою назвою
+    const existingScheduleKey = Object.keys(savedSchedules).find(key => savedSchedules[key].name === name);
+    
+    if (existingScheduleKey) {
+        const confirmOverwrite = confirm(`Розклад з назвою "${name}" вже існує. Бажаєте перезаписати його?`);
+        if (!confirmOverwrite) {
+            return; // Якщо користувач відмовився, виходимо з функції
+        }
+        // Якщо користувач погодився, видаляємо старий розклад
+        delete savedSchedules[existingScheduleKey];
+    }
+
+    // Створюємо новий ключ для розкладу
     const key = `${groupKey}_${Date.now()}`;
     savedSchedules[key] = {
         name: name,
