@@ -173,10 +173,20 @@ function updateAddedSubjectsList() {
     addedExamSubjects.forEach(subject => {
         const li = document.createElement('li');
         li.innerHTML = `
-            ${subject.name}: ${subject.score} балів, ${subject.credits} кредитів
-            <button class="remove-btn" onclick="removeSubject('${subject.name}', true)">
-                <i class="fas fa-times"></i>
-            </button>
+            <div class="subject-item-content">
+                <span>
+                    <strong>${subject.name}</strong>
+                    <small>${subject.score} балів, ${subject.credits} кредитів</small>
+                </span>
+                <div class="subject-item-buttons">
+                    <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, true)">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', true)">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
         `;
         examList.appendChild(li);
     });
@@ -184,13 +194,35 @@ function updateAddedSubjectsList() {
     addedCreditSubjects.forEach(subject => {
         const li = document.createElement('li');
         li.innerHTML = `
-            ${subject.name}: ${subject.score} балів, ${subject.credits} кредитів
-            <button class="remove-btn" onclick="removeSubject('${subject.name}', false)">
-                <i class="fas fa-times"></i>
-            </button>
+            <div class="subject-item-content">
+                <span>
+                    <strong>${subject.name}</strong>
+                    <small>${subject.score} балів, ${subject.credits} кредитів</small>
+                </span>
+                <div class="subject-item-buttons">
+                    <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, false)">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', false)">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
         `;
         creditList.appendChild(li);
     });
+}
+
+// Функція для редагування предмету
+function editSubject(subjectName, currentScore, isExam) {
+    document.getElementById('subjectName').value = subjectName;
+    document.getElementById('subjectScore').value = currentScore;
+    
+    // Видаляємо старий запис
+    removeSubject(subjectName, isExam);
+    
+    // Фокусуємося на полі з оцінкою для редагування
+    document.getElementById('subjectScore').focus();
 }
 
 // Розрахунок рейтингу (залишається без змін)
@@ -329,6 +361,17 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('edit') === 'true') {
+        const editData = JSON.parse(localStorage.getItem('currentRatingEdit'));
+        if (editData) {
+            addedExamSubjects = editData.examSubjects || [];
+            addedCreditSubjects = editData.creditSubjects || [];
+            updateAddedSubjectsList();
+            localStorage.removeItem('currentRatingEdit');
+        }
+    }
+    
     const savedData = localStorage.getItem('currentRating');
     if (savedData) {
         const data = JSON.parse(savedData);

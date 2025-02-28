@@ -431,6 +431,7 @@ body {
     animation: slideIn 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform var(--transition-speed);
+    min-width: 0; /* Додано для кращого контролю переносу */
 }
 
 .saved-item:hover {
@@ -441,6 +442,24 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+    min-width: 0; /* Додано для кращого контролю переносу */
+    flex: 1; /* Додано для кращого розподілу простору */
+}
+
+.saved-item-header h3 {
+    white-space: nowrap; /* Текст в одному рядку */
+    overflow: hidden; /* Приховуємо текст, що виходить за межі */
+    text-overflow: ellipsis; /* Додаємо три крапки в кінці */
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.saved-item-header p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    color: var(--dark-gray);
 }
 
 .delete-btn {
@@ -497,11 +516,117 @@ body {
     padding: 0;
     margin-left: 10px;
     transition: background-color 0.3s ease; /* Додаємо плавний перехід */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Додаємо тінь для об’ємності */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Додаємо тінь для об'ємності */
 }
 
 .remove-btn:hover {
     background-color: #cc0000;
     transform: translateY(-1px); /* Легке підняття при наведенні для ефекту */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Збільшуємо тінь при наведенні */
+}
+
+.subject-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.subject-item-content span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    white-space: normal;
+    overflow: visible;
+    font-size: 1rem;
+}
+
+.subject-item-content span strong {
+    display: block;
+    color: var(--dark-gray);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.subject-item-content span small {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.subject-item-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.edit-btn {
+    background-color: var(--warning-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn:hover {
+    background-color: #f1c40f;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.remove-btn {
+    background-color: var(--danger-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Оновлені стилі для списку предметів */
+.subject-list li {
+    background: var(--light-gray);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+    animation: slideIn 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.subject-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem; /* Відступ від тексту */
+    flex-shrink: 0; /* Кнопки не стискаються */
 }

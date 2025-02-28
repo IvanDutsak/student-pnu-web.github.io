@@ -39,48 +39,176 @@ function isDateInRange(date, from, to) {
 
 function normalizeSubgroup(subgroup) {
     if (!subgroup) return '';
-    return subgroup
+    
+    // Нормалізуємо до нижнього регістру і видаляємо зайві пробіли
+    let normalized = subgroup
         .toLowerCase()
         .replace(/\s+/g, ' ')
         .trim();
+
+    // Якщо це збірна група, зберігаємо оригінальний тип заняття
+    if (normalized.includes('кн(зб)')) {
+        const match = subgroup.match(/КН\(зб\)(\d+\.\d+)\s*\(([^)]+)\)/i);
+        if (match) {
+            const [, number, type] = match;
+            const normalizedType = normalizeType(type);
+            return `КН(зб)${number}(${normalizedType})`;
+        }
+    }
+
+    // Нормалізуємо типи занять
+    return normalizeType(normalized);
+}
+
+function normalizeType(type) {
+    if (!type) return '';
+    
+    console.log('\n[TYPE] ========= Початок нормалізації типу =========');
+    console.log('[TYPE] Оригінальний тип:', type);
+    
+    // Видаляємо всі зайві символи та пробіли
+    type = type
+        .toLowerCase()
+        .replace(/[\(\)\[\]\{\}]/g, '')  // видаляємо всі види дужок
+        .replace(/\s+/g, '')             // видаляємо всі пробіли
+        .replace(/[-_]/g, '')            // видаляємо дефіси та підкреслення
+        .trim();
+    
+    console.log('[TYPE] Після очищення:', type);
+    
+    // Розширений список всіх можливих варіантів
+    const typeMap = {
+        'л': 'Лекція',
+        'лек': 'Лекція',
+        'лекція': 'Лекція',
+        'лекция': 'Лекція',
+        'лаб': 'Лабораторна',
+        'лабораторна': 'Лабораторна',
+        'прс': 'Семінар',
+        'практика': 'Семінар',
+        'сем': 'Семінар',
+        'семінар': 'Семінар',
+        'семинар': 'Семінар',
+        'кек': 'Консультація',
+        'екз': 'Екзамен',
+        'консультація': 'Консультація',
+        'екзамен': 'Екзамен'
+    };
+    
+    // Перевіряємо точні співпадіння
+    if (typeMap[type]) {
+        console.log('[TYPE] Знайдено точне співпадіння:', type, '->', typeMap[type]);
+        return typeMap[type];
+    }
+    
+    // Перевіряємо часткові співпадіння
+    for (const [key, value] of Object.entries(typeMap)) {
+        if (type.includes(key)) {
+            console.log('[TYPE] Знайдено часткове співпадіння:', type, 'містить', key, '->', value);
+            return value;
+        }
+    }
+    
+    // Додаткова перевірка для семінарів
+    if (type.includes('с') || type.includes('прс')) {
+        console.log('[TYPE] Розпізнано як семінар через додаткову перевірку');
+        return 'Семінар';
+    }
+    
+    console.log('[TYPE] Не вдалося нормалізувати тип:', type);
+    console.log('[TYPE] ========= Кінець нормалізації типу =========\n');
+    return type.charAt(0).toUpperCase() + type.slice(1);
 }
 
 // --- Функції для витягнення підгрупи та основної назви предмета ---
 function extractCoreSubject(subject) {
     if (!subject) return '';
+    
+    console.log('\n[EXTRACT] ========= Початок витягнення предмету =========');
+    console.log('[EXTRACT] Оригінальний предмет:', subject);
+    
+    // Видаляємо префікси та суфікси з урахуванням всіх можливих варіантів
     let core = subject
-        .replace(/^\(підгр\. \d+\)\s*/, '')
-        .replace(/^Збірна група \S+\s*/, '')
-        .replace(/^Потік \S+\s*/, '')
-        .replace(/\s*\((Л|Лекція|Лаб|Сем|ПрС)\)$/, '')
+        .replace(/^Збірна група\s+КН\(зб\)\s*/, '')
+        .replace(/^Потік\s+[^\\n]+/, '')
+        .replace(/КН\(зб\)\d+\.\d+\s*/, '')
+        .replace(/^\(підгр\.\s*\d+\)\s*/, '')
+        .replace(/[\s]*\([\s]*(Л|Лек|Лаб|ПрС|прс|Прс|Сем|ПРАКТИКА|Практика|Семінар)[\s]*\)[\s]*$/, '')
         .replace(/\n/g, ' ')
         .trim();
+    
+    console.log('[EXTRACT] Результат витягнення:', core);
+    console.log('[EXTRACT] ========= Кінець витягнення предмету =========\n');
+    
     return core;
 }
 
 function normalizeSubject(subject) {
-    return (subject || '')
+    if (!subject) return '';
+    
+    let normalized = subject
         .toLowerCase()
+        .replace(/[''`']/g, '')
+        .replace(/[іi]/g, 'i')
+        .replace(/[её]/g, 'е')
+        .replace(/[-–—]/g, ' ')
         .replace(/[^a-zа-яіїєґ0-9\s]/g, ' ')
         .replace(/\s+/g, ' ')
         .trim();
+    
+    console.log('[NORMALIZE] Оригінальний предмет:', subject);
+    console.log('[NORMALIZE] Нормалізований предмет:', normalized);
+    
+    return normalized;
 }
 
 function extractSubgroup(subject) {
     if (!subject) return '';
-    const patterns = [
-        { regex: /^\(підгр\. (\d+)\)/, format: (match) => `Підгрупа ${match[1]}` },
-        { regex: /КН\(зб\)(\d+\.\d+)\s+.*\((Л|Лекція|Лаб)\)/, format: (match) => `${match[1]} (${match[2] === 'Л' ? 'Лекція' : match[2] === 'Лаб' ? 'Лабораторна' : match[2]})` },
-        { regex: /\(Л\)$/, format: () => "Лекція" },
-        { regex: /\(Лекція\)$/, format: () => "Лекція" },
-        { regex: /\(Лаб\)$/, format: () => "Лабораторна" },
-        { regex: /\(Сем\)$/, format: () => "Семінар" },
-        { regex: /\(ПРС\)$/, format: () => "Практика" },
-    ];
-    for (const pattern of patterns) {
-        const match = subject.match(pattern.regex);
-        if (match) return pattern.format(match);
+    
+    console.log('\n[SUBGROUP] ========= Початок аналізу підгрупи =========');
+    console.log('[SUBGROUP] Оригінальний текст:', subject);
+    
+    // Шукаємо тип в кінці рядка з урахуванням всіх можливих варіантів
+    const typePattern = /[\s]*\([\s]*(Л|Лек|Лаб|ПрС|прс|Прс|Сем|ПРАКТИКА|Практика|Семінар|КЕк|Екз|Консультація)[\s]*\)[\s]*$/i;
+    const typeMatch = subject.match(typePattern);
+    
+    console.log('[SUBGROUP] Пошук типу заняття за патерном:', typePattern);
+    console.log('[SUBGROUP] Знайдений тип (сирий):', typeMatch ? typeMatch[0] : 'не знайдено');
+    console.log('[SUBGROUP] Знайдений тип (група 1):', typeMatch ? typeMatch[1] : 'не знайдено');
+    
+    // Перевіряємо на наявність збірної групи
+    if (subject.includes('Збірна група')) {
+        const zbMatch = subject.match(/Збірна група\s+КН\(зб\)(\d+\.\d+)/);
+        console.log('[SUBGROUP] Знайдено збірну групу:', zbMatch ? zbMatch[1] : 'ні');
+        
+        if (zbMatch && typeMatch) {
+            const groupNum = zbMatch[1];
+            const type = typeMatch[1];
+            const normalizedType = normalizeType(type);
+            const result = `КН(зб)${groupNum}(${normalizedType})`;
+            console.log('[SUBGROUP] Результат для збірної групи:', result);
+            return result;
+        }
     }
+    
+    // Перевіряємо на наявність потоку
+    if (subject.includes('Потік')) {
+        if (typeMatch) {
+            const normalizedType = normalizeType(typeMatch[1]);
+            console.log('[SUBGROUP] Результат для потоку:', normalizedType);
+            return normalizedType;
+        }
+    }
+    
+    // Для всіх інших випадків
+    if (typeMatch) {
+        const normalizedType = normalizeType(typeMatch[1]);
+        console.log('[SUBGROUP] Результат для звичайного заняття:', normalizedType);
+        return normalizedType;
+    }
+    
+    console.log('[SUBGROUP] Тип заняття не знайдено');
+    console.log('[SUBGROUP] ========= Кінець аналізу підгрупи =========\n');
     return '';
 }
 
@@ -108,8 +236,12 @@ function showGroups(faculty) {
     window.currentState.faculty = faculty;
     saveState();
 
+    console.log('[GROUPS] Показую групи для факультету:', faculty);
+    console.log('[GROUPS] Доступні дані:', schedulesData);
+
     for (const groupKey in schedulesData) {
         const groupData = schedulesData[groupKey];
+        console.log('[GROUPS] Перевіряю групу:', groupKey, 'факультет:', groupData.faculty);
         if (groupData.faculty === faculty) {
             const btn = document.createElement('button');
             btn.className = 'group-btn';
@@ -126,6 +258,7 @@ function showGroups(faculty) {
                 btn.classList.add('active');
             }
             groupsDiv.appendChild(btn);
+            console.log('[GROUPS] Додано кнопку для групи:', groupKey);
         }
     }
     const groupSelection = document.querySelector('.group-selection');
@@ -184,6 +317,8 @@ function showTeacherSuggestions(query) {
 // --- Функція відображення розкладу ---
 function showSchedule(groupKey) {
     console.log('[SCHEDULE] === Початок обробки розкладу для групи:', groupKey, '===');
+    console.log('[SCHEDULE] Поточний стан:', window.currentState);
+    
     window.currentState.group = groupKey;
     saveState();
 
@@ -238,34 +373,7 @@ function showSchedule(groupKey) {
                 l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
             ) || {};
 
-            const coreSubject = extractCoreSubject(lesson.subject);
-            const lessonSubjectLower = normalizeSubject(coreSubject);
-            const lessonSubgroup = extractSubgroup(lesson.subject);
-
-            const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 ||
-                Object.keys(window.currentState.selectedSubjects).some(subject => {
-                    const normalizedSelectedSubject = normalizeSubject(subject);
-                    return lessonSubjectLower.includes(normalizedSelectedSubject) ||
-                           normalizedSelectedSubject.includes(lessonSubjectLower);
-                });
-
-            const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
-                const normalizedSelectedSubject = normalizeSubject(subject);
-                return lessonSubjectLower.includes(normalizedSelectedSubject) ||
-                       normalizedSelectedSubject.includes(lessonSubjectLower);
-            });
-            const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
-            const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
-            const isSubgroupMatch = selectedSubgroups.length === 0 ||
-                selectedSubgroups.some(selectedSubgroup => {
-                    const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
-                    return normalizedSelectedSubgroup === normalizedLessonSubgroup ||
-                           normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) ||
-                           normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
-                });
-
-            const isTeacherMatch = !teacherSearch || (lesson.teacher && lesson.teacher.toLowerCase().includes(teacherSearch));
-            const shouldDisplay = isSubjectSelected && isTeacherMatch && isSubgroupMatch;
+            const shouldDisplay = shouldDisplayLesson(lesson);
 
             const row = document.createElement('tr');
             row.classList.toggle('empty-slot', !lesson.subject || !shouldDisplay);
@@ -283,27 +391,20 @@ function showSchedule(groupKey) {
             groupCell.setAttribute('data-label', 'Група');
 
             if (lesson.subject && shouldDisplay) {
-                timeCell.classList.add('lesson-cell');
-                subjectCell.classList.add('lesson-cell');
-                teacherCell.classList.add('lesson-cell', 'group-color'); // Додаємо клас group-color
-                groupCell.classList.add('lesson-cell', 'group-color');   // Якщо group вже має цей клас
                 if (isMobileView) {
                     subjectCell.innerHTML = `<span class="mobile-label">Предмет: </span>` + lesson.subject;
                     if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
-                    if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
                     teacherCell.innerHTML = `<span class="mobile-label">Викладач: </span>` + (lesson.teacher || '');
                     groupCell.innerHTML = `<span class="mobile-label">Група: </span>` + (lesson.group || groupKey);
                 } else {
                     subjectCell.textContent = lesson.subject;
                     if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
-                    if (lessonSubgroup) subjectCell.innerHTML += `<br><small>${lessonSubgroup}</small>`;
                     teacherCell.textContent = lesson.teacher || '';
                     groupCell.textContent = lesson.group || groupKey;
                 }
-            } else {
-                subjectCell.textContent = '';
-                teacherCell.textContent = '';
-                groupCell.textContent = '';
+                // Додаємо класи для застосування однакового кольору
+                teacherCell.classList.add('lesson-cell', 'group-color');
+                groupCell.classList.add('lesson-cell', 'group-color');
             }
 
             row.appendChild(timeCell);
@@ -317,8 +418,6 @@ function showSchedule(groupKey) {
     tbody.appendChild(fragment);
     document.querySelector('.schedule-view').style.display = 'block';
 }
-
-
 
 // --- Функція збереження розкладу ---
 function saveSchedule() {
@@ -361,23 +460,35 @@ function saveSchedule() {
                     const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 ||
                         Object.keys(window.currentState.selectedSubjects).some(subject => {
                             const normalizedSelectedSubject = normalizeSubject(subject);
-                            return lessonSubjectLower.includes(normalizedSelectedSubject) ||
-                                   normalizedSelectedSubject.includes(normalizedSelectedSubject);
+                            const match = lessonSubjectLower.includes(normalizedSelectedSubject) ||
+                                         normalizedSelectedSubject.includes(lessonSubjectLower);
+                            console.log('[FILTER] Порівняння:', {
+                                урок: lessonSubjectLower,
+                                обраний: normalizedSelectedSubject,
+                                співпадіння: match
+                            });
+                            return match;
                         });
 
                     const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
                         const normalizedSelectedSubject = normalizeSubject(subject);
                         return lessonSubjectLower.includes(normalizedSelectedSubject) ||
-                               normalizedSelectedSubject.includes(normalizedSelectedSubject);
-                        });
+                               normalizedSelectedSubject.includes(lessonSubjectLower);
+                    });
                     const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
                     const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
                     const isSubgroupMatch = selectedSubgroups.length === 0 ||
                                             selectedSubgroups.some(selectedSubgroup => {
                                                 const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
-                                                return normalizedSelectedSubgroup === normalizedLessonSubgroup ||
-                                                       normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) ||
-                                                       normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
+                                                const match = normalizedSelectedSubgroup === normalizedLessonSubgroup ||
+                                                             normalizedSelectedSubgroup.includes(normalizedLessonSubgroup) ||
+                                                             normalizedLessonSubgroup.includes(normalizedSelectedSubgroup);
+                                                console.log('[FILTER] Порівняння підгруп:', {
+                                                    урок: normalizedLessonSubgroup,
+                                                    обрана: normalizedSelectedSubgroup,
+                                                    співпадіння: match
+                                                });
+                                                return match;
                                             });
 
                     const isTeacherMatch = !teacherSearch || (lesson.teacher && lesson.teacher.toLowerCase().includes(teacherSearch));
@@ -551,40 +662,172 @@ function showFullSchedule() {
     document.querySelector('.schedule-view').style.display = 'block';
 }
 
+// Додана допоміжна функція для витягнення базової назви предмета
+function extractBaseSubjectName(subject) {
+    if (!subject) return '';
+    
+    // Видаляємо номер підгрупи та інші технічні деталі
+    return subject
+        .replace(/^\d+\.\d+\s+/, '')  // Видаляємо номер на початку (2.26 і т.д.)
+        .replace(/^КН\(зб\)\d+\.\d+\s*/, '')  // Видаляємо формат КН(зб)2.26
+        .replace(/^Збірна група\s+КН\(зб\)\d+\.\d+\s*/, '')  // Видаляємо "Збірна група КН(зб)2.26"
+        .toLowerCase()
+        .trim();
+}
 
-
-// Додана допоміжна функція для перевірки, чи урок повинен відображатися з урахуванням фільтрів
-function shouldDisplayLesson(lesson, teacherSearch) {
+// Функція для перевірки, чи потрібно відображати урок
+function shouldDisplayLesson(lesson) {
     if (!lesson.subject) return false;
 
+    const selectedSubjects = Object.keys(window.currentState.selectedSubjects);
+    const searchTeacher = document.getElementById('teacher-search').value.toLowerCase();
+
+    // Отримуємо базову назву предмета
     const coreSubject = extractCoreSubject(lesson.subject);
-    const lessonSubjectLower = normalizeSubject(coreSubject);
-    const lessonSubgroup = extractSubgroup(lesson.subject);
+    console.log('[SCHEDULE] Перевірка заняття:', lesson.subject);
+    console.log('[SCHEDULE] Базова назва предмета:', coreSubject);
 
-    const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 ||
-        Object.keys(window.currentState.selectedSubjects).some(subject => {
-            const normalizedSelectedSubject = normalizeSubject(subject);
-            return lessonSubjectLower.includes(normalizedSelectedSubject) ||
-                   normalizedSelectedSubject.includes(normalizedSelectedSubject);
+    // Перевіряємо чи обрано предмет
+    const isSubjectSelected = selectedSubjects.some(subject => {
+        let normalizedSelected = normalizeSubject(subject);
+        let normalizedCore = normalizeSubject(coreSubject);
+        
+        // Для збірних груп та потокових лекцій витягуємо назву з другого рядка
+        let lessonToCompare = normalizedCore;
+        if (lesson.subject.includes('Збірна група') || lesson.subject.includes('Потік')) {
+            const lines = lesson.subject.split('\n');
+            if (lines.length > 1) {
+                lessonToCompare = normalizeSubject(extractCoreSubject(lines[1]));
+            }
+        }
+
+        // Спеціальна обробка для Unity
+        if (subject.toLowerCase().includes('unity') || lessonToCompare.toLowerCase().includes('unity')) {
+            normalizedSelected = normalizedSelected.replace(/\s+/g, ' ').trim();
+            lessonToCompare = lessonToCompare.replace(/\s+/g, ' ').trim();
+            
+            // Перевіряємо, чи обидва предмети містять "unity" та "технології проектування"
+            const isUnityMatch = 
+                normalizedSelected.includes('unity') && lessonToCompare.includes('unity') &&
+                (normalizedSelected.includes('технологiї') || lessonToCompare.includes('технологiї'));
+                
+            if (isUnityMatch) {
+                console.log('[SCHEDULE] Знайдено співпадіння Unity');
+                return true;
+            }
+        }
+        
+        const match = lessonToCompare.includes(normalizedSelected) || 
+                     normalizedSelected.includes(lessonToCompare);
+        
+        console.log('[SCHEDULE] Порівняння предметів:', {
+            урок: lessonToCompare,
+            обраний: normalizedSelected,
+            співпадіння: match
         });
+        
+        return match;
+    });
 
-    const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
-        const normalizedSelectedSubject = normalizeSubject(subject);
-        return lessonSubjectLower.includes(normalizedSelectedSubject) ||
-               normalizedSelectedSubject.includes(normalizedSelectedSubject);
+    if (!isSubjectSelected) {
+        console.log('[SCHEDULE] Предмет не обрано, пропускаємо');
+        return false;
+    }
+
+    // Перевіряємо чи це ПрС або Сем
+    const isPrSOrSem = lesson.subject.match(/\((ПрС|Сем)\)$/i);
+    if (isPrSOrSem) {
+        console.log('[SCHEDULE] Знайдено ПрС/Сем, показуємо автоматично');
+        return true;
+    }
+
+    // Перевіряємо пошук по викладачу
+    if (searchTeacher) {
+        const teacherName = lesson.teacher ? lesson.teacher.toLowerCase() : '';
+        if (!teacherName.includes(searchTeacher)) {
+            console.log('[SCHEDULE] Викладач не співпадає з пошуком');
+            return false;
+        }
+    }
+
+    // Отримуємо обрані підгрупи для цього предмета
+    const selectedSubjectKey = selectedSubjects.find(subject => {
+        let normalizedSelected = normalizeSubject(subject);
+        let normalizedCore = normalizeSubject(coreSubject);
+        
+        // Для збірних груп та потокових лекцій
+        let lessonToCompare = normalizedCore;
+        if (lesson.subject.includes('Збірна група') || lesson.subject.includes('Потік')) {
+            const lines = lesson.subject.split('\n');
+            if (lines.length > 1) {
+                lessonToCompare = normalizeSubject(extractCoreSubject(lines[1]));
+            }
+        }
+
+        // Спеціальна обробка для Unity
+        if (subject.toLowerCase().includes('unity') || lessonToCompare.toLowerCase().includes('unity')) {
+            normalizedSelected = normalizedSelected.replace(/\s+/g, ' ').trim();
+            lessonToCompare = lessonToCompare.replace(/\s+/g, ' ').trim();
+            
+            return normalizedSelected.includes('unity') && lessonToCompare.includes('unity') &&
+                   (normalizedSelected.includes('технологiї') || lessonToCompare.includes('технологiї'));
+        }
+        
+        return lessonToCompare.includes(normalizedSelected) || 
+               normalizedSelected.includes(lessonToCompare);
+    });
+    
+    const selectedSubgroups = window.currentState.selectedSubjects[selectedSubjectKey] || [];
+
+    // Для потокових лекцій
+    if (lesson.subject.includes('Потік') || lesson.subject.includes('КН-21, КН-22, КН-23')) {
+        return selectedSubgroups.includes('Лекція');
+    }
+
+    // Для збірних груп
+    if (lesson.subject.includes('Збірна група')) {
+        const zbMatch = lesson.subject.match(/КН\(зб\)(\d+\.\d+)/);
+        const typeMatch = lesson.subject.match(/\((Л|Лек|Лаб)\)$/i);
+        if (zbMatch && typeMatch) {
+            const groupNum = zbMatch[1];
+            const type = normalizeType(typeMatch[1]);
+            const subgroupToCheck = `КН(зб)${groupNum}(${type})`;
+            console.log('[SCHEDULE] Перевірка збірної групи:', {
+                знайдена: subgroupToCheck,
+                обрані: selectedSubgroups,
+                співпадіння: selectedSubgroups.includes(subgroupToCheck)
+            });
+            return selectedSubgroups.includes(subgroupToCheck);
+        }
+    }
+
+    // Для підгруп
+    const subgroupMatch = lesson.subject.match(/^\(підгр\. (\d+)\)/);
+    if (subgroupMatch) {
+        const subgroupToCheck = `Підгрупа ${subgroupMatch[1]}`;
+        console.log('[SCHEDULE] Перевірка підгрупи:', {
+            знайдена: subgroupToCheck,
+            обрані: selectedSubgroups,
+            співпадіння: selectedSubgroups.includes(subgroupToCheck)
         });
-    const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
-    const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
-    const isSubgroupMatch = selectedSubgroups.length === 0 ||
-                            selectedSubgroups.some(selectedSubgroup => {
-                                const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
-                                return normalizedSelectedSubgroup === normalizedLessonSubgroup ||
-                                       normalizedSelectedSubgroup.startsWith(normalizedLessonSubgroup) ||
-                                       normalizedLessonSubgroup.startsWith(normalizedSelectedSubgroup);
-                            });
+        return selectedSubgroups.includes(subgroupToCheck);
+    }
 
-    const isTeacherMatch = !teacherSearch || (lesson.teacher && lesson.teacher.toLowerCase().includes(teacherSearch));
-    return isSubjectSelected && isTeacherMatch && isSubgroupMatch;
+    // Для звичайних занять перевіряємо тип
+    const typeMatch = lesson.subject.match(/\((Л|Лек|Лаб)\)$/i);
+    if (typeMatch) {
+        const type = normalizeType(typeMatch[1]);
+        console.log('[SCHEDULE] Перевірка типу заняття:', {
+            знайдений: type,
+            обрані: selectedSubgroups,
+            співпадіння: selectedSubgroups.includes(type)
+        });
+        return selectedSubgroups.includes(type);
+    }
+
+    // Якщо немає явного типу, показуємо заняття
+    console.log('[SCHEDULE] Немає явного типу заняття, показуємо');
+    return true;
 }
 
 // --- Функція застосування фільтрів ---

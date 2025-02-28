@@ -87,7 +87,10 @@ function loadSavedItems() {
                 </div>
                 <div class="button-group">
                     <button class="control-btn primary" onclick="showRatingDetails('${rating.key}')">
-                        Деталі
+                        <i class="fas fa-eye"></i> Деталі
+                    </button>
+                    <button class="control-btn warning" onclick="editRating('${rating.key}')">
+                        <i class="fas fa-edit"></i> Редагувати
                     </button>
                     <button class="control-btn danger" onclick="deleteRating('${rating.key}', this)">
                         <i class="fas fa-trash"></i> Видалити
@@ -116,6 +119,7 @@ function showRatingDetails(key) {
     localStorage.setItem('currentRatingDetails', JSON.stringify(ratingData));
     window.location.href = 'rating-details.html';
 }
+
 function showScheduleDetails(key) {
     const savedSchedules = JSON.parse(localStorage.getItem('savedSchedules')) || {};
     const scheduleData = savedSchedules[key];
@@ -141,4 +145,11 @@ function deleteSchedule(key, buttonElement) {
 
     }
 }
+
+function editRating(key) {
+    const ratingData = JSON.parse(localStorage.getItem(key));
+    localStorage.setItem('currentRatingEdit', JSON.stringify(ratingData));
+    window.location.href = 'rating.html?edit=true';
+}
+
 document.addEventListener('DOMContentLoaded', loadSavedItems);
