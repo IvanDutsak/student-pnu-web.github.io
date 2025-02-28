@@ -310,12 +310,20 @@ body {
 
 /* Адаптивність */
 @media (max-width: 768px) {
-    /* Перезаписуємо sticky, щоб на мобільних навігація не прилипала */
+    /* Базові налаштування для мобільних */
     .main-nav {
         position: static !important;
         top: auto !important;
     }
 
+    .container {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    /* Навігація */
     .nav-list {
         flex-direction: column;
         align-items: center;
@@ -325,10 +333,39 @@ body {
         margin: 0.5rem 0;
     }
 
+    /* Сітка та контейнери */
     .subjects-container {
         grid-template-columns: 1fr;
     }
 
+    .saved-content {
+        padding: 0;
+        width: 100%;
+    }
+
+    .saved-category {
+        padding: 1rem;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Елементи збереженого контенту */
+    .saved-item {
+        width: 100%;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .saved-item-header {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    /* Кнопки та елементи керування */
     .controls-wrapper {
         display: flex;
         flex-direction: column;
@@ -344,13 +381,26 @@ body {
 
     .button-group {
         flex-direction: column;
+        width: 100%;
+        margin-top: 0.5rem;
+        gap: 0.5rem;
     }
     
     .button-group .control-btn {
         width: 100%;
         min-width: unset;
     }
+
+    .saved-item .button-group {
+        width: 100%;
+    }
+
+    .saved-item .button-group button {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
     
+    /* Таблиці та списки */
     .suggestions-list {
         width: 100% !important;
     }
@@ -366,6 +416,22 @@ body {
 
     .rating-summary {
         grid-template-columns: 1fr;
+    }
+
+    /* Додаткові фікси для збережених елементів */
+    .saved-items-container {
+        width: 100%;
+    }
+
+    .saved-item-content {
+        width: 100%;
+    }
+
+    .saved-item-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
 
@@ -629,4 +695,197 @@ body {
     gap: 0.5rem;
     margin-left: 1rem; /* Відступ від тексту */
     flex-shrink: 0; /* Кнопки не стискаються */
+}
+
+/* Стилі для кнопки зміни теми */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle .moon-icon,
+.theme-toggle .sun-icon {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle .moon-icon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.theme-toggle .sun-icon {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+/* Темна тема */
+[data-theme="dark"] {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --success-color: #00b894;
+    --warning-color: #ffeaa7;
+    --danger-color: #ff7675;
+    --light-gray: #2d3436;
+    --dark-gray: #dfe6e9;
+    --text-color: #f5f6fa;
+    background: #1a1a1a;
+}
+
+[data-theme="dark"] .main-nav {
+    background: rgba(32, 32, 32, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] .rating-section,
+[data-theme="dark"] .saved-category {
+    background: #2d3436;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] body {
+    background: #1a1a1a;
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .saved-item {
+    background: #1a1a1a;
+}
+
+[data-theme="dark"] .theme-toggle .moon-icon {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+[data-theme="dark"] .theme-toggle .sun-icon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+[data-theme="dark"] .nav-link {
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .results-table {
+    background: #2d3436;
+}
+
+[data-theme="dark"] .results-table th {
+    background: #1a1a1a;
+}
+
+[data-theme="dark"] .results-table tr:nth-child(even) {
+    background: #1a1a1a;
+}
+
+[data-theme="dark"] .input-section {
+    background: #2d3436;
+}
+
+[data-theme="dark"] .subject-input {
+    background: #1a1a1a;
+    border-color: #4a4a4a;
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .suggestions-list {
+    background: #2d3436;
+    border-color: #4a4a4a;
+}
+
+[data-theme="dark"] .suggestions-list li:hover {
+    background: #1a1a1a;
+}
+
+[data-theme="dark"] .subject-list li {
+    background: #1a1a1a;
+    border: 1px solid #4a4a4a;
+}
+
+[data-theme="dark"] .empty-message {
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .main-title {
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .rating-summary {
+    background: #1a1a1a;
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .control-btn.warning {
+    background: #ffeaa7;
+    color: #2d3436;
+}
+
+[data-theme="dark"] .control-btn.primary {
+    background: #6c5ce7;
+}
+
+[data-theme="dark"] .control-btn.success {
+    background: #00b894;
+}
+
+[data-theme="dark"] .control-btn.danger {
+    background: #ff7675;
+}
+
+[data-theme="dark"] .day-header {
+    background: #2d3436;
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .time-slot {
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .empty-slot {
+    background: #1a1a1a;
+    color: #6c757d;
+}
+
+[data-theme="dark"] .subject-category {
+    background: #2d3436;
+    border: 1px solid #4a4a4a;
+}
+
+[data-theme="dark"] .subject-item {
+    background: #1a1a1a;
+    color: #f5f6fa;
+    border: 1px solid #4a4a4a;
+}
+
+[data-theme="dark"] .subgroups {
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .input-label {
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .saved-item-header h3,
+[data-theme="dark"] .saved-item-header p {
+    color: #f5f6fa;
 }

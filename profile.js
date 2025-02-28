@@ -2,7 +2,8 @@
 const groups = {
     "КН": ["КН-11", "КН-12", "КН-13", "КН-21", "КН-22", "КН-23", "КН-31", "КН-32"],
     "ІПЗ": ["ІПЗ-11", "ІПЗ-12", "ІПЗ-21", "ІПЗ-22"],
-    "ІСТ": ["ІСТ-11", "ІСТ-12", "ІСТ-21"]
+    "ІСТ": ["ІСТ-11", "ІСТ-12", "ІСТ-21"],
+    "ПР": ["ПР-11", "ПР-12, ПР-13","ПР-14","ПР-15","ПР-21, ПР-22, ПР-23","ПР-24","ПР-25","ПР-26","ПР-31, ПР-32","ПР-33", "ПР-34","ПР-35","ПР-41","ПР-42","ПР-43","ПР-44","ПР-45"]
 };
 
 
@@ -670,9 +671,21 @@ function showProfile() {
 
 // Функція очищення предметів
 function clearSubjects() {
+    // Зберігаємо поточну тему
+    const currentTheme = localStorage.getItem('theme');
+    
     window.currentState.selectedSubjects = {};
     saveState();
-    localStorage.clear();
+    
+    // Очищаємо тільки дані профілю
+    localStorage.removeItem('appState');
+    
+    // Відновлюємо тему
+    if (currentTheme) {
+        localStorage.setItem('theme', currentTheme);
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    }
+    
     location.reload();
 }
 

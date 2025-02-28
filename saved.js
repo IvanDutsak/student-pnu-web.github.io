@@ -59,14 +59,7 @@ function loadSavedItems() {
     }
 
     // === Збережені рейтинги ===
-    const savedRatings = Object.keys(localStorage)
-        .filter(key => key.startsWith('rating_'))
-        .map(key => ({
-            key: key,
-            name: key.replace('rating_', ''),
-            data: JSON.parse(localStorage.getItem(key))
-        }));
-
+    const savedRatings = JSON.parse(localStorage.getItem('savedRatings')) || [];
     const ratingsList = document.getElementById('savedRatingsList');
     if (!ratingsList) return;
 
@@ -74,7 +67,11 @@ function loadSavedItems() {
         ratingsList.innerHTML = '<div class="empty-message">Немає збережених рейтингів</div>';
     } else {
         ratingsList.innerHTML = '';
-        savedRatings.forEach(rating => {
+        savedRatings.forEach((rating, index) => {
+            const examCount = rating.examSubjects.length;
+            const creditCount = rating.creditSubjects.length;
+            const totalSubjects = examCount + creditCount;
+
             const item = document.createElement('div');
             item.className = 'saved-item';
             item.innerHTML = `
@@ -82,17 +79,23 @@ function loadSavedItems() {
                     <i class="fas fa-chart-line"></i>
                     <div>
                         <h3>${rating.name}</h3>
-                        <p>Загальний рейтинг: ${rating.data.R?.toFixed(2) || 'Н/Д'}</p>
+                        <p>
+                            Загальний рейтинг: ${rating.totalRating}
+                            <br>
+                            Предметів: ${totalSubjects} (${examCount} екзаменів, ${creditCount} заліків)
+                            <br>
+                            Дата: ${rating.date}
+                        </p>
                     </div>
                 </div>
                 <div class="button-group">
-                    <button class="control-btn primary" onclick="showRatingDetails('${rating.key}')">
+                    <button class="control-btn primary" onclick="showRatingDetails(${index})">
                         <i class="fas fa-eye"></i> Деталі
                     </button>
-                    <button class="control-btn warning" onclick="editRating('${rating.key}')">
+                    <button class="control-btn warning" onclick="editRating(${index})">
                         <i class="fas fa-edit"></i> Редагувати
                     </button>
-                    <button class="control-btn danger" onclick="deleteRating('${rating.key}', this)">
+                    <button class="control-btn danger" onclick="deleteRating(${index})">
                         <i class="fas fa-trash"></i> Видалити
                     </button>
                 </div>
@@ -102,21 +105,23 @@ function loadSavedItems() {
     }
 }
 
-function deleteRating(key, button) {
-    if (confirm('Видалити цей рейтинг?')) {
-        localStorage.removeItem(key);
-        button.closest('.saved-item').remove();
-        // Оновлення списку після видалення
-        if (document.getElementById('savedRatingsList').children.length === 0) {
-            document.getElementById('savedRatingsList').innerHTML =
-                '<div class="empty-message">Немає збережених рейтингів</div>';
-        }
+function deleteRating(index) {
+    const savedRatings = JSON.parse(localStorage.getItem('savedRatings')) || [];
+    const rating = savedRatings[index];
+    
+    if (confirm(`Видалити рейтинг "${rating.name}"?`)) {
+        savedRatings.splice(index, 1);
+        localStorage.setItem('savedRatings', JSON.stringify(savedRatings));
+        loadSavedItems(); // Оновлюємо список
     }
 }
 
-function showRatingDetails(key) {
-    const ratingData = JSON.parse(localStorage.getItem(key));
-    localStorage.setItem('currentRatingDetails', JSON.stringify(ratingData));
+function showRatingDetails(index) {
+    const savedRatings = JSON.parse(localStorage.getItem('savedRatings')) || [];
+    const rating = savedRatings[index];
+    if (!rating) return;
+
+    localStorage.setItem('currentRatingDetails', JSON.stringify(rating));
     window.location.href = 'rating-details.html';
 }
 
@@ -146,9 +151,12 @@ function deleteSchedule(key, buttonElement) {
     }
 }
 
-function editRating(key) {
-    const ratingData = JSON.parse(localStorage.getItem(key));
-    localStorage.setItem('currentRatingEdit', JSON.stringify(ratingData));
+function editRating(index) {
+    const savedRatings = JSON.parse(localStorage.getItem('savedRatings')) || [];
+    const rating = savedRatings[index];
+    if (!rating) return;
+
+    localStorage.setItem('currentRatingEdit', JSON.stringify(rating));
     window.location.href = 'rating.html?edit=true';
 }
 

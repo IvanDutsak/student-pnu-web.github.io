@@ -332,24 +332,65 @@ function saveLocally() {
     const name = prompt("Введіть назву для збереження рейтингу:");
     if (!name) return;
 
-    const data = {
-        examSubjects: addedExamSubjects.map(subj => ({
-            ...subj,
-            type: "Екзамен"
-        })),
-        creditSubjects: addedCreditSubjects.map(subj => ({
-            ...subj,
-            type: "Залік"
-        })),
-        R_e: window.R_e,
-        R_z: window.R_z,
-        R: window.R,
+    const savedRatings = JSON.parse(localStorage.getItem('savedRatings') || '[]');
+    const currentDate = new Date().toLocaleDateString('uk-UA');
+    
+    const examList = document.getElementById('examList');
+    const creditList = document.getElementById('creditList');
+    const examRating = document.getElementById('examRating').textContent;
+    const creditRating = document.getElementById('creditRating').textContent;
+    const totalRating = document.getElementById('totalRating').textContent;
+
+    const examSubjects = addedExamSubjects.map(subject => ({
+        name: subject.name,
+        score: subject.score,
+        credits: subject.credits,
+        type: "Екзамен"
+    }));
+
+    const creditSubjects = addedCreditSubjects.map(subject => ({
+        name: subject.name,
+        score: subject.score,
+        credits: subject.credits,
+        type: "Залік"
+    }));
+
+    const ratingData = {
+        name: name,
+        date: currentDate,
+        examSubjects,
+        creditSubjects,
+        examRating,
+        creditRating,
+        totalRating,
         timestamp: new Date().toISOString(),
         html: document.getElementById('results').outerHTML
     };
 
-    localStorage.setItem(`rating_${name}`, JSON.stringify(data));
-    alert(`Рейтинг "${name}" збережено!`);
+    // Перевіряємо, чи є вже збережений рейтинг з такою назвою
+    const existingRatingIndex = savedRatings.findIndex(rating => rating.name === name);
+
+    if (existingRatingIndex !== -1) {
+        // Якщо знайдено існуючий рейтинг, показуємо діалогове вікно
+        const confirmOverwrite = confirm(`Рейтинг з назвою "${name}" вже існує. Бажаєте перезаписати його?`);
+        
+        if (!confirmOverwrite) {
+            return; // Якщо користувач відмовився, виходимо з функції
+        }
+        // Якщо користувач погодився, оновлюємо існуючий рейтинг
+        savedRatings[existingRatingIndex] = ratingData;
+    } else {
+        // Якщо рейтингу з такою назвою немає, додаємо новий
+        savedRatings.push(ratingData);
+    }
+
+    localStorage.setItem('savedRatings', JSON.stringify(savedRatings));
+    alert(`Рейтинг "${name}" успішно збережено!`);
+    
+    // Оновлюємо список збережених рейтингів, якщо ми на сторінці збережених
+    if (window.location.pathname.includes('saved.html')) {
+        displaySavedRatings();
+    }
 }
 
 // Обробники подій (залишаються без змін)
