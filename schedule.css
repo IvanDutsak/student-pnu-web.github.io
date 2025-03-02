@@ -1001,6 +1001,80 @@ body {
 }
 
 
+/* Інформаційні повідомлення */
+.page-info {
+    background: #8c7ae6;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(140, 122, 230, 0.3);
+    animation: fadeIn 0.5s ease;
+}
+
+.page-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.page-info p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.page-info ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.page-info li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.page-info .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.page-info .close-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+.schedule-info {
+    background: #8c7ae6;
+    border-left: 4px solid #5f43e0;
+}
+
+/* Анімація появи */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Темна тема */
 [data-theme="dark"] {
     --primary-color: #6c5ce7;
@@ -1137,8 +1211,10 @@ body {
 }
 
 [data-theme="dark"] .day-header {
-    background: #2d3436;
-    color: #f5f6fa;
+    background-color: rgba(108, 92, 231, 0.1);
+    color: var(--primary-color);
+    border-top: 1px solid rgba(108, 92, 231, 0.5);
+    border-bottom: 1px solid rgba(108, 92, 231, 0.5);
 }
 
 [data-theme="dark"] .time-slot {
@@ -1279,5 +1355,55 @@ body {
 .theme-toggle .sun-icon {
     opacity: 0;
     transform: rotate(90deg);
+}
+
+[data-theme="dark"] #scheduleTable td:first-child {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+[data-theme="dark"] .mobile-lesson-date-right {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] #scheduleTable td:nth-child(4) {
+    color: var(--primary-color); /* Фіолетовий колір для колонки груп */
+    font-weight: 500; /* Трохи жирніший текст для кращої видимості */
+}
+
+[data-theme="dark"] .page-info {
+    background-color: #2d3436;
+    color: #f5f6fa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #6c5ce7;
+}
+
+/* Стилі для посилань на відеоконференцію */
+.lesson-link {
+    color: #fdcb6e;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+    transition: color 0.3s;
+}
+
+.lesson-link:hover {
+    color: #ffeaa7;
+    text-decoration: underline;
+}
+
+[data-theme="light"] .lesson-link {
+    color: #d35400;
+}
+
+[data-theme="light"] .lesson-link:hover {
+    color: #e67e22;
+}
+
+/* Іконка для посилання */
+.lesson-link i {
+    margin-left: 5px;
+    font-size: 0.9em;
 }
 

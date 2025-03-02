@@ -176,15 +176,18 @@ function updateAddedSubjectsList() {
             <div class="subject-item-content">
                 <span>
                     <strong>${subject.name}</strong>
-                    <small>${subject.score} балів, ${subject.credits} кредитів</small>
                 </span>
-                <div class="subject-item-buttons">
-                    <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, true)">
-                        <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', true)">
-                        <i class="fas fa-times"></i>
-                    </button>
+                <div class="subject-info">
+                    <small>${subject.score} балів</small>
+                    <small>${subject.credits} кредитів</small>
+                    <div class="subject-item-buttons">
+                        <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, true)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', true)">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         `;
@@ -197,15 +200,18 @@ function updateAddedSubjectsList() {
             <div class="subject-item-content">
                 <span>
                     <strong>${subject.name}</strong>
-                    <small>${subject.score} балів, ${subject.credits} кредитів</small>
                 </span>
-                <div class="subject-item-buttons">
-                    <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, false)">
-                        <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', false)">
-                        <i class="fas fa-times"></i>
-                    </button>
+                <div class="subject-info">
+                    <small>${subject.score} балів</small>
+                    <small>${subject.credits} кредитів</small>
+                    <div class="subject-item-buttons">
+                        <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, false)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', false)">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         `;

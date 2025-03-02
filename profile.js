@@ -3,7 +3,7 @@ const groups = {
     "КН": ["КН-11", "КН-12", "КН-13", "КН-21", "КН-22", "КН-23", "КН-31", "КН-32"],
     "ІПЗ": ["ІПЗ-11", "ІПЗ-12", "ІПЗ-21", "ІПЗ-22"],
     "ІСТ": ["ІСТ-11", "ІСТ-12", "ІСТ-21"],
-    "ПР": ["ПР-11", "ПР-12, ПР-13","ПР-14","ПР-15","ПР-21, ПР-22, ПР-23","ПР-24","ПР-25","ПР-26","ПР-31, ПР-32","ПР-33", "ПР-34","ПР-35","ПР-41","ПР-42","ПР-43","ПР-44","ПР-45"]
+    "ПР": ["ПР-31", "ПР-32", "ПР-33", "ПР-34", "ПР-35"]
 };
 
 
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (!groups || !groups[selectedFaculty]) {
                 console.error('[PROFILE] Помилка: немає груп для факультету', selectedFaculty);
-                alert('Помилка: немає доступних груп для цього факультету');
+                alert('Помилка: немає доступних груп для цієї спеціальності');
                 return;
             }
             
@@ -650,7 +650,7 @@ function showProfile() {
     container.innerHTML = `
         <div class="profile-summary">
             <h2>Профіль студента</h2>
-            <p><strong>Факультет:</strong> ${window.currentState.faculty}</p>
+            <p><strong>Спеціальність:</strong> ${window.currentState.faculty}</p>
             <p><strong>Група:</strong> ${window.currentState.group}</p>
             <p><strong>Курс:</strong> ${getCourseFromGroup(window.currentState.group)}</p>
             <p><strong>Семестр:</strong> ${window.currentState.semester}</p>
@@ -671,21 +671,32 @@ function showProfile() {
 
 // Функція очищення предметів
 function clearSubjects() {
-    // Зберігаємо поточну тему
+    // Зберігаємо поточну тему перед очищенням
     const currentTheme = localStorage.getItem('theme');
     
+    // Оновлюємо стан без очищення всього localStorage
     window.currentState.selectedSubjects = {};
     saveState();
     
-    // Очищаємо тільки дані профілю
-    localStorage.removeItem('appState');
+    // Відзначаємо, що користувач мав обрані предмети, які були очищені
+    localStorage.setItem('hadSelectedSubjects', 'true');
     
-    // Відновлюємо тему
-    if (currentTheme) {
-        localStorage.setItem('theme', currentTheme);
-        document.documentElement.setAttribute('data-theme', currentTheme);
+    // Видаляємо лише дані профілю, але зберігаємо тему
+    for (const key in localStorage) {
+        // Не видаляємо ключі 'theme', 'schedulesData' та 'hadSelectedSubjects'
+        if (key !== 'theme' && key !== 'schedulesData' && key !== 'hadSelectedSubjects') {
+            localStorage.removeItem(key);
+        }
     }
     
+    // Відновлюємо збережену тему
+    if (currentTheme) {
+        localStorage.setItem('theme', currentTheme);
+    }
+    
+    console.log('[PROFILE] Предмети очищені');
+    
+    // Перезавантажуємо сторінку
     location.reload();
 }
 
@@ -736,3 +747,39 @@ function previousStep(currentStepId) {
         showStep(previousStepId);
     }
 }
+
+// Додаємо функцію для перевірки стану профілю перед переходом на сторінку розкладу
+function checkProfileBeforeSchedule() {
+    console.log('[PROFILE] === Перевірка стану профілю перед переходом на розклад ===');
+    
+    // Перевіряємо, чи обрані предмети в профілі
+    const hasSelectedSubjects = window.currentState.selectedSubjects && 
+                               Object.keys(window.currentState.selectedSubjects).length > 0;
+    
+    console.log('[PROFILE] Стан профілю:');
+    console.log('[PROFILE] - Обрані предмети:', hasSelectedSubjects);
+    console.log('[PROFILE] - Кількість обраних предметів:', Object.keys(window.currentState.selectedSubjects || {}).length);
+    
+    // Якщо користувач очистив предмети
+    if (!hasSelectedSubjects) {
+        // Підготовка до показу повідомлення на сторінці розкладу
+        // Відзначаємо, що користувач мав обрані предмети
+        localStorage.setItem('hadSelectedSubjects', 'true');
+        
+        console.log('[PROFILE] Підготовлено показ повідомлення на сторінці розкладу');
+    }
+    
+    window.location.href = 'schedule.html';
+}
+
+// Оновлюємо навігаційні кнопки, щоб використовувати нову функцію перевірки
+document.addEventListener('DOMContentLoaded', function() {
+    const scheduleLink = document.querySelector('nav a[href="schedule.html"]');
+    if (scheduleLink) {
+        scheduleLink.setAttribute('href', 'javascript:void(0)');
+        scheduleLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            checkProfileBeforeSchedule();
+        });
+    }
+});

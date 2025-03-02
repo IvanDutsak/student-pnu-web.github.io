@@ -139,10 +139,28 @@
     <script>
         function showScheduleForDays(days) {
             const today = new Date();
-            const dateFrom = today.toISOString().split('T')[0]; // Сьогоднішня дата
+            const dayOfWeek = today.getDay(); // 0 - неділя, 6 - субота
+            let dateFrom;
+            
+            // Логіка визначення початкової дати в залежності від дня тижня
+            if (dayOfWeek === 0) { // Неділя
+                // Переходимо на наступний день (понеділок)
+                const nextMonday = new Date(today);
+                nextMonday.setDate(today.getDate() + 1);
+                dateFrom = nextMonday.toISOString().split('T')[0];
+            } else if (dayOfWeek === 6) { // Субота
+                // Поки що починаємо з поточного дня (суботи)
+                // Користувач хоче бачити п'ятницю та понеділок, це буде оброблено в showSchedule
+                dateFrom = today.toISOString().split('T')[0];
+            } else {
+                // Понеділок-п'ятниця - починаємо з поточного дня
+                dateFrom = today.toISOString().split('T')[0];
+            }
+            
+            // Розрахунок кінцевої дати
             const futureDate = new Date(today);
             futureDate.setDate(today.getDate() + days);
-            const dateTo = futureDate.toISOString().split('T')[0]; // Дата через 'days' днів
+            const dateTo = futureDate.toISOString().split('T')[0];
 
             document.getElementById('date-from').value = dateFrom;
             document.getElementById('date-to').value = dateTo;
@@ -150,8 +168,27 @@
         }
 
         function showScheduleForMonth() {
-           const today = new Date();
-            const dateFrom = today.toISOString().split('T')[0];
+            const today = new Date();
+            const dayOfWeek = today.getDay(); // 0 - неділя, 6 - субота
+            let dateFrom;
+
+            // Логіка визначення початкової дати в залежності від дня тижня
+            if (dayOfWeek === 0) { // Неділя
+                // Переходимо на наступний день (понеділок)
+                const nextMonday = new Date(today);
+                nextMonday.setDate(today.getDate() + 1);
+                dateFrom = nextMonday.toISOString().split('T')[0];
+            } else if (dayOfWeek === 6) { // Субота
+                // З п'ятниці
+                const friday = new Date(today);
+                friday.setDate(today.getDate() - 1);
+                dateFrom = friday.toISOString().split('T')[0];
+            } else {
+                // Понеділок-п'ятниця - починаємо з поточного дня
+                dateFrom = today.toISOString().split('T')[0];
+            }
+            
+            // Розрахунок кінцевої дати на місяць вперед
             const futureDate = new Date(today);
             futureDate.setMonth(today.getMonth() + 1);
             const dateTo = futureDate.toISOString().split('T')[0];
@@ -166,5 +203,6 @@
         <span class="toggle-arrow"><i class="fas fa-arrow-up"></i></span>
     </button>
 
+    <script src="page-info.js"></script>
 </body>
 </html>

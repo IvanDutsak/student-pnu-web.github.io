@@ -96,17 +96,17 @@ body {
 /* Кнопки */
 .control-btn {
     padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    min-width: 200px;
+    min-width: 150px;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
-    transition: all var(--transition-speed) ease;
-    margin: 0 0.5rem;
 }
 
 .control-btn.primary {
@@ -130,8 +130,8 @@ body {
 }
 
 .control-btn:hover {
+    background-color: var(--secondary-color);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Форма введення */
@@ -220,25 +220,83 @@ body {
 }
 
 .subject-list li {
-    padding: 1rem;
-    margin-bottom: 0.75rem;
     background: var(--light-gray);
-    border-radius: 8px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation: slideIn 0.3s ease;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.subject-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.subject-item-content span {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.subject-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.subject-info small {
+    font-size: 0.9rem;
+    color: #666;
+    background: var(--light-gray);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.subject-item-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.edit-btn, .remove-btn {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.edit-btn {
+    background-color: var(--warning-color);
+    color: var(--dark-gray);
+}
+
+.remove-btn {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.edit-btn:hover, .remove-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
 }
 
 /* Результати та таблиця */
@@ -295,13 +353,14 @@ body {
 .button-group {
     display: flex;
     gap: 1rem;
-    margin-top: 1.5rem;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
 }
 
 .button-group .control-btn {
     flex: 1;
-    min-width: 200px;
+    min-width: 120px;
 }
 
 /* Адаптивність */
@@ -348,17 +407,21 @@ body {
 
     /* Елементи збереженого контенту */
     .saved-item {
-        width: 100%;
-        padding: 1rem;
-        margin: 0.5rem 0;
-        box-sizing: border-box;
-        flex-direction: column;
-        align-items: flex-start;
+        grid-template-columns: 1fr;
+        padding: 0.75rem;
     }
 
-    .saved-item-header {
-        width: 100%;
-        margin-bottom: 1rem;
+    .saved-item-buttons {
+        justify-content: flex-end;
+        margin-top: 0.5rem;
+    }
+
+    .saved-item-content span strong {
+        font-size: 1rem;
+    }
+
+    .saved-item-content span small {
+        font-size: 0.85rem;
     }
 
     /* Кнопки та елементи керування */
@@ -545,6 +608,46 @@ body {
     .input-section .control-btn {
         margin: 0;
     }
+
+    .subject-item-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .subject-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .subject-info small {
+        background: var(--light-gray);
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+
+    .subject-item-buttons {
+        display: flex;
+        gap: 0.5rem;
+        margin-left: auto;
+    }
+
+    .edit-btn,
+    .remove-btn {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .autocomplete-wrapper {
@@ -600,44 +703,82 @@ body {
 }
 
 .saved-item {
-    background: var(--light-gray);
+    background: white;
     border-radius: 12px;
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation: slideIn 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform var(--transition-speed);
-    min-width: 0; /* Додано для кращого контролю переносу */
-}
-
-.saved-item:hover {
-    transform: translateY(-3px);
-}
-
-.saved-item-header {
-    display: flex;
-    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto;
     gap: 1rem;
-    min-width: 0; /* Додано для кращого контролю переносу */
-    flex: 1; /* Додано для кращого розподілу простору */
+    align-items: center;
 }
 
-.saved-item-header h3 {
-    white-space: nowrap; /* Текст в одному рядку */
-    overflow: hidden; /* Приховуємо текст, що виходить за межі */
-    text-overflow: ellipsis; /* Додаємо три крапки в кінці */
-    margin: 0;
+.saved-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+.saved-item-content span {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.saved-item-content span strong {
     font-size: 1.1rem;
-}
-
-.saved-item-header p {
-    white-space: nowrap;
+    color: var(--dark-gray);
+    font-weight: 600;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0;
+}
+
+.saved-item-content span small {
+    font-size: 0.9rem;
+    color: #666;
+    background: var(--light-gray);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.saved-item-buttons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.edit-btn, .remove-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: var(--warning-color);
     color: var(--dark-gray);
+}
+
+.remove-btn {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.edit-btn:hover, .remove-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
 }
 
 .delete-btn {
@@ -705,39 +846,35 @@ body {
 
 .subject-item-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
     width: 100%;
-    padding: 10px 0;
 }
 
 .subject-item-content span {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    flex: 1;
-    white-space: normal;
-    overflow: visible;
-    font-size: 1rem;
+    gap: 0.25rem;
 }
 
 .subject-item-content span strong {
-    display: block;
-    color: var(--dark-gray);
-    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-color);
     margin-bottom: 2px;
 }
 
 .subject-item-content span small {
-    display: block;
-    color: #666;
     font-size: 0.9rem;
+    color: #666;
+    display: block;
+    line-height: 1.2;
 }
 
 .subject-item-buttons {
     display: flex;
     gap: 0.5rem;
-    margin-left: 1rem;
+    margin-left: auto;
 }
 
 .edit-btn {
@@ -789,12 +926,14 @@ body {
 /* Оновлені стилі для списку предметів */
 .subject-list li {
     background: var(--light-gray);
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
-    padding: 0.75rem 1rem;
-    animation: slideIn 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .subject-list li:hover {
@@ -930,7 +1069,7 @@ body {
 
 [data-theme="dark"] .subject-list li {
     background: #1a1a1a;
-    border: 1px solid #4a4a4a;
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="dark"] .empty-message {
@@ -1021,4 +1160,91 @@ body {
         flex: 1;
         max-width: none;
     }
+}
+
+/* Стилі для інформаційних повідомлень сторінок */
+.page-info {
+    background-color: #55efc4;
+    color: #2d3436;
+    padding: 15px 20px;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(85, 239, 196, 0.3);
+    position: relative;
+    max-width: 900px;
+    transition: all 0.3s ease;
+    border-left: 5px solid #00b894;
+    line-height: 1.6;
+}
+
+[data-theme="dark"] .page-info {
+    background-color: #2d3436;
+    color: #f5f6fa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #6c5ce7;
+}
+
+.page-info h3 {
+    margin-top: 0;
+    color: #00b894;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .page-info h3 {
+    color: #a29bfe;
+}
+
+.page-info p {
+    margin-bottom: 10px;
+}
+
+.page-info ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.page-info li {
+    margin-bottom: 5px;
+}
+
+.page-info .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 184, 148, 0.2);
+    border: none;
+    color: #2d3436;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.page-info .close-btn:hover {
+    background: rgba(0, 184, 148, 0.4);
+    transform: rotate(90deg);
+}
+
+/* Фіксований блок для schedule.html */
+.schedule-info {
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+}
+
+/* Анімація появи */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.page-info {
+    animation: fadeIn 0.5s ease-out;
 }

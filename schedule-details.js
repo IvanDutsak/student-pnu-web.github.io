@@ -51,6 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (lesson.details) {
                 subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
             }
+            if (lesson.link && lesson.link.trim() !== '') {
+                subjectCell.innerHTML += `<br><small><a href="${lesson.link}" target="_blank" class="lesson-link">Посилання на відеоконференцію <i class="fas fa-external-link-alt"></i></a></small>`;
+            }
             row.appendChild(subjectCell);
 
             const teacherCell = document.createElement('td');
