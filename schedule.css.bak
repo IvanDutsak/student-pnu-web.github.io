@@ -427,7 +427,7 @@ body {
     #scheduleTable tbody tr {
         margin-bottom: 15px; /* Increased margin between lesson cards for better spacing */
         display: block;
-        border: 1px solid #ddd;
+        border: none; /* Прибираємо обводку */
         border-radius: 8px;
         overflow: hidden;
         background-color: white; /* Added background for cards */
@@ -878,117 +878,38 @@ body {
 
 /* --- Мобільні стилі для таблиці (компактні картки) --- */
 @media (max-width: 768px) {
-    #scheduleTable {
-        table-layout: auto;
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1rem;
-        font-size: 0.9em;
+    [data-theme="dark"] #scheduleTable tbody tr {
+        border-bottom: none; /* Прибираємо нижню обводку */
+        background-color: #1a1a1a !important;
+    }
+    
+    [data-theme="dark"] #scheduleTable td:before {
+        color: #a29bfe; /* Світло-фіолетовий для міток */
     }
 
-    #scheduleTable thead {
-        display: none; /* Hide table headers on mobile */
+    /* Видаляємо всі вертикальні пунктирні лінії в мобільній версії для темної теми */
+    [data-theme="dark"] #scheduleTable td {
+        border: none !important;
+        background: #2d3436 !important;
+        background-image: none !important;
+        border-image: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
     }
-
-    #scheduleTable th,
-    #scheduleTable td {
-        border: none; /* Remove borders from individual cells */
-        padding: 0; /* Remove padding from cells */
-        text-align: left;
-        word-wrap: break-word;
-        overflow: visible;
-        text-overflow: clip;
-        white-space: normal;
-        display: block; /* Each cell as a block element */
-        width: 100%;
-        box-sizing: border-box;
+    
+    /* Спеціально для чистих клітинок з часовими слотами */
+    [data-theme="dark"] #scheduleTable .time-slot {
+        color: #ffffff;
+        background-color: #1a1a1a !important;
+        border: none !important;
     }
-
-    #scheduleTable tbody tr {
-        margin-bottom: 15px; /* Increased margin between lesson cards for better spacing */
-        display: block;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        overflow: hidden;
-        background-color: white; /* Added background for cards */
-        padding: 10px; /* Added padding to cards */
+    
+    /* Очищення для пар, виділених на скріншоті */
+    [data-theme="dark"] #scheduleTable tr td:first-child {
+        background-color: #1a1a1a !important;
+        border: none !important;
+        box-shadow: none !important;
     }
-
-    #scheduleTable td:before {
-        font-weight: bold;
-        display: inline-block;
-        width: auto;
-        min-width: 80px; /* Slightly reduced min-width for labels */
-        margin-right: 5px;
-        vertical-align: top;
-    }
-
-    #scheduleTable td:nth-child(1), /* Time Slot */
-    #scheduleTable td:nth-child(2), /* Subject */
-    #scheduleTable td:nth-child(3), /* Teacher */
-    #scheduleTable td:nth-child(4)  /* Group */
-    {
-        width: auto;
-        display: block;
-        border: none;
-        padding: 0; /* Removed padding from individual TDs, padding is on TR now */
-    }
-
-    #scheduleTable tbody tr.empty-slot { /* Styles for empty slots */
-        padding: 5px 10px; /* Reduced padding for empty slots */
-        margin-bottom: 10px; /* Reduced margin for empty slots */
-        border-color: #eee; /* Lighter border for empty slots */
-        background-color: #f8f9fa; /* Lighter background for empty slots */
-        color: #777; /* Grey text for empty slots */
-    }
-
-    #scheduleTable tbody tr.empty-slot td {
-        padding: 0; /* No padding for cells in empty slots */
-    }
-
-    #scheduleTable tbody tr.empty-slot td:before {
-        content: none; /* Hide labels for empty slots */
-    }
-
-    .day-header {
-        position: sticky;
-        top: 5px; /* Adjusted top value to be higher, less cut-off */
-        z-index: 101;
-        background-color: #e0e0e0;
-        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.3);
-        padding: 8px; /* Keep day header padding */
-        margin-top: 1rem; /* Keep day header margin */
-        border-radius: 4px; /* Keep day header border-radius */
-    }
-
-    .time-slot {
-        font-size: 1em;
-        margin-bottom: 2px;
-        display: inline-block; /* Changed to inline-block */
-    }
-
-    #scheduleTable td:nth-child(2) {
-        font-weight: 500; /* Keep subject font-weight */
-    }
-
-    #scheduleTable tbody tr:nth-child(even) {
-        background-color: white; /* Ensure even rows have white background in card layout */
-    }
-
-    /* Стиль для дати в мобільному розкладі - Right Style */
-    .mobile-lesson-date-right {
-        font-size: 1em;
-        color: #777;
-        text-align: right; /* Align text to the right */
-        display: inline-block; /* Ensure inline layout */
-        margin-top: 0; /* Видалено margin-top, для вирівнювання по вертикалі */
-        vertical-align: baseline; /* Вирівнювання по базовій лінії, щоб текст був на одному рівні */
-        white-space: nowrap; /* Prevent date from wrapping */
-        margin-left: 10px; /* Add some left margin to separate from time */
-        position: relative; /* Added relative positioning */
-        top: -0.3em; /* Slightly adjust vertical position upwards */
-    }
-    /* --- Кінець мобільних стилів таблиці (компактні картки) --- */
 }
 
 .day-header .toggle-arrow {
@@ -1106,31 +1027,32 @@ body {
 }
 
 [data-theme="dark"] #scheduleTable {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background: #2d3436;
+    color: #f5f6fa;
     border-collapse: collapse;
-    width: 100%;
-    border: none !important;
+    border: none; /* Прибираємо зовнішній фіолетовий border */
 }
 
 [data-theme="dark"] #scheduleTable th {
-    background-color: #1a1a1a;
-    color: #9e86f7; /* Фіолетовий колір для заголовків */
-    border-bottom: 2px solid #9e86f7 !important; /* Фіолетова лінія під заголовками */
+    background: #1a1a1a;
+    color: #f5f6fa;
+    border: 1px solid #8c7ae6; /* Залишаємо фіолетовий колір для ліній заголовків */
+    font-weight: bold;
 }
 
 [data-theme="dark"] #scheduleTable td {
-    background-color: #1a1a1a;
+    background: #2d3436;
     color: #f5f6fa;
-    border-bottom: 1px solid #9e86f7 !important; /* Фіолетові лінії між рядками */
+    border: 1px solid #8c7ae6; /* Фіолетовий колір для ліній клітинок */
 }
 
-[data-theme="dark"] .day-header {
-    background-color: #1a1a1a !important;
-    color: #f5f6fa !important;
-    font-weight: bold;
-    border-bottom: 2px solid #9e86f7 !important; /* Фіолетова лінія під заголовком дня */
-    border-top: 2px solid #9e86f7 !important; /* Фіолетова лінія над заголовком дня */
+[data-theme="dark"] #scheduleTable tbody tr:nth-child(even) td {
+    background: #222; /* Темніший фон для парних рядків */
+}
+
+[data-theme="dark"] #scheduleTable tbody tr {
+    background-color: #2d3436;
+    border: none; /* Прибираємо фіолетову обводку */
 }
 
 [data-theme="dark"] .saved-item {
@@ -1218,10 +1140,79 @@ body {
     background: #ff7675;
 }
 
+[data-theme="dark"] .day-header {
+    background-color: #1a1a1a !important;
+    color: #ffffff;
+    border-left: 4px solid #8c7ae6;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #8c7ae6;
+}
+
+[data-theme="dark"] .time-slot {
+    color: #ffffff;
+    background-color: #1a1a1a !important;
+}
+
 [data-theme="dark"] .empty-slot {
     background-color: #1a1a1a;
     border: 1px solid #8c7ae6; /* Фіолетова рамка для границь порожніх рядків */
     color: #6c757d;
+}
+
+[data-theme="dark"] .subject-category {
+    background: #2d3436;
+    border: 1px solid #4a4a4a;
+}
+
+[data-theme="dark"] .subject-item {
+    background: #1a1a1a;
+    color: #f5f6fa;
+    border: 1px solid #4a4a4a;
+}
+
+[data-theme="dark"] .subgroups {
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .input-label {
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] .saved-item-header h3,
+[data-theme="dark"] .saved-item-header p {
+    color: #f5f6fa;
+}
+
+[data-theme="dark"] #faculties button,
+[data-theme="dark"] #groups button {
+    background-color: var(--primary-color);
+    color: #f5f6fa;
+    border: 1px solid #4a4a4a;
+}
+
+[data-theme="dark"] #faculties button:hover,
+[data-theme="dark"] #groups button:hover {
+    background-color: var(--secondary-color);
+}
+
+[data-theme="dark"] #scheduleTable tbody tr {
+    background-color: #2d3436;
+    border-color: #6c6c6c;
+    border-width: 1px;
+    border-style: solid;
+}
+
+[data-theme="dark"] #scheduleTable tbody tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+[data-theme="dark"] #scheduleTable tbody tr.empty-slot {
+    background-color: #1a1a1a;
+    border-color: #6c6c6c;
+    color: #6c757d;
+    border-width: 1px;
+    border-style: solid;
 }
 
 [data-theme="dark"] .table-wrapper.desktop-table.fixed-height {
@@ -1361,47 +1352,19 @@ body {
     border: 1px solid #8c7ae6; /* Фіолетова рамка для контейнера таблиці */
     border-radius: 5px;
     overflow: hidden;
-    background: #1a1a1a; /* Змінено з #2d3436 на #1a1a1a */
+    background: #2d3436;
 }
 
 [data-theme="dark"] .table-wrapper.desktop-table.fixed-height table {
-    background: #1a1a1a; /* Змінено з #2d3436 на #1a1a1a */
+    background: #2d3436;
     color: #f5f6fa;
     border: none; /* Прибираємо рамку самої таблиці, щоб уникнути подвійних границь */
 }
 
 /* Ефект при наведенні на рядки таблиці */
 [data-theme="dark"] #scheduleTable tbody tr:hover td {
-    background-color: #2d3436; /* Залишаємо темно-сірий тільки для ефекту ховера */
+    background-color: #373d3f; /* Трохи світліший колір при наведенні */
     transition: background-color 0.2s ease;
-}
-
-/* Змінюємо фон для звичайних рядків таблиці */
-[data-theme="dark"] #scheduleTable th {
-    background-color: #1a1a1a; /* Змінено з #2d3436 на #1a1a1a */
-    color: #f5f6fa;
-    border-bottom: 1px solid #8c7ae6;
-}
-
-[data-theme="dark"] #scheduleTable td {
-    background-color: #1a1a1a; /* Змінено з #2d3436 на #1a1a1a */
-    color: #f5f6fa;
-    border-bottom: 1px solid #3d3d3d;
-}
-
-[data-theme="dark"] #scheduleTable tbody tr {
-    background-color: #1a1a1a; /* Змінено з #2d3436 на #1a1a1a */
-    border-bottom: 1px solid #3d3d3d;
-}
-
-[data-theme="dark"] #scheduleTable tbody tr:nth-child(even) {
-    background-color: #1a1a1a; /* Змінено з #2d3436 на #1a1a1a */
-}
-
-/* Смуги для днів тижня */
-[data-theme="dark"] .day-header {
-    background: #1a1a1a !important; /* Змінено з #2d3436 на #1a1a1a */
-    border-bottom: 1px solid #8c7ae6 !important;
 }
 
 [data-theme="dark"] #scheduleTable tr.empty-slot td {
@@ -1430,66 +1393,36 @@ body {
 /* Стилі для мобільної версії в темній темі */
 @media (max-width: 768px) {
     [data-theme="dark"] #scheduleTable tbody tr {
-        border-bottom: 1px solid #3d3d3d;
-        padding: 8px 0;
-        display: block;
-        margin-bottom: 12px;
-        background: #1a1a1a !important; /* Чорний замість сірого */
-        background-image: none !important;
-        box-shadow: none !important;
+        border-bottom: none; /* Прибираємо нижню обводку */
+        background-color: #1a1a1a !important;
     }
     
     [data-theme="dark"] #scheduleTable td:before {
         color: #a29bfe; /* Світло-фіолетовий для міток */
     }
-    
+
+    /* Видаляємо всі вертикальні пунктирні лінії в мобільній версії для темної теми */
     [data-theme="dark"] #scheduleTable td {
         border: none !important;
-        background: #1a1a1a !important; /* Чорний замість сірого */
+        background: #2d3436 !important;
         background-image: none !important;
         border-image: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
-        padding: 8px 15px;
-    }
-    
-    [data-theme="dark"] #scheduleTable tbody tr:nth-child(even) td {
-        background: #1a1a1a !important; /* Чорний замість сірого */
-    }
-    
-    /* Темний фон для дня тижня в мобільному режимі */
-    [data-theme="dark"] .day-header {
-        background: #1a1a1a !important;
-        border: none !important;
-        border-bottom: 1px solid #3d3d3d !important;
     }
     
     /* Спеціально для чистих клітинок з часовими слотами */
     [data-theme="dark"] #scheduleTable .time-slot {
-        background: transparent !important;
-        background-image: none !important;
+        color: #ffffff;
+        background-color: #1a1a1a !important;
         border: none !important;
-        border-image: none !important;
-        border-right: none !important;
-        border-left: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-        color: #ffffff; /* Білий колір тексту для часових слотів */
     }
     
-    /* Очищення для комірок з часом */
+    /* Очищення для пар, виділених на скріншоті */
     [data-theme="dark"] #scheduleTable tr td:first-child {
-        background: #1a1a1a !important; /* Чорний замість сірого */
-        background-image: none !important;
+        background-color: #1a1a1a !important;
         border: none !important;
-        border-image: none !important;
         box-shadow: none !important;
-        text-shadow: none !important;
     }
-}
-
-[data-theme="dark"] .time-slot {
-    color: #ffffff; /* Білий колір для "пара 1", "пара 2", тощо */
-    font-weight: bold;
 }
 
