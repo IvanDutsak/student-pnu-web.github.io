@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна сторінка</title>
+    <title>Головна сторінка - Student PNU</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <script src="theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // **JavaScript для мобільного меню**
+            document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+                document.querySelector('.nav-list').classList.toggle('show');
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -15,47 +23,77 @@
         <i class="fas fa-sun sun-icon"></i>
     </button>
 
-
     <nav class="main-nav">
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="schedule.html" class="nav-link">
-                    <i class="fas fa-calendar-alt"></i>
-                    Розклад
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="saved.html" class="nav-link">
-                    <i class="fas fa-save"></i>
-                    Збережені
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="rating.html" class="nav-link">
-                    <i class="fas fa-star"></i>
-                    Рейтинговий бал
-                </a>
-            </li>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Student PNU</span>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="schedule_new.html" class="nav-link">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Розклад</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="saved_new.html" class="nav-link">
+                        <i class="fas fa-save"></i>
+                        <span>Збережені</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="rating_new.html" class="nav-link">
+                        <i class="fas fa-star"></i>
+                        <span>Рейтинговий бал</span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="profile.html" class="nav-link">
-                    <i class="fas fa-user"></i>
-                    Профіль
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a href="profile_new.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>Профіль</span>
+                    </a>
+                </li>
 
-        </ul>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </nav>
 
-    <main class="container">
-        <section class="rating-section">
-            <h1 class="main-title">
-                <i class="fas fa-home"></i> 
-                Вітаю всіх!
-            </h1>
+    <main class="main-content">
+        <div class="container">
+            <section class="home-section">
+                <h1 class="page-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Вітаємо!
+                </h1>
+                <p class="home-subtitle">
+                    Ласкаво просимо до Student PNU - вашого персонального помічника в навчанні.
+                    Тут ви можете легко керувати своїм розкладом, відстежувати рейтинговий бал,
+                    зберігати важливу інформацію та багато іншого.
+                </p>
+            </section>
+        </div>
 
-        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // **JavaScript для мобільного меню**
+                document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+                    document.querySelector('.nav-list').classList.toggle('show');
+                });
+            });
+        </script>
+
+        
     </main>
-    <script src="page-info.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Student PNU. Всі права захищені.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,8 +1,14 @@
-// База даних предметів
+/**
+ * rating_new.js
+ * Модуль для розрахунку рейтингового балу студента
+ */
+
+// База даних предметів: назва -> [кредити, тип оцінювання]
 const subjectsDatabase = {
     "Українська мова за професійним спрямуванням": [3, "Залік"],
     "Історія України": [3, "Залік"],
     "Історія української культури": [3, "Залік"],
+    "Фізика": [6, "Екзамен"],
     "Філософія": [3, "Залік"],
     "Політологія": [3, "Залік"],
     "Економіка": [3, "Залік"],
@@ -69,10 +75,37 @@ const subjectsDatabase = {
     "Програмування Mac iOS": [6, "Залік"]
 };
 
-// Змінні для зберігання доданих предметів
 let addedExamSubjects = [];
 let addedCreditSubjects = [];
+let editingSubject = null; // Для редагування предметів
 
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('edit') === 'true') {
+        const editData = JSON.parse(localStorage.getItem('currentRatingEdit'));
+        if (editData) {
+            addedExamSubjects = editData.examSubjects || [];
+            addedCreditSubjects = editData.creditSubjects || [];
+            updateAddedSubjectsList();
+            calculateRating();
+            localStorage.removeItem('currentRatingEdit');
+        }
+    }
+
+    const savedData = localStorage.getItem('currentRating');
+    if (savedData) {
+        const data = JSON.parse(savedData);
+        addedExamSubjects = data.examSubjects || [];
+        addedCreditSubjects = data.creditSubjects || [];
+        updateAddedSubjectsList();
+        calculateRating();
+    }
+
+    // **Виправлення JS:** Переконаємося, що обробник кліку додається **після** DOMContentLoaded
+    document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+        document.querySelector('.nav-list').classList.toggle('show');
+    });
+});
 
 function showSuggestions(inputText) {
     const input = document.getElementById('subjectName');
@@ -106,65 +139,80 @@ function showSuggestions(inputText) {
     suggestions.style.display = 'block';
 }
 
-// Додавання предмету з перевіркою на дублікати
 function addSubject() {
     const subjectName = document.getElementById('subjectName').value.trim();
     const subjectScore = parseInt(document.getElementById('subjectScore').value);
 
+    // Перевірка коректності введених даних
     if (!subjectName || isNaN(subjectScore) || subjectScore < 0 || subjectScore > 100) {
         alert('Будь ласка, введіть коректну назву предмету та оцінку (0-100).');
         return;
     }
 
-    const subject = subjectsDatabase[subjectName];
-    if (!subject) {
+    const subjectData = subjectsDatabase[subjectName];
+    if (!subjectData) {
         alert('Предмет не знайдено в базі даних.');
         return;
     }
 
-    // Перевірка на дублікати
-    const isAlreadyAdded = 
-        addedExamSubjects.some(subj => subj.name === subjectName) ||
-        addedCreditSubjects.some(subj => subj.name === subjectName);
+    const [credits, type] = subjectData;
+    const isExam = type === "Екзамен";
+
+    // Перевірка на дублювання предмета (враховуємо, що редагований предмет може бути замінений)
+    const allSubjects = [...addedExamSubjects, ...addedCreditSubjects];
+    const isAlreadyAdded = allSubjects.some(
+        subj => subj.name === subjectName && (!editingSubject || editingSubject.name !== subj.name)
+    );
 
     if (isAlreadyAdded) {
         alert('Цей предмет уже додано!');
         return;
     }
 
-    const [credits, type] = subject;
-    if (type === "Екзамен") {
-        addedExamSubjects.push({ 
-            name: subjectName, 
-            score: subjectScore, 
-            credits,
-            type
-        });
-    } else if (type === "Залік") {
-        addedCreditSubjects.push({ 
-            name: subjectName, 
-            score: subjectScore, 
-            credits,
-            type
-        });
+    if (editingSubject) {
+        // Перевірка, чи новий предмет належить до тієї ж категорії (Екзамен/Залік)
+        const editingIsExam = editingSubject.isExam;
+        if (editingIsExam !== isExam) {
+            alert(`Ви не можете обрати предмет, так як він є ${isExam ? 'екзаменаційним' : 'заліковим'}.`);
+            return;
+        }
+
+        // Оновлюємо предмет у відповідному списку
+        const list = editingIsExam ? addedExamSubjects : addedCreditSubjects;
+        const index = list.findIndex(subj => subj.name === editingSubject.name);
+        if (index !== -1) {
+            list[index] = { name: subjectName, score: subjectScore, credits, type };
+        }
+        editingSubject = null; // Скидаємо editingSubject після редагування
+    } else {
+        // Додаємо новий предмет
+        if (isExam) {
+            addedExamSubjects.push({ name: subjectName, score: subjectScore, credits, type });
+        } else {
+            addedCreditSubjects.push({ name: subjectName, score: subjectScore, credits, type });
+        }
     }
 
     updateAddedSubjectsList();
+    calculateRating();
     document.getElementById('subjectName').value = '';
     document.getElementById('subjectScore').value = '';
 }
 
-// Видалення предмету
 function removeSubject(subjectName, isExam) {
     if (isExam) {
         addedExamSubjects = addedExamSubjects.filter(subj => subj.name !== subjectName);
     } else {
         addedCreditSubjects = addedCreditSubjects.filter(subj => subj.name !== subjectName);
     }
+    // Скидаємо editingSubject, якщо видаляємо редагований предмет
+    if (editingSubject && editingSubject.name === subjectName) {
+        editingSubject = null;
+    }
     updateAddedSubjectsList();
+    calculateRating();
 }
 
-// Оновлення списків доданих предметів з кнопками видалення
 function updateAddedSubjectsList() {
     const examList = document.getElementById('examList');
     const creditList = document.getElementById('creditList');
@@ -173,23 +221,31 @@ function updateAddedSubjectsList() {
 
     addedExamSubjects.forEach(subject => {
         const li = document.createElement('li');
+        li.classList.add('subject-item');
         li.innerHTML = `
-            <div class="subject-item-content">
-                <span>
-                    <strong>${subject.name}</strong>
-                </span>
-                <div class="subject-info">
-                    <small>${subject.score} балів</small>
-                    <small>${subject.credits} кредитів</small>
-                    <div class="subject-item-buttons">
-                        <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, true)">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', true)">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
+            <div class="subject-details">
+                <div class="subject-header">
+                    <span class="subject-type-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </span>
+                    <span class="subject-name">${subject.name}</span>
                 </div>
+                <div class="subject-meta">
+                    <span class="subject-score">
+                        <i class="fas fa-star"></i> ${subject.score} балів
+                    </span>
+                    <span class="subject-credits">
+                        <i class="fas fa-coins"></i> ${subject.credits} кредитів
+                    </span>
+                </div>
+            </div>
+            <div class="subject-actions">
+                <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, true)" title="Редагувати">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', true)" title="Видалити">
+                    <i class="fas fa-trash"></i>
+                </button>
             </div>
         `;
         examList.appendChild(li);
@@ -197,45 +253,50 @@ function updateAddedSubjectsList() {
 
     addedCreditSubjects.forEach(subject => {
         const li = document.createElement('li');
+        li.classList.add('subject-item');
         li.innerHTML = `
-            <div class="subject-item-content">
-                <span>
-                    <strong>${subject.name}</strong>
-                </span>
-                <div class="subject-info">
-                    <small>${subject.score} балів</small>
-                    <small>${subject.credits} кредитів</small>
-                    <div class="subject-item-buttons">
-                        <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, false)">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', false)">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
+            <div class="subject-details">
+                <div class="subject-header">
+                    <span class="subject-type-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                    <span class="subject-name">${subject.name}</span>
                 </div>
+                <div class="subject-meta">
+                    <span class="subject-score">
+                        <i class="fas fa-star"></i> ${subject.score} балів
+                    </span>
+                    <span class="subject-credits">
+                        <i class="fas fa-coins"></i> ${subject.credits} кредитів
+                    </span>
+                </div>
+            </div>
+            <div class="subject-actions">
+                <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, false)" title="Редагувати">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', false)" title="Видалити">
+                    <i class="fas fa-trash"></i>
+                </button>
             </div>
         `;
         creditList.appendChild(li);
     });
 }
 
-// Функція для редагування предмету
 function editSubject(subjectName, currentScore, isExam) {
     document.getElementById('subjectName').value = subjectName;
     document.getElementById('subjectScore').value = currentScore;
-    
-    // Видаляємо старий запис
-    removeSubject(subjectName, isExam);
-    
-    // Фокусуємося на полі з оцінкою для редагування
+    editingSubject = { name: subjectName, isExam: isExam };
     document.getElementById('subjectScore').focus();
 }
 
-// Розрахунок рейтингу (залишається без змін)
 function calculateRating() {
-    if (addedExamSubjects.length === 0 && addedCreditSubjects.length === 0) {
-        alert('Додайте хоча б один предмет.');
+    const hasSubjects = addedExamSubjects.length > 0 || addedCreditSubjects.length > 0;
+    const resultsSection = document.getElementById('results-section');
+    resultsSection.style.display = hasSubjects ? 'block' : 'none';
+
+    if (!hasSubjects) {
         return;
     }
 
@@ -257,11 +318,11 @@ function calculateRating() {
     const R_e = examCredits > 0 ? examTotal / examCredits : 0;
     const R_z = creditCredits > 0 ? creditTotal / creditCredits : 0;
     const totalCredits = examCredits + creditCredits;
-    const R = totalCredits > 0 
-        ? (2 * R_e * examCredits + R_z * creditCredits) / (2 * examCredits + creditCredits) 
+    const R = totalCredits > 0
+        ? (2 * R_e * examCredits + R_z * creditCredits) / (2 * examCredits + creditCredits)
         : 0;
 
-    const tbody = document.querySelector('.results-table tbody');
+    const tbody = document.getElementById('resultsTableBody');
     tbody.innerHTML = '';
 
     addedExamSubjects.forEach(subject => {
@@ -290,6 +351,12 @@ function calculateRating() {
     document.getElementById('creditRating').textContent = R_z.toFixed(2);
     document.getElementById('totalRating').textContent = R.toFixed(2);
 
+    // Оновлюємо ширину графіка (максимум 100%)
+    const examBar = document.getElementById('examBar');
+    const creditBar = document.getElementById('creditBar');
+    examBar.style.width = `${Math.min(R_e, 100)}%`;
+    creditBar.style.width = `${Math.min(R_z, 100)}%`;
+
     window.examData = addedExamSubjects;
     window.creditData = addedCreditSubjects;
     window.R_e = R_e;
@@ -297,30 +364,96 @@ function calculateRating() {
     window.R = R;
 }
 
-// Експорт до PDF, Очищення даних, Збереження локально (залишаються без змін)
 async function exportToPDF() {
-    const resultsElement = document.querySelector("#results");
-    
+    const resultsElement = document.getElementById('results-section');
     if (!resultsElement) {
         alert("Блок з результатами не знайдено!");
         return;
     }
 
     try {
+        // Зберігаємо оригінальні стилі
+        const originalDisplay = resultsElement.style.display;
+        const originalBackground = resultsElement.style.backgroundColor;
+        const originalOpacity = resultsElement.style.opacity;
+
+        // Встановлюємо видимість і фонові кольори для кращого рендерингу
+        resultsElement.style.display = 'block';
+        resultsElement.style.height = 'auto';
+        resultsElement.style.backgroundColor = '#ffffff';
+        resultsElement.style.opacity = '1';
+
+        // Додаємо невелику затримку, щоб переконатися, що DOM оновлений
+        await new Promise(resolve => setTimeout(resolve, 100));
+
+        // Захоплюємо весь вміст із оптимізованими параметрами
         const canvas = await html2canvas(resultsElement, {
-            scale: 2,
+            scale: 2, // Покращене масштабування
             useCORS: true,
-            logging: false
+            logging: false,
+            backgroundColor: '#ffffff', // Гарантуємо білий фон
+            windowWidth: document.documentElement.scrollWidth,
+            windowHeight: document.documentElement.scrollHeight,
+            scrollX: 0,
+            scrollY: -window.scrollY, // Корекція для скролінгу
+            x: 0,
+            y: 0,
+            onclone: (clonedDoc) => {
+                // Додаємо стилі для клонованого документа, щоб уникнути блідості
+                const clonedElement = clonedDoc.getElementById('results-section');
+                clonedElement.style.backgroundColor = '#ffffff';
+                clonedElement.style.opacity = '1';
+                clonedElement.style.color = '#000000';
+
+                // Переконуємося, що графік видимий
+                const chartBars = clonedElement.querySelectorAll('.chart-bar');
+                chartBars.forEach(bar => {
+                    bar.style.backgroundColor = '#28a745';
+                    bar.style.opacity = '1';
+                });
+
+                // Переконуємося, що текст у картках чіткий
+                const ratingCards = clonedElement.querySelectorAll('.rating-card');
+                ratingCards.forEach(card => {
+                    card.style.backgroundColor = '#f8f9fa';
+                    card.style.color = '#000000';
+                    card.style.opacity = '1';
+                });
+            }
         });
 
-        const imgData = canvas.toDataURL("image/png");
-        const { jsPDF } = window.jspdf;
-        const doc = new jsPDF();
+        // Повертаємо оригінальні стилі
+        resultsElement.style.display = originalDisplay;
+        resultsElement.style.backgroundColor = originalBackground;
+        resultsElement.style.opacity = originalOpacity;
 
-        const imgWidth = doc.internal.pageSize.getWidth() - 20;
+        const imgData = canvas.toDataURL("image/jpeg", 1.0); // Використовуємо JPEG із максимальною якістю
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF({
+            orientation: 'portrait',
+            unit: 'mm',
+            format: 'a4'
+        });
+
+        const imgWidth = 190; // Ширина зображення в PDF (з урахуванням полів)
         const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-        doc.addImage(imgData, "PNG", 10, 10, imgWidth, imgHeight);
+        let position = 10; // Початкова позиція по Y
+        const pageHeight = 277; // Висота сторінки A4 (з урахуванням полів)
+
+        // Розбиваємо на сторінки, якщо вміст перевищує висоту
+        if (imgHeight > pageHeight) {
+            const totalPages = Math.ceil(imgHeight / pageHeight);
+            for (let i = 0; i < totalPages; i++) {
+                if (i > 0) doc.addPage();
+                const srcY = i * pageHeight * (canvas.width / imgWidth); // Корекція для масштабування
+                doc.addImage(imgData, "JPEG", 10, position, imgWidth, Math.min(imgHeight - (i * pageHeight), pageHeight), undefined, 'FAST');
+                position = 10;
+            }
+        } else {
+            doc.addImage(imgData, "JPEG", 10, position, imgWidth, imgHeight, undefined, 'FAST');
+        }
+
         doc.save("рейтинг.pdf");
     } catch (error) {
         console.error("Помилка при створенні PDF:", error);
@@ -332,18 +465,16 @@ function clearData() {
     addedExamSubjects = [];
     addedCreditSubjects = [];
     updateAddedSubjectsList();
-    document.getElementById('results').innerHTML = '';
+    calculateRating();
 }
 
 function saveLocally() {
     const name = prompt("Введіть назву для збереження рейтингу:");
     if (!name) return;
 
-    const savedRatings = JSON.parse(localStorage.getItem('savedRatings') || '[]');
+    const savedRatings = JSON.parse(localStorage.getItem('savedRatings') || '[]'); // Змінено ключ на 'savedRatings'
     const currentDate = new Date().toLocaleDateString('uk-UA');
-    
-    const examList = document.getElementById('examList');
-    const creditList = document.getElementById('creditList');
+
     const examRating = document.getElementById('examRating').textContent;
     const creditRating = document.getElementById('creditRating').textContent;
     const totalRating = document.getElementById('totalRating').textContent;
@@ -370,61 +501,33 @@ function saveLocally() {
         examRating,
         creditRating,
         totalRating,
-        timestamp: new Date().toISOString(),
-        html: document.getElementById('results').outerHTML
+        timestamp: '2025-03-07', // Використовуємо фіксовану дату
+        html: document.getElementById('results-section').outerHTML
     };
 
-    // Перевіряємо, чи є вже збережений рейтинг з такою назвою
     const existingRatingIndex = savedRatings.findIndex(rating => rating.name === name);
 
     if (existingRatingIndex !== -1) {
-        // Якщо знайдено існуючий рейтинг, показуємо діалогове вікно
         const confirmOverwrite = confirm(`Рейтинг з назвою "${name}" вже існує. Бажаєте перезаписати його?`);
-        
         if (!confirmOverwrite) {
-            return; // Якщо користувач відмовився, виходимо з функції
+            return;
         }
-        // Якщо користувач погодився, оновлюємо існуючий рейтинг
         savedRatings[existingRatingIndex] = ratingData;
     } else {
-        // Якщо рейтингу з такою назвою немає, додаємо новий
         savedRatings.push(ratingData);
     }
 
-    localStorage.setItem('savedRatings', JSON.stringify(savedRatings));
+    localStorage.setItem('savedRatings', JSON.stringify(savedRatings)); // Змінено ключ на 'savedRatings'
     alert(`Рейтинг "${name}" успішно збережено!`);
-    
-    // Оновлюємо список збережених рейтингів, якщо ми на сторінці збережених
-    if (window.location.pathname.includes('saved.html')) {
-        displaySavedRatings();
+
+    if (window.location.pathname.includes('saved_new.html')) { // Змінено на 'saved_new.html'
+        displaySavedRatings(); // Переконайтеся, що ця функція існує в saved_new.js або видаліть виклик, якщо її немає і вона вам не потрібна тут
     }
 }
 
-// Обробники подій (залишаються без змін)
 document.addEventListener('click', (e) => {
-    if (!document.getElementById('subjectName').contains(e.target) && 
+    if (!document.getElementById('subjectName').contains(e.target) &&
         !document.getElementById('suggestions').contains(e.target)) {
         document.getElementById('suggestions').style.display = 'none';
-    }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('edit') === 'true') {
-        const editData = JSON.parse(localStorage.getItem('currentRatingEdit'));
-        if (editData) {
-            addedExamSubjects = editData.examSubjects || [];
-            addedCreditSubjects = editData.creditSubjects || [];
-            updateAddedSubjectsList();
-            localStorage.removeItem('currentRatingEdit');
-        }
-    }
-    
-    const savedData = localStorage.getItem('currentRating');
-    if (savedData) {
-        const data = JSON.parse(savedData);
-        addedExamSubjects = data.examSubjects || [];
-        addedCreditSubjects = data.creditSubjects || [];
-        updateAddedSubjectsList();
     }
 });

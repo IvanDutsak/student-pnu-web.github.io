@@ -385,6 +385,7 @@ body {
     .rating-summary {
         grid-template-columns: 1fr;
     }
+    
 }
 
 /* Темна тема */

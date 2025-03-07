@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рейтинговий бал</title>
+    <link rel="stylesheet" href="rating_new.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- html2canvas and jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="schedule_data.js"></script>
+    <script src="theme.js"></script>
+    <script src="rating_new.js" defer></script>
+</head>
+<body>
+    <!-- Тема -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon moon-icon"></i>
+        <i class="fas fa-sun sun-icon"></i>
+    </button>
+
+    <!-- Навігація -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Student PNU</span>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="schedule_new.html" class="nav-link">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Розклад</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="saved_new.html" class="nav-link">
+                        <i class="fas fa-save"></i>
+                        <span>Збережені</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="rating_new.html" class="nav-link active">
+                        <i class="fas fa-star"></i>
+                        <span>Рейтинговий бал</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile_new.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>Профіль</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Головний контент -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">
+                <i class="fas fa-star"></i>
+                Рейтинговий бал
+            </h1>
+            <p class="profile-subtitle">Розрахуйте свій середній бал та експортуйте результати</p>
+
+            <!-- Секція додавання предметів -->
+            <section class="rating-section">
+                <h2 class="section-title"><i class="fas fa-plus-circle"></i> Додати предмет</h2>
+                <div class="input-group">
+                    <label for="subjectName" class="input-label">Назва предмету</label>
+                    <div class="autocomplete-wrapper">
+                        <input type="text" id="subjectName" class="subject-input" placeholder="Почніть вводити назву..." oninput="showSuggestions(this.value)">
+                        <ul id="suggestions" class="suggestions-list"></ul>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="subjectScore" class="input-label">Оцінка (0-100)</label>
+                    <input type="number" id="subjectScore" class="subject-input" min="0" max="100" placeholder="Введіть оцінку">
+                </div>
+                <div class="button-group">
+                    <button class="control-btn primary" onclick="addSubject()"><i class="fas fa-plus"></i> Додати</button>
+                </div>
+            </section>
+
+            <!-- Секція доданих предметів -->
+            <section class="rating-section">
+                <h2 class="section-title"><i class="fas fa-list"></i> Додані предмети</h2>
+                <div class="subjects-container">
+                    <div class="subject-category">
+                        <h3 class="category-title"><i class="fas fa-graduation-cap"></i> Екзамени</h3>
+                        <ul id="examList" class="subject-list">
+                            <!-- Предмети тут -->
+                        </ul>
+                    </div>
+                    <div class="subject-category">
+                        <h3 class="category-title"><i class="fas fa-check-circle"></i> Заліки</h3>
+                        <ul id="creditList" class="subject-list">
+                            <!-- Предмети тут -->
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секція результатів -->
+            <section id="results-section" class="rating-section" style="display: none;">
+                <h2 class="section-title"><i class="fas fa-chart-bar"></i> Результати</h2>
+                <div class="results-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Предмет</th>
+                                <th>Оцінка</th>
+                                <th>Кредити</th>
+                                <th>Тип</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsTableBody">
+                            <!-- Таблиця результатів -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="rating-summary">
+                    <div class="rating-card exam-rating">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="rating-label">Екзамени</span>
+                        <span id="examRating" class="rating-value">0</span>
+                    </div>
+                    <div class="rating-card credit-rating">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="rating-label">Заліки</span>
+                        <span id="creditRating" class="rating-value">0</span>
+                    </div>
+                    <div class="rating-card total-rating">
+                        <i class="fas fa-star"></i>
+                        <span class="rating-label">Загальний</span>
+                        <span id="totalRating" class="rating-value">0</span>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <div class="chart-label">Екзамени</div>
+                    <div class="chart-container">
+                        <div class="chart-bar exam-bar" id="examBar" style="width: 0%;"></div>
+                    </div>
+                    <div class="chart-label">Заліки</div>
+                    <div class="chart-container">
+                        <div class="chart-bar credit-bar" id="creditBar" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button class="control-btn primary" onclick="saveLocally()"><i class="fas fa-save"></i> Зберегти</button>
+                    <button class="control-btn info" onclick="exportToPDF()"><i class="fas fa-file-pdf"></i> Експорт PDF</button>
+                    <button class="control-btn danger" onclick="clearData()"><i class="fas fa-trash"></i> Очистити</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Student PNU. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

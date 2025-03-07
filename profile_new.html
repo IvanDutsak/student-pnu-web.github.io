@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль студента</title>
+    <link rel="stylesheet" href="profile_new.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Додаємо schedule_data.js перед profile.js -->
+    <script src="schedule_data.js"></script>
+    <script src="theme.js"></script>
+    <script src="profile_new.js" defer></script>
+</head>
+<body>
+    <!-- Тема -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon moon-icon"></i>
+        <i class="fas fa-sun sun-icon"></i>
+    </button>
+    
+    <!-- Навігація -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Student PNU</span>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="schedule_new.html" class="nav-link">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Розклад</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="saved_new.html" class="nav-link">
+                        <i class="fas fa-save"></i>
+                        <span>Збережені</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="rating_new.html" class="nav-link">
+                        <i class="fas fa-star"></i>
+                        <span>Рейтинговий бал</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile_new.html" class="nav-link active">
+                        <i class="fas fa-user"></i>
+                        <span>Профіль</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Головний контент -->
+    <main class="main-content">
+        <div class="container">
+            <div class="profile-header">
+                <h1 class="page-title">
+                    <i class="fas fa-user-graduate"></i>
+                    Профіль студента
+                </h1>
+                <p class="profile-subtitle">Налаштуйте свій профіль для персоналізованого досвіду</p>
+            </div>
+
+            <!-- Прогрес заповнення профілю -->
+            <div class="profile-progress">
+                <div class="progress-steps">
+                    <div class="progress-step active" data-step="faculty">
+                        <div class="step-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="step-label">Спеціальність</div>
+                    </div>
+                    <div class="progress-step" data-step="group">
+                        <div class="step-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="step-label">Група</div>
+                    </div>
+                    <div class="progress-step" data-step="semester">
+                        <div class="step-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="step-label">Семестр</div>
+                    </div>
+                    <div class="progress-step" data-step="subjects">
+                        <div class="step-icon">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+                        <div class="step-label">Предмети</div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 25%"></div>
+                </div>
+            </div>
+
+            <!-- Крок 1: Вибір спеціальності -->
+            <div id="step-faculty" class="profile-step active-step">
+                <div class="step-content">
+                    <h2 class="section-title">Оберіть вашу спеціальність</h2>
+                    <div class="faculty-cards">
+                        <div class="faculty-card" data-faculty="КН">
+                            <div class="faculty-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Комп'ютерні науки</h3>
+                            <p>Спеціальність 122</p>
+                        </div>
+                        <div class="faculty-card" data-faculty="ІПЗ">
+                            <div class="faculty-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Інженерія програмного забезпечення</h3>
+                            <p>Спеціальність 121</p>
+                        </div>
+                        <div class="faculty-card" data-faculty="ІСТ">
+                            <div class="faculty-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Інформаційні системи та технології</h3>
+                            <p>Спеціальність 126</p>
+                        </div>
+                        <div class="faculty-card" data-faculty="ПР">
+                            <div class="faculty-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3>Право</h3>
+                            <p>Спеціальність 081</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Крок 2: Вибір групи -->
+            <div id="step-group" class="profile-step">
+                <div class="step-content">
+                    <h2 class="section-title">Оберіть вашу групу</h2>
+                    <div class="groups-container"></div>
+                    <div class="step-actions">
+                        <button class="btn btn-secondary" onclick="previousStep('step-group')">
+                            <i class="fas fa-arrow-left"></i> Назад
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Крок 3: Вибір семестру -->
+            <div id="step-semester" class="profile-step">
+                <div class="step-content">
+                    <h2 class="section-title">Оберіть семестр</h2>
+                    <div class="semester-cards">
+                        <div class="semester-card" data-semester="1">
+                            <div class="semester-icon">
+                                <i class="fas fa-1"></i>
+                            </div>
+                            <h3>Перший семестр</h3>
+                            <p>Осінній семестр</p>
+                        </div>
+                        <div class="semester-card" data-semester="2">
+                            <div class="semester-icon">
+                                <i class="fas fa-2"></i>
+                            </div>
+                            <h3>Другий семестр</h3>
+                            <p>Весняний семестр</p>
+                        </div>
+                    </div>
+                    <div class="step-actions">
+                        <button class="btn btn-secondary" onclick="previousStep('step-semester')">
+                            <i class="fas fa-arrow-left"></i> Назад
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Крок 4: Список предметів -->
+            <div id="step-subjects" class="profile-step">
+                <div class="step-content">
+                    <h2 class="section-title">Предмети вашого семестру</h2>
+                    <div class="subjects-container">
+                        <!-- Тут будуть предмети -->
+                    </div>
+                    <div class="step-actions">
+                        <button class="btn btn-secondary" onclick="previousStep('step-subjects')">
+                            <i class="fas fa-arrow-left"></i> Назад
+                        </button>
+                        <button class="btn btn-primary" onclick="saveProfile()">
+                            <i class="fas fa-save"></i> Зберегти профіль
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Підсумок профілю (з'являється після заповнення) -->
+            <div id="profile-summary" class="profile-step">
+                <div class="step-content">
+                    <h2 class="section-title">Ваш профіль</h2>
+                    <div class="profile-summary-content">
+                        <!-- Тут буде інформація про профіль -->
+                    </div>
+                    <div class="step-actions">
+                        <button class="btn btn-secondary" onclick="editSubjects()">
+                            <i class="fas fa-edit"></i> Редагувати предмети
+                        </button>
+                        <button class="btn btn-primary" onclick="checkProfileBeforeSchedule()">
+                            <i class="fas fa-calendar-alt"></i> Перейти до розкладу
+                        </button>
+                        <button class="btn btn-danger" onclick="clearProfileState()">
+                            <i class="fas fa-trash"></i> Очистити профіль
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Student PNU. Всі права захищені.</p>
+        </div>
+    </footer>
+
+</body>
+</html> 

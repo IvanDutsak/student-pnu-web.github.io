@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="profile_new.css">  <!-- Оновлений CSS -->
+    <link rel="stylesheet" href="schedule_new.css">  <!-- Оновлений CSS -->
+    <link rel="stylesheet" href="profile_new.css">  <!-- Оновлений CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="schedule_data.js" defer></script>
+    <script src="theme.js"></script>
+    <script src="schedule_new.js" defer></script>
+</head>
+<body>
+    <!-- Тема -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon moon-icon"></i>
+        <i class="fas fa-sun sun-icon"></i>
+    </button>
+
+    <!-- Навігація -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Student PNU</span>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="schedule_new.html" class="nav-link active">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Розклад</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="saved_new.html" class="nav-link">
+                        <i class="fas fa-save"></i>
+                        <span>Збережені</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="rating_new.html" class="nav-link">
+                        <i class="fas fa-star"></i>
+                        <span>Рейтинговий бал</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile_new.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>Профіль</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">  <!-- Змінено з container на main-content -->
+        <div class="container">    <!-- Додано container -->
+            <section class="rating-section">
+                <h1 class="page-title"> <!-- Змінено на page-title -->
+                    <i class="fas fa-calendar-alt"></i>
+                    Розклад занять
+                </h1>
+
+                 <div class="faculty-selection">
+                    <h2 class="section-title"><i class="fas fa-university"></i> Оберіть спеціальність</h2>
+                    <div id="faculties" class="button-group"></div>
+                </div>
+
+                <div class="group-selection" style="display: none;">
+                    <h2 class="section-title"><i class="fas fa-users"></i> Оберіть групу</h2>
+                    <div id="groups" class="button-group"></div>
+                </div>
+
+
+                <div class="schedule-view" style="display: none;">
+                    <h2 class="section-title"><i class="fas fa-table"></i> Розклад</h2>
+
+                    <!-- Фільтри -->
+                    <div class="filters schedule-filters">
+                        <!-- Кнопки 7 днів і 1 місяць -->
+                        <div class="filter-group">
+                            <button class="control-btn primary" onclick="showScheduleForDays(7)">
+                                <i class="fas fa-calendar-week"></i> 7 днів
+                            </button>
+                            <button class="control-btn primary" onclick="showScheduleForMonth()">
+                                <i class="fas fa-calendar-days"></i> 1 місяць
+                            </button>
+                        </div>
+                        <div class="filter-group">
+                            <label for="date-from">Дата з:</label>
+                            <input type="date" id="date-from">
+                        </div>
+                        <div class="filter-group">
+                            <label for="date-to">Дата по:</label>
+                            <input type="date" id="date-to">
+                        </div>
+                        <div class="filter-group">
+                            <label for="teacher-search">Пошук за викладачем:</label>
+                            <div class="autocomplete-wrapper">
+                                <input type="text" id="teacher-search" placeholder="Введіть прізвище...">
+                                <div id="teacher-suggestions" class="suggestions-list" style="display:none;"></div>
+                            </div>
+                        </div>
+                        <button class="control-btn primary" onclick="applyFilters()">
+                            <i class="fas fa-filter"></i> Застосувати
+                        </button>
+                        <button class="control-btn secondary" onclick="showFullSchedule()">
+                            <i class="fas fa-calendar"></i> Показати загальний розклад
+                        </button>
+                        <button class="control-btn warning" onclick="resetFilters()">
+                            <i class="fas fa-undo"></i> Скинути фільтр
+                        </button>
+                        <button class="control-btn success" onclick="exportScheduleToPDF()">
+                            <i class="fas fa-file-pdf"></i> Зберегти у PDF
+                        </button>
+                         <!-- Add "Save Schedule" button here -->
+                        <button class="control-btn success" onclick="saveSchedule()">
+                            <i class="fas fa-save"></i> Зберегти розклад
+                        </button>
+                    </div>
+
+                   <!-- Контейнер для ПК (таблиця) -->
+                    <div class="table-wrapper desktop-table fixed-height">
+                        <table id="scheduleTable" class="results-table">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Предмет</th>
+                                    <th>Викладач</th>
+                                    <th>Група</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <!-- Контейнер для мобільних пристроїв (карточки) -->
+                    <div class="mobile-schedule" style="display: none;">
+                        <div id="mobileScheduleItems" class="schedule-items"></div>
+                    </div>
+                </div>
+            </section>
+        </div> <!-- Закриваючий тег для container -->
+    </main>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" data-direction="up">
+        <span class="toggle-arrow"><i class="fas fa-arrow-up"></i></span>
+    </button>
+
+
+     <script src="page-info.js"></script>
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Student PNU. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
