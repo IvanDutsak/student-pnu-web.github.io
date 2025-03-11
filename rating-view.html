@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перегляд рейтингу</title>
+    <link rel="stylesheet" href="rating_new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="theme.js"></script>
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon moon-icon"></i>
+        <i class="fas fa-sun sun-icon"></i>
+    </button>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Student PNU</span>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="schedule_new.html" class="nav-link">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Розклад</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="saved_new.html" class="nav-link">
+                        <i class="fas fa-save"></i>
+                        <span>Збережені</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="rating_new.html" class="nav-link">
+                        <i class="fas fa-star"></i>
+                        <span>Рейтинговий бал</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile_new.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>Профіль</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <div class="container">
+            <section class="rating-section">
+                <h1 class="page-title">
+                    <i class="fas fa-star"></i>
+                    Перегляд рейтингу
+                </h1>
+                
+                <div id="viewContent" class="rating-view">
+                    <!-- Тут буде вставлений контент рейтингу -->
+                </div>
+                
+                <div class="button-group">
+                    <button class="control-btn primary" onclick="window.location.href='saved_new.html'">
+                        <i class="fas fa-arrow-left"></i> Повернутися до списку
+                    </button>
+                    <button class="control-btn success" onclick="editRating()">
+                        <i class="fas fa-edit"></i> Редагувати
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script>
+        // Мобільне меню
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navList = document.querySelector('.nav-list');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    navList.classList.toggle('show');
+                });
+            }
+            
+            // Завантаження даних рейтингу
+            loadRatingView();
+        });
+        
+        // Функція для завантаження даних рейтингу
+        function loadRatingView() {
+            const viewContent = document.getElementById('viewContent');
+            const currentRating = localStorage.getItem('viewRating');
+            
+            if (currentRating) {
+                try {
+                    const ratingData = JSON.parse(currentRating);
+                    
+                    // Відображаємо назву та дату
+                    const header = document.createElement('div');
+                    header.className = 'rating-header';
+                    header.innerHTML = `
+                        <h2>${ratingData.name || 'Рейтинг'}</h2>
+                        <p class="rating-date">Створено: ${ratingData.date || 'Не вказано'}</p>
+                    `;
+                    viewContent.appendChild(header);
+                    
+                    // Відображаємо підсумкові дані
+                    const summary = document.createElement('div');
+                    summary.className = 'rating-summary';
+                    summary.innerHTML = `
+                        <div class="rating-card exam-rating">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="rating-label">Середній бал екзаменів</div>
+                            <div class="rating-value">${ratingData.examRating || '0.00'}</div>
+                        </div>
+                        <div class="rating-card credit-rating">
+                            <i class="fas fa-clipboard-check"></i>
+                            <div class="rating-label">Середній бал заліків</div>
+                            <div class="rating-value">${ratingData.creditRating || '0.00'}</div>
+                        </div>
+                        <div class="rating-card total-rating">
+                            <i class="fas fa-star"></i>
+                            <div class="rating-label">Загальний рейтинг</div>
+                            <div class="rating-value">${ratingData.totalRating || '0.00'}</div>
+                        </div>
+                    `;
+                    viewContent.appendChild(summary);
+                    
+                    // Відображаємо екзамени
+                    if (ratingData.examSubjects && ratingData.examSubjects.length > 0) {
+                        const examSection = document.createElement('div');
+                        examSection.className = 'subjects-section';
+                        examSection.innerHTML = `
+                            <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Екзамени</h3>
+                            <div class="results-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Предмет</th>
+                                            <th>Кредити</th>
+                                            <th>Бал</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="examTableBody">
+                                    </tbody>
+                                </table>
+                            </div>
+                        `;
+                        viewContent.appendChild(examSection);
+                        
+                        const examTableBody = examSection.querySelector('#examTableBody');
+                        ratingData.examSubjects.forEach(subject => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${subject.name}</td>
+                                <td>${subject.credits}</td>
+                                <td>${subject.score}</td>
+                            `;
+                            examTableBody.appendChild(row);
+                        });
+                    }
+                    
+                    // Відображаємо заліки
+                    if (ratingData.creditSubjects && ratingData.creditSubjects.length > 0) {
+                        const creditSection = document.createElement('div');
+                        creditSection.className = 'subjects-section';
+                        creditSection.innerHTML = `
+                            <h3 class="section-title"><i class="fas fa-clipboard-check"></i> Заліки</h3>
+                            <div class="results-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Предмет</th>
+                                            <th>Кредити</th>
+                                            <th>Бал</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="creditTableBody">
+                                    </tbody>
+                                </table>
+                            </div>
+                        `;
+                        viewContent.appendChild(creditSection);
+                        
+                        const creditTableBody = creditSection.querySelector('#creditTableBody');
+                        ratingData.creditSubjects.forEach(subject => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${subject.name}</td>
+                                <td>${subject.credits}</td>
+                                <td>${subject.score}</td>
+                            `;
+                            creditTableBody.appendChild(row);
+                        });
+                    }
+                    
+                } catch (error) {
+                    console.error('Помилка при завантаженні даних рейтингу:', error);
+                    viewContent.innerHTML = '<p class="empty-message">Помилка при завантаженні даних</p>';
+                    localStorage.removeItem('viewRating');
+                }
+            } else {
+                viewContent.innerHTML = '<p class="empty-message">Дані для перегляду не знайдено</p>';
+            }
+        }
+        
+        // Функція для переходу до редагування
+        function editRating() {
+            // Копіюємо дані з viewRating до currentRating для редагування
+            const viewRatingData = localStorage.getItem('viewRating');
+            if (viewRatingData) {
+                localStorage.setItem('currentRating', viewRatingData);
+                window.location.href = 'rating_new.html';
+            }
+        }
+    </script>
+    
+    <script src="page-info.js"></script>
+</body>
+</html> 

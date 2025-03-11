@@ -79,32 +79,56 @@ let addedExamSubjects = [];
 let addedCreditSubjects = [];
 let editingSubject = null; // Для редагування предметів
 
-document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('edit') === 'true') {
-        const editData = JSON.parse(localStorage.getItem('currentRatingEdit'));
-        if (editData) {
-            addedExamSubjects = editData.examSubjects || [];
-            addedCreditSubjects = editData.creditSubjects || [];
+document.addEventListener('DOMContentLoaded', function() {
+    // Мобільне меню
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navList = document.querySelector('.nav-list');
+    
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    }
+    
+    // Перевіряємо, чи є збережені дані для редагування
+    const currentRating = localStorage.getItem('currentRating');
+    
+    if (currentRating) {
+        try {
+            const ratingData = JSON.parse(currentRating);
+            
+            // Заповнюємо предмети з даних рейтингу
+            if (ratingData.examSubjects && Array.isArray(ratingData.examSubjects)) {
+                ratingData.examSubjects.forEach(subject => {
+                    addedExamSubjects.push({
+                        name: subject.name,
+                        score: parseFloat(subject.score),
+                        credits: parseFloat(subject.credits)
+                    });
+                });
+            }
+            
+            if (ratingData.creditSubjects && Array.isArray(ratingData.creditSubjects)) {
+                ratingData.creditSubjects.forEach(subject => {
+                    addedCreditSubjects.push({
+                        name: subject.name,
+                        score: parseFloat(subject.score),
+                        credits: parseFloat(subject.credits)
+                    });
+                });
+            }
+            
             updateAddedSubjectsList();
             calculateRating();
-            localStorage.removeItem('currentRatingEdit');
+            
+            // Очищаємо дані сесії, щоб при повторному відвідуванні сторінки дані не завантажувались знову
+            localStorage.removeItem('currentRating');
+            console.log('Дані рейтингу завантажено і очищено з пам\'яті');
+        } catch (error) {
+            console.error('Помилка при завантаженні даних рейтингу:', error);
+            localStorage.removeItem('currentRating');
         }
     }
-
-    const savedData = localStorage.getItem('currentRating');
-    if (savedData) {
-        const data = JSON.parse(savedData);
-        addedExamSubjects = data.examSubjects || [];
-        addedCreditSubjects = data.creditSubjects || [];
-        updateAddedSubjectsList();
-        calculateRating();
-    }
-
-    // **Виправлення JS:** Переконаємося, що обробник кліку додається **після** DOMContentLoaded
-    document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
-        document.querySelector('.nav-list').classList.toggle('show');
-    });
 });
 
 function showSuggestions(inputText) {

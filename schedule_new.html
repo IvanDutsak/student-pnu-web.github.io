@@ -112,20 +112,20 @@
                                 <div id="teacher-suggestions" class="suggestions-list" style="display:none;"></div>
                             </div>
                         </div>
-                        <button class="control-btn primary" onclick="applyFilters()">
+                        <button class="control-btn primary" id="apply-filters-btn" onclick="applyFilters()">
                             <i class="fas fa-filter"></i> Застосувати
                         </button>
-                        <button class="control-btn secondary" onclick="showFullSchedule()">
+                        <button class="control-btn secondary" id="show-full-schedule-btn" onclick="showFullSchedule()">
                             <i class="fas fa-calendar"></i> Показати загальний розклад
                         </button>
-                        <button class="control-btn warning" onclick="resetFilters()">
+                        <button class="control-btn warning" id="reset-filters-btn" onclick="resetFilters()">
                             <i class="fas fa-undo"></i> Скинути фільтр
                         </button>
-                        <button class="control-btn success" onclick="exportScheduleToPDF()">
+                        <button class="control-btn success" id="export-pdf-btn" onclick="exportScheduleToPDF()">
                             <i class="fas fa-file-pdf"></i> Зберегти у PDF
                         </button>
                          <!-- Add "Save Schedule" button here -->
-                        <button class="control-btn success" onclick="saveSchedule()">
+                        <button class="control-btn success" id="save-schedule-btn" onclick="saveSchedule()">
                             <i class="fas fa-save"></i> Зберегти розклад
                         </button>
                     </div>

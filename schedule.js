@@ -68,44 +68,39 @@ function setDatesBasedOnCurrentDay() {
     localStorage.setItem('appState', JSON.stringify(window.currentState));
 }
 
-function isDateInRange(date, from, to) {
+function isDateInRange(date, dateFrom, dateTo) {
     if (!date) return false;
-    
-    // Якщо фільтри дат не задані, повертаємо true для будь-якої дати
-    if ((!from || from === '') && (!to || to === '')) {
+
+    // Якщо обидва параметри порожні, показуємо всі дати (повний розклад)
+    if ((!dateFrom || dateFrom === '') && (!dateTo || dateTo === '')) {
         return true;
     }
-    
-    // Перетворюємо дату в об'єкт Date
-    const dateObj = typeof date === 'string' ? new Date(date.split(".").reverse().join("-")) : date;
-    
-    // Перетворюємо from і to в об'єкти Date, з урахуванням можливих різних форматів
-    let fromObj = null;
-    if (from && from !== '') {
-        // Перевіряємо, чи дата в форматі DD.MM.YYYY (містить крапки)
-        if (from.includes('.')) {
-            fromObj = new Date(from.split(".").reverse().join("-"));
-        } else {
-            // Інакше вважаємо, що формат ISO (YYYY-MM-DD)
-            fromObj = new Date(from);
-        }
-    }
-    
-    let toObj = null;
-    if (to && to !== '') {
-        // Перевіряємо, чи дата в форматі DD.MM.YYYY (містить крапки)
-        if (to.includes('.')) {
-            toObj = new Date(to.split(".").reverse().join("-"));
-        } else {
-            // Інакше вважаємо, що формат ISO (YYYY-MM-DD)
-            toObj = new Date(to);
-        }
-    }
-    
-    if (isNaN(dateObj)) return false;
-    if (fromObj && !isNaN(fromObj) && dateObj < fromObj) return false;
-    if (toObj && !isNaN(toObj) && dateObj > toObj) return false;
+
+    // Перетворюємо дату розкладу у формат Date
+    const lessonDate = parseDate(date);
+
+    const from = dateFrom ? parseDate(dateFrom) : null;
+    const to = dateTo ? parseDate(dateTo) : null;
+
+    if (from && lessonDate < from) return false;
+    if (to && lessonDate > to) return false;
     return true;
+}
+
+function parseDate(dateStr) {
+    const parts = dateStr.includes('.') ? dateStr.split('.') : dateStr.split('-');
+    if (parts.length === 3) {
+        if (dateStr.includes('.')) {
+            // Формат DD.MM.YYYY
+            const [day, month, year] = parts;
+            return new Date(year, month - 1, day);
+        } else {
+            // Формат YYYY-MM-DD
+            const [year, month, day] = parts;
+            return new Date(year, month - 1, day);
+        }
+    }
+    return new Date();
 }
 
 function normalizeSubgroup(subgroup) {
@@ -389,7 +384,7 @@ function showTeacherSuggestions(query) {
 function showSchedule(groupKey) {
     console.log('[SCHEDULE] === Початок обробки розкладу для групи:', groupKey, '===');
     console.log('[SCHEDULE] Поточний стан:', window.currentState);
-    
+
     window.currentState.group = groupKey;
     saveState();
 
@@ -405,25 +400,22 @@ function showSchedule(groupKey) {
 
     const fragment = document.createDocumentFragment();
 
-    // Отримуємо значення дат з window.currentState, а не з полів вводу
-    // Це забезпечить, що розклад завжди використовує останні встановлені дати
     let dateFrom = window.currentState.dateFrom;
     let dateTo = window.currentState.dateTo;
     const teacherSearch = window.currentState.teacherSearch || '';
-    
-    // Оновлюємо поля вводу на випадок, якщо вони не збігаються зі станом
+
     document.getElementById('date-from').value = dateFrom;
     document.getElementById('date-to').value = dateTo;
     document.getElementById('teacher-search').value = teacherSearch;
-    
-    // Логуємо значення фільтрів дат перед відображенням розкладу
+
     console.log('[SCHEDULE] Параметри фільтрації:');
     console.log('[SCHEDULE] - dateFrom:', dateFrom);
     console.log('[SCHEDULE] - dateTo:', dateTo);
     console.log('[SCHEDULE] - teacherSearch:', teacherSearch);
-    
-    // Якщо dateFrom і dateTo порожні, показуємо повний розклад
-    const isShowingFullSchedule = (!dateFrom || dateFrom === '') && (!dateTo || dateTo === '');
+
+    const hasFilters = (dateFrom && dateFrom !== '') || (dateTo && dateTo !== '') || (teacherSearch && teacherSearch !== '');
+    const isShowingFullSchedule = !hasFilters;
+    console.log('[SCHEDULE] Є активні фільтри?', hasFilters);
     console.log('[SCHEDULE] Показуємо повний розклад?', isShowingFullSchedule);
 
     const timeSlots = {
@@ -431,7 +423,6 @@ function showSchedule(groupKey) {
         5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
     };
 
-    // Перевірка мобільного перегляду
     const isMobileView = window.innerWidth <= 768;
 
     schedule.forEach(day => {
@@ -496,7 +487,6 @@ function showSchedule(groupKey) {
                     teacherCell.textContent = lesson.teacher || '';
                     groupCell.textContent = lesson.group || groupKey;
                 }
-                // Додаємо класи для застосування однакового кольору
                 teacherCell.classList.add('lesson-cell', 'group-color');
                 groupCell.classList.add('lesson-cell', 'group-color');
             }
@@ -728,7 +718,6 @@ function restoreState() {
 
 // --- Функція відображення повного розкладу ---
 function showFullSchedule() {
-    // Перевіряємо, чи вибрана група
     const activeGroupBtn = document.querySelector('.group-btn.active');
     if (!activeGroupBtn) {
         alert('Будь ласка, оберіть групу перед переглядом розкладу.');
@@ -736,31 +725,27 @@ function showFullSchedule() {
     }
 
     console.log('[SCHEDULE] === Початок відображення повного розкладу ===');
-    console.log('[SCHEDULE] Поточний стан перед скиданням:', {...window.currentState});
+    console.log('[SCHEDULE] Поточний стан перед скиданням:', { ...window.currentState });
 
-    // Очищаємо поля фільтрації
-    document.getElementById('date-from').value = '';
-    document.getElementById('date-to').value = '';
-    document.getElementById('teacher-search').value = '';
-    
-    // Оновлюємо стан
+    // Очищаємо всі фільтри
     window.currentState.dateFrom = '';
     window.currentState.dateTo = '';
     window.currentState.teacherSearch = '';
-    
-    // Зберігаємо стан без дат фільтрації
+    document.getElementById('date-from').value = '';
+    document.getElementById('date-to').value = '';
+    document.getElementById('teacher-search').value = '';
+
     saveState();
-    
+
     console.log('[SCHEDULE] Повний розклад: фільтри очищені');
-    console.log('[SCHEDULE] Оновлений стан:', {...window.currentState});
-    
-    // Показуємо розклад з очищеними фільтрами
+    console.log('[SCHEDULE] Оновлений стан:', { ...window.currentState });
+
+    // Викликаємо showSchedule без прапорця forceFullSchedule
     showSchedule(activeGroupBtn.dataset.group);
-    
-    // Повідомляємо користувача про режим перегляду
+
     const notification = document.createElement('div');
     notification.className = 'notification';
-    notification.textContent = 'Показано повний розклад без фільтрації за датами';
+    notification.textContent = 'Показано повний розклад без фільтрації';
     notification.style.position = 'fixed';
     notification.style.top = '20px';
     notification.style.left = '50%';
@@ -771,10 +756,9 @@ function showFullSchedule() {
     notification.style.borderRadius = '5px';
     notification.style.zIndex = '1000';
     notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
-    
+
     document.body.appendChild(notification);
-    
-    // Видаляємо повідомлення через 3 секунди
+
     setTimeout(() => {
         notification.style.opacity = '0';
         notification.style.transition = 'opacity 0.5s';
@@ -954,22 +938,41 @@ function shouldDisplayLesson(lesson) {
 
 // --- Функція застосування фільтрів ---
 function applyFilters() {
-    // Оновлюємо window.currentState датами з полів вводу
-    window.currentState.dateFrom = document.getElementById('date-from').value;
-    window.currentState.dateTo = document.getElementById('date-to').value;
-    window.currentState.teacherSearch = document.getElementById('teacher-search').value;
-    
+    let dateFrom = document.getElementById('date-from').value;
+    let dateTo = document.getElementById('date-to').value;
+    const teacherSearch = document.getElementById('teacher-search').value;
+
+    // Якщо dateFrom порожнє і є teacherSearch, встановлюємо сьогоднішню дату
+    if (!dateFrom && teacherSearch) {
+        const today = new Date();
+        dateFrom = formatDateForInput(today);
+        console.log('[SCHEDULE] dateFrom не вказано, встановлено сьогодні:', dateFrom);
+    }
+
+    window.currentState.dateFrom = dateFrom;
+    window.currentState.dateTo = dateTo;
+    window.currentState.teacherSearch = teacherSearch;
+
+    document.getElementById('date-from').value = window.currentState.dateFrom;
+    document.getElementById('date-to').value = window.currentState.dateTo;
+    document.getElementById('teacher-search').value = window.currentState.teacherSearch;
+
     console.log('[SCHEDULE] Застосування фільтрів:');
     console.log('[SCHEDULE] - dateFrom:', window.currentState.dateFrom);
     console.log('[SCHEDULE] - dateTo:', window.currentState.dateTo);
     console.log('[SCHEDULE] - teacherSearch:', window.currentState.teacherSearch);
-    
-    // Зберігаємо оновлений стан
+
     saveState();
-    
-    // Показуємо розклад з новими фільтрами
+
     const activeGroupBtn = document.querySelector('.group-btn.active');
     if (activeGroupBtn) showSchedule(activeGroupBtn.dataset.group);
+}
+
+function formatDateForInput(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
 }
 
 // --- Функція скидання фільтрів ---

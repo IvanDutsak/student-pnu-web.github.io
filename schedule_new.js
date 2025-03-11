@@ -27,7 +27,7 @@ function formatDate(dateString) {
     const day = String(date.getDate()).padStart(2, '0');
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const year = date.getFullYear();
-    return `${day}.${day}.${year}`; // corrected typo `${day}.${month}.${year}`
+    return `${day}.${month}.${year}`; // corrected typo `${day}.${month}.${year}`
 }
 
 function getDayOfWeek(dateString) {
@@ -54,21 +54,16 @@ function setDatesBasedOnCurrentDay() {
     }
     // Для будніх днів (1-5) залишаємо поточну дату як початкову
 
-    // Форматуємо дату для відображення у форматі DD.MM.YYYY
-    const formatDate = (date) => {
-        const day = String(date.getDate()).padStart(2, '0');
-        const month = String(date.getMonth() + 1).padStart(2, '0'); // +1 тому що місяці починаються з 0
-        const year = date.getFullYear();
-        return `${day}.${month}.${year}`;
-    };
-
+    // Використовуємо глобальну функцію для форматування дати (DD.MM.YYYY)
     const formattedDateFrom = formatDate(dateFrom);
 
     // Встановлюємо початкову дату в стан та в інтерфейсі
     // Кінцеву дату не встановлюємо (залишаємо порожньою)
     window.currentState.dateFrom = formattedDateFrom;
     window.currentState.dateTo = '';
-    document.getElementById('date-from').value = formattedDateFrom;
+    
+    // Оновлюємо інтерфейс з датами у форматі YYYY-MM-DD
+    document.getElementById('date-from').value = formatDateForInput(dateFrom);
     document.getElementById('date-to').value = '';
 
     console.log(`[SCHEDULE] Встановлено початкову дату: ${formattedDateFrom}`);
@@ -81,33 +76,26 @@ function setDatesBasedOnCurrentDay() {
 function isDateInRange(date, from, to) {
     if (!date) return false;
 
-    // Якщо фільтри дат не задані, повертаємо true для будь-якої дати
     if ((!from || from === '') && (!to || to === '')) {
         return true;
     }
 
-    // Перетворюємо дату в об'єкт Date
     const dateObj = typeof date === 'string' ? new Date(date.split(".").reverse().join("-")) : date;
 
-    // Перетворюємо from і to в об'єкти Date, з урахуванням можливих різних форматів
     let fromObj = null;
     if (from && from !== '') {
-        // Перевіряємо, чи дата в форматі DD.MM.YYYY (містить крапки)
         if (from.includes('.')) {
             fromObj = new Date(from.split(".").reverse().join("-"));
         } else {
-            // Інакше вважаємо, що формат ISO (YYYY-MM-DD)
             fromObj = new Date(from);
         }
     }
 
     let toObj = null;
     if (to && to !== '') {
-        // Перевіряємо, чи дата в форматі DD.MM.YYYY (містить крапки)
         if (to.includes('.')) {
             toObj = new Date(to.split(".").reverse().join("-"));
         } else {
-            // Інакше вважаємо, що формат ISO (YYYY-MM-DD)
             toObj = new Date(to);
         }
     }
@@ -400,9 +388,11 @@ function showSchedule(groupKey) {
     console.log('[SCHEDULE] === Початок обробки розкладу для групи:', groupKey, '===');
     console.log('[SCHEDULE] Поточний стан:', window.currentState);
 
+    // Оновлюємо групу в стані
     window.currentState.group = groupKey;
     saveState();
 
+    // Перевіряємо, чи є дані для групи
     const groupData = schedulesData[groupKey];
     if (!groupData) {
         console.error('[SCHEDULE] Помилка: група', groupKey, 'не знайдена');
@@ -410,43 +400,52 @@ function showSchedule(groupKey) {
     }
     const schedule = groupData.schedule;
     const tbody = document.querySelector('#scheduleTable tbody');
-    if (!tbody) return;
-    tbody.innerHTML = '';
+    if (!tbody) {
+        console.error('[SCHEDULE] Помилка: таблиця розкладу не знайдена');
+        return;
+    }
+    tbody.innerHTML = ''; // Очищаємо попередній вміст таблиці
 
     const fragment = document.createDocumentFragment();
 
-    // Отримуємо значення дат з window.currentState, а не з полів вводу
-    // Це забезпечить, що розклад завжди використовує останні встановлені дати
-    let dateFrom = window.currentState.dateFrom;
-    let dateTo = window.currentState.dateTo;
+    // Отримуємо значення фільтрів із window.currentState
+    let dateFrom = window.currentState.dateFrom || '';
+    let dateTo = window.currentState.dateTo || '';
     const teacherSearch = window.currentState.teacherSearch || '';
 
-    // Оновлюємо поля вводу на випадок, якщо вони не збігаються зі станом
+    // Синхронізуємо поля вводу з поточним станом
     document.getElementById('date-from').value = dateFrom;
     document.getElementById('date-to').value = dateTo;
     document.getElementById('teacher-search').value = teacherSearch;
 
-    // Логуємо значення фільтрів дат перед відображенням розкладу
+    // Логуємо параметри фільтрації
     console.log('[SCHEDULE] Параметри фільтрації:');
     console.log('[SCHEDULE] - dateFrom:', dateFrom);
     console.log('[SCHEDULE] - dateTo:', dateTo);
     console.log('[SCHEDULE] - teacherSearch:', teacherSearch);
 
-    // Якщо dateFrom і dateTo порожні, показуємо повний розклад
+    // Перевіряємо, чи показуємо повний розклад
     const isShowingFullSchedule = (!dateFrom || dateFrom === '') && (!dateTo || dateTo === '');
     console.log('[SCHEDULE] Показуємо повний розклад?', isShowingFullSchedule);
 
+    // Визначаємо часові слоти
     const timeSlots = {
         1: "09:00-10:20", 2: "10:35-11:55", 3: "12:20-13:40", 4: "13:50-15:10",
         5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
     };
 
-    // Перевірка мобільного перегляду
+    // Визначаємо, чи це мобільний вигляд
     const isMobileView = window.innerWidth <= 768;
 
+    // Проходимо по кожному дню розкладу
     schedule.forEach(day => {
-        if (!isDateInRange(day.date, dateFrom, dateTo)) return;
+        // Фільтруємо дні за діапазоном дат
+        if (!isDateInRange(day.date, dateFrom, dateTo)) {
+            console.log(`[SCHEDULE] День ${day.date} виключено через фільтр дат`);
+            return;
+        }
 
+        // Створюємо заголовок дня
         const dayHeaderRow = document.createElement('tr');
         dayHeaderRow.classList.add("day-header");
         const dayHeaderCell = document.createElement('td');
@@ -459,28 +458,36 @@ function showSchedule(groupKey) {
         let lessonRows = [];
         let isDayExpanded = true;
 
+        // Додаємо можливість згортання/розгортання дня
         dayHeaderRow.addEventListener('click', () => {
             isDayExpanded = !isDayExpanded;
-            lessonRows.forEach(row => { row.style.display = isDayExpanded ? '' : 'none'; });
+            lessonRows.forEach(row => {
+                row.style.display = isDayExpanded ? '' : 'none';
+            });
             const arrowSpan = dayHeaderCell.querySelector('.toggle-arrow');
             arrowSpan.textContent = isDayExpanded ? '▼' : '▶';
         });
 
+        // Проходимо по всіх парах (1-8)
         for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
             const lesson = (day.lessons || []).find(l =>
                 l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
             ) || {};
 
+            // Визначаємо, чи відображати урок
             const shouldDisplay = isShowingFullSchedule ? !!lesson.subject : shouldDisplayLesson(lesson);
 
+            // Створюємо рядок для уроку
             const row = document.createElement('tr');
             row.classList.toggle('empty-slot', !lesson.subject || !shouldDisplay);
             lessonRows.push(row);
 
+            // Колонка часу
             const timeCell = document.createElement('td');
             timeCell.setAttribute('data-label', 'Час');
             timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
 
+            // Колонки предмету, викладача та групи
             const subjectCell = document.createElement('td');
             subjectCell.setAttribute('data-label', 'Предмет');
             const teacherCell = document.createElement('td');
@@ -488,29 +495,39 @@ function showSchedule(groupKey) {
             const groupCell = document.createElement('td');
             groupCell.setAttribute('data-label', 'Група');
 
+            // Якщо є предмет і він має відображатися
             if (lesson.subject && shouldDisplay) {
-                if (isMobileView) {
-                    subjectCell.innerHTML = `<span class="mobile-label">Предмет: </span>` + lesson.subject;
-                    if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
-                    if (lesson.link && lesson.link.trim() !== '') {
-                        subjectCell.innerHTML += `<br><small><a href="${lesson.link}" target="_blank" class="lesson-link">Посилання на відеоконференцію <i class="fas fa-external-link-alt"></i></a></small>`;
-                    }
-                    teacherCell.innerHTML = `<span class="mobile-label">Викладач: </span>` + (lesson.teacher || '');
-                    groupCell.innerHTML = `<span class="mobile-label">Група: </span>` + (lesson.group || groupKey);
+                // Перевіряємо фільтр за викладачем
+                if (teacherSearch && (!lesson.teacher || !lesson.teacher.toLowerCase().includes(teacherSearch.toLowerCase()))) {
+                    console.log(`[SCHEDULE] Урок ${lesson.subject} пропущено через фільтр викладача`);
+                    row.classList.add('empty-slot');
                 } else {
-                    subjectCell.textContent = lesson.subject;
-                    if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
-                    if (lesson.link && lesson.link.trim() !== '') {
-                        subjectCell.innerHTML += `<br><small><a href="${lesson.link}" target="_blank" class="lesson-link">Посилання на відеоконференцію <i class="fas fa-external-link-alt"></i></a></small>`;
+                    // Оформлення для мобільного та десктопного вигляду
+                    if (isMobileView) {
+                        subjectCell.innerHTML = `<span class="mobile-label">Предмет: </span>${lesson.subject}`;
+                        if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
+                        if (lesson.link && lesson.link.trim() !== '') {
+                            subjectCell.innerHTML += `<br><small><a href="${lesson.link}" target="_blank" class="lesson-link">Посилання на відеоконференцію <i class="fas fa-external-link-alt"></i></a></small>`;
+                        }
+                        teacherCell.innerHTML = `<span class="mobile-label">Викладач: </span>${lesson.teacher || ''}`;
+                        groupCell.innerHTML = `<span class="mobile-label">Група: </span>${lesson.group || groupKey}`;
+                    } else {
+                        subjectCell.textContent = lesson.subject;
+                        if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
+                        if (lesson.link && lesson.link.trim() !== '') {
+                            subjectCell.innerHTML += `<br><small><a href="${lesson.link}" target="_blank" class="lesson-link">Посилання на відеоконференцію <i class="fas fa-external-link-alt"></i></a></small>`;
+                        }
+                        teacherCell.textContent = lesson.teacher || '';
+                        groupCell.textContent = lesson.group || groupKey;
                     }
-                    teacherCell.textContent = lesson.teacher || '';
-                    groupCell.textContent = lesson.group || groupKey;
+
+                    // Додаємо класи для стилізації
+                    teacherCell.classList.add('lesson-cell', 'group-color');
+                    groupCell.classList.add('lesson-cell', 'group-color');
                 }
-                // Додаємо класи для застосування однакового кольору
-                teacherCell.classList.add('lesson-cell', 'group-color');
-                groupCell.classList.add('lesson-cell', 'group-color');
             }
 
+            // Додаємо колонки до рядка
             row.appendChild(timeCell);
             row.appendChild(subjectCell);
             row.appendChild(teacherCell);
@@ -519,12 +536,17 @@ function showSchedule(groupKey) {
         }
     });
 
+    // Додаємо сформований фрагмент у таблицю
     tbody.appendChild(fragment);
     document.querySelector('.schedule-view').style.display = 'block';
+
+    console.log('[SCHEDULE] === Завершення обробки розкладу для групи:', groupKey, '===');
 }
 
 // --- Функція збереження розкладу ---
 function saveSchedule() {
+    console.log('[SCHEDULE] Початок збереження розкладу');
+    
     const activeGroupBtn = document.querySelector('.group-btn.active');
     if (!activeGroupBtn) {
         alert('Будь ласка, оберіть групу перед збереженням.');
@@ -532,118 +554,87 @@ function saveSchedule() {
     }
 
     const groupKey = activeGroupBtn.dataset.group;
-    const dateFrom = document.getElementById('date-from').value;
-    const dateTo = document.getElementById('date-to').value;
-    const teacherSearch = document.getElementById('teacher-search').value.toLowerCase();
-
-    const groupData = schedulesData[groupKey];
-    if (!groupData) {
-        alert('Дані для обраної групи не знайдено.');
+    console.log('[SCHEDULE] Обрана група:', groupKey);
+    
+    // Отримуємо всю секцію з розкладом, включно з таблицею
+    const scheduleSection = document.querySelector('.schedule-view');
+    if (!scheduleSection) {
+        console.warn('[SCHEDULE] Не знайдено секцію з розкладом');
+        alert('Не вдалося знайти розклад на сторінці.');
         return;
     }
-
-    const timeSlots = {
-        1: "09:00-10:20", 2: "10:35-11:55", 3: "12:20-13:40", 4: "13:50-15:10",
-        5: "15:20-16:40", 6: "16:50-18:10", 7: "18:15-19:35", 8: "19:40-21:00"
-    };
-
-    const schedule = groupData.schedule
-        .filter(day => isDateInRange(day.date, dateFrom, dateTo))
-        .map(day => {
-            const filteredLessons = [];
-            for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
-                const lesson = (day.lessons || []).find(l =>
-                    l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
-                ) || {};
-
-                if (lesson.subject) {
-                    const coreSubject = extractCoreSubject(lesson.subject);
-                    const lessonSubjectLower = normalizeSubject(coreSubject);
-                    const lessonSubgroup = extractSubgroup(lesson.subject);
-
-                    const isSubjectSelected = Object.keys(window.currentState.selectedSubjects).length === 0 ||
-                        Object.keys(window.currentState.selectedSubjects).some(subject => {
-                            const normalizedSelectedSubject = normalizeSubject(subject);
-                            const match = lessonSubjectLower.includes(normalizedSelectedSubject) ||
-                                normalizedSelectedSubject.includes(lessonSubjectLower);
-                            return match;
-                        });
-
-                    const selectedSubjectKey = Object.keys(window.currentState.selectedSubjects).find(subject => {
-                        const normalizedSelectedSubject = normalizeSubject(subject);
-                        return lessonSubjectLower.includes(normalizedSelectedSubject) ||
-                               normalizedSelectedSubject.includes(lessonSubjectLower);
-                    });
-                    const selectedSubgroups = selectedSubjectKey ? window.currentState.selectedSubjects[selectedSubjectKey] : [];
-                    const normalizedLessonSubgroup = normalizeSubgroup(lessonSubgroup);
-                    const isSubgroupMatch = selectedSubgroups.length === 0 ||
-                                            selectedSubgroups.some(selectedSubgroup => {
-                                                const normalizedSelectedSubgroup = normalizeSubgroup(selectedSubgroup);
-                                                const match = normalizedSelectedSubgroup === normalizedLessonSubgroup ||
-                                                             normalizedSelectedSubgroup.includes(normalizedLessonSubgroup) ||
-                                                             normalizedLessonSubgroup.includes(normalizedSelectedSubgroup);
-                                                return match;
-                                            });
-
-                    const isTeacherMatch = !teacherSearch || (lesson.teacher && lesson.teacher.toLowerCase().includes(teacherSearch));
-                    if (isSubjectSelected && isTeacherMatch && isSubgroupMatch) {
-                        filteredLessons.push({
-                            number: lessonNumber,
-                            time: timeSlots[lessonNumber],
-                            subject: lesson.subject,
-                            teacher: lesson.teacher || '',
-                            group: lesson.group || groupKey,
-                            subgroup: lessonSubgroup,
-                            details: lesson.details || ''
-                        });
-                    }
-                }
-            }
-            return {
-                date: day.date,
-                day: day.day,
-                lessons: filteredLessons
-            };
-        })
-        .filter(day => day.lessons.length > 0);
-
-    if (schedule.length === 0) {
-        alert('Немає занять для збереження з обраними фільтрами.');
+    
+    // Отримуємо таблицю розкладу
+    const scheduleTable = document.querySelector('#scheduleTable');
+    if (!scheduleTable) {
+        console.warn('[SCHEDULE] Не знайдено таблицю з розкладом');
+        alert('Не вдалося знайти таблицю з розкладом на сторінці.');
         return;
     }
-
+    
+    // Створюємо копію всієї секції з розкладом без модифікацій
+    const scheduleHTML = scheduleSection.outerHTML;
+    const tableHTML = scheduleTable.outerHTML;
+    
+    console.log('[SCHEDULE] Отримано HTML розкладу');
+    
     const name = prompt('Введіть назву для збереженого розкладу:');
     if (!name) {
         alert('Назву не введено. Збереження скасовано.');
         return;
     }
 
-    const savedSchedules = JSON.parse(localStorage.getItem('savedSchedules')) || {};
+    // Отримуємо збережені розклади як масив
+    let savedSchedules = JSON.parse(localStorage.getItem('savedSchedules') || '[]');
+    
+    // Якщо savedSchedules не є масивом, перетворюємо його на масив
+    if (!Array.isArray(savedSchedules)) {
+        if (typeof savedSchedules === 'object' && savedSchedules !== null) {
+            savedSchedules = Object.values(savedSchedules);
+        } else {
+            savedSchedules = [];
+        }
+    }
 
     // Перевіряємо, чи існує розклад з такою назвою
-    const existingScheduleKey = Object.keys(savedSchedules).find(key => savedSchedules[key].name === name);
+    const existingScheduleIndex = savedSchedules.findIndex(item => item.name === name);
 
-    if (existingScheduleKey) {
+    if (existingScheduleIndex !== -1) {
         const confirmOverwrite = confirm(`Розклад з назвою "${name}" вже існує. Бажаєте перезаписати його?`);
         if (!confirmOverwrite) {
             return; // Якщо користувач відмовився, виходимо з функції
         }
         // Якщо користувач погодився, видаляємо старий розклад
-        delete savedSchedules[existingScheduleKey];
+        savedSchedules.splice(existingScheduleIndex, 1);
     }
 
-    // Створюємо новий ключ для розкладу
-    const key = `${groupKey}_${Date.now()}`;
-    savedSchedules[key] = {
-        name: name,
-        group: groupKey,
-        dateFrom: dateFrom,
-        dateTo: dateTo,
-        teacherSearch: teacherSearch,
-        schedule: schedule
+    // Зберігаємо поточні фільтри
+    const currentFilters = {
+        dateFrom: document.getElementById('date-from').value,
+        dateTo: document.getElementById('date-to').value,
+        teacherSearch: document.getElementById('teacher-search').value
     };
 
+    // Створюємо новий об'єкт розкладу з HTML-вмістом
+    const newSchedule = {
+        name: name,
+        faculty: document.querySelector('.faculty-btn.active')?.textContent.trim() || '',
+        group: groupKey,
+        createdAt: Date.now(),
+        date: new Date().toLocaleDateString('uk-UA'),
+        dateFrom: currentFilters.dateFrom,
+        dateTo: currentFilters.dateTo,
+        teacherSearch: currentFilters.teacherSearch,
+        scheduleHTML: tableHTML, // Зберігаємо HTML таблиці
+        sectionHTML: scheduleHTML // Зберігаємо також HTML всієї секції для контексту
+    };
+
+    console.log('[SCHEDULE] Створено об\'єкт для збереження з HTML');
+
+    // Додаємо новий розклад до масиву та зберігаємо
+    savedSchedules.push(newSchedule);
     localStorage.setItem('savedSchedules', JSON.stringify(savedSchedules));
+    console.log('[SCHEDULE] Розклад успішно збережено в localStorage');
     alert('Розклад успішно збережено!');
 }
 
@@ -708,12 +699,15 @@ function restoreState() {
     // Для будніх днів (1-5) залишаємо поточну дату як початкову
 
     // Форматуємо дату для відображення у форматі DD.MM.YYYY
-    const formatDate = (date) => {
+    function formatDate(dateString) {
+        if (!dateString) return "";
+        const date = new Date(dateString);
+        if (isNaN(date)) return "";
         const day = String(date.getDate()).padStart(2, '0');
-        const month = String(date.getMonth() + 1).padStart(2, '0'); // +1 тому що місяці починаються з 0
+        const month = String(date.getMonth() + 1).padStart(2, '0'); // +1, бо місяці з 0
         const year = date.getFullYear();
         return `${day}.${month}.${year}`;
-    };
+    }
 
     const formattedDateFrom = formatDate(dateFrom);
 
@@ -735,6 +729,71 @@ function restoreState() {
         showSchedule(window.currentState.group);
     }
 }
+
+
+function showScheduleForDays(days) {
+    console.log(`[SCHEDULE] Показ розкладу на ${days} днів`);
+    const today = new Date();
+    const dateFrom = formatDate(today);
+    const dateTo = new Date(today);
+    dateTo.setDate(today.getDate() + days - 1); // Включаємо весь період (наприклад, 7 днів)
+    const formattedDateTo = formatDate(dateTo);
+
+    console.log(`[SCHEDULE] Дати для фільтрації: з ${dateFrom} по ${formattedDateTo}`);
+
+    // Оновлюємо стан
+    window.currentState.dateFrom = dateFrom;
+    window.currentState.dateTo = formattedDateTo;
+
+    // Оновлюємо інтерфейс (формат для input type="date" - YYYY-MM-DD)
+    document.getElementById('date-from').value = formatDateForInput(today);
+    document.getElementById('date-to').value = formatDateForInput(dateTo);
+
+    console.log(`[SCHEDULE] Встановлено дати для ${days} днів: з ${dateFrom} по ${formattedDateTo}`);
+    saveState();
+    applyFilters(); // Застосовуємо фільтри для відображення розкладу
+}
+
+
+
+
+function showScheduleForMonth() {
+    console.log('[SCHEDULE] Показ розкладу на 1 місяць');
+    const today = new Date();
+    const dateFrom = formatDate(today);
+    const dateTo = new Date(today);
+    dateTo.setMonth(today.getMonth() + 1); // Додаємо 1 місяць
+    const formattedDateTo = formatDate(dateTo);
+
+    console.log(`[SCHEDULE] Дати для фільтрації: з ${dateFrom} по ${formattedDateTo}`);
+
+    // Оновлюємо стан
+    window.currentState.dateFrom = dateFrom;
+    window.currentState.dateTo = formattedDateTo;
+
+    // Оновлюємо інтерфейс (формат для input type="date" - YYYY-MM-DD)
+    document.getElementById('date-from').value = formatDateForInput(today);
+    document.getElementById('date-to').value = formatDateForInput(dateTo);
+
+    console.log(`[SCHEDULE] Встановлено дати для 1 місяця: з ${dateFrom} по ${formattedDateTo}`);
+    saveState();
+    applyFilters(); // Застосовуємо фільтри для відображення розкладу
+}
+
+// Функція для форматування дати у формат для input type="date" (YYYY-MM-DD)
+function formatDateForInput(date) {
+    const d = new Date(date);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+
+
+
+
+
 
 // --- Функція відображення повного розкладу ---
 function showFullSchedule() {
@@ -964,10 +1023,19 @@ function shouldDisplayLesson(lesson) {
 
 // --- Функція застосування фільтрів ---
 function applyFilters() {
-    // Оновлюємо window.currentState датами з полів вводу
-    window.currentState.dateFrom = document.getElementById('date-from').value;
-    window.currentState.dateTo = document.getElementById('date-to').value;
-    window.currentState.teacherSearch = document.getElementById('teacher-search').value;
+    // Отримуємо значення з полів вводу
+    const dateFromInput = document.getElementById('date-from').value;
+    const dateToInput = document.getElementById('date-to').value;
+    const teacherSearch = document.getElementById('teacher-search').value;
+    
+    // Конвертуємо дати з формату input (YYYY-MM-DD) у формат для фільтрації (DD.MM.YYYY)
+    const dateFrom = dateFromInput ? convertInputDateToFilterFormat(dateFromInput) : '';
+    const dateTo = dateToInput ? convertInputDateToFilterFormat(dateToInput) : '';
+    
+    // Оновлюємо стан
+    window.currentState.dateFrom = dateFrom;
+    window.currentState.dateTo = dateTo;
+    window.currentState.teacherSearch = teacherSearch;
 
     console.log('[SCHEDULE] Застосування фільтрів:');
     console.log('[SCHEDULE] - dateFrom:', window.currentState.dateFrom);
@@ -980,6 +1048,14 @@ function applyFilters() {
     // Показуємо розклад з новими фільтрами
     const activeGroupBtn = document.querySelector('.group-btn.active');
     if (activeGroupBtn) showSchedule(activeGroupBtn.dataset.group);
+}
+
+// Функція для конвертації дати з формату input (YYYY-MM-DD) у формат для фільтрації (DD.MM.YYYY)
+function convertInputDateToFilterFormat(inputDate) {
+    if (!inputDate) return '';
+    const parts = inputDate.split('-');
+    if (parts.length !== 3) return '';
+    return `${parts[2]}.${parts[1]}.${parts[0]}`;
 }
 
 // --- Функція скидання фільтрів ---
@@ -1007,66 +1083,31 @@ function resetFilters() {
         // Встановлюємо дату "з" на вчора (п'ятницю)
         dateFrom.setDate(today.getDate() - 1);
     }
-    // Для будніх днів (1-5) залишаємо поточну дату як початкову
 
-    // Форматуємо дату для відображення у форматі DD.MM.YYYY
-    const formatDate = (date) => {
-        const day = String(date.getDate()).padStart(2, '0');
-        const month = String(date.getMonth() + 1).padStart(2, '0'); // +1 тому що місяці починаються з 0
-        const year = date.getFullYear();
-        return `${day}.${month}.${year}`;
-    };
-
+    // Форматуємо дату для стану у форматі DD.MM.YYYY
     const formattedDateFrom = formatDate(dateFrom);
 
-    console.log(`[SCHEDULE] Скидання фільтрів. Нова початкова дата: ${formattedDateFrom}`);
-    console.log('[SCHEDULE] Кінцеву дату не встановлюємо для показу всього розкладу');
-
-    // Встановлюємо початкову дату в стан та в інтерфейсі
-    // Кінцеву дату очищаємо для показу всього розкладу
+    // Встановлюємо початкову дату в стан
     window.currentState.dateFrom = formattedDateFrom;
     window.currentState.dateTo = '';
-    document.getElementById('date-from').value = formattedDateFrom;
+
+    // Встановлюємо початкову дату в інтерфейсі у форматі YYYY-MM-DD
+    document.getElementById('date-from').value = formatDateForInput(dateFrom);
     document.getElementById('date-to').value = '';
+
+    console.log('[SCHEDULE] Скидання фільтрів. Нові значення:');
+    console.log('[SCHEDULE] - dateFrom:', window.currentState.dateFrom);
+    console.log('[SCHEDULE] - dateTo:', window.currentState.dateTo);
+    console.log('[SCHEDULE] - teacherSearch:', window.currentState.teacherSearch);
 
     // Зберігаємо оновлений стан
     saveState();
 
-    console.log('[SCHEDULE] Оновлений стан після скидання:', { ...window.currentState });
-
-    // Відображаємо розклад з новими параметрами
+    // Показуємо розклад з новими фільтрами
     const activeGroupBtn = document.querySelector('.group-btn.active');
-    if (activeGroupBtn) {
-        showSchedule(activeGroupBtn.dataset.group);
-    }
+    if (activeGroupBtn) showSchedule(activeGroupBtn.dataset.group);
 
-    // Повідомляємо користувача про скидання фільтрів
-    const notification = document.createElement('div');
-    notification.className = 'notification';
-    notification.textContent = 'Фільтри скинуто. Показано розклад від поточної дати до кінця семестру.';
-    notification.style.position = 'fixed';
-    notification.style.top = '20px';
-    notification.style.left = '50%';
-    notification.style.transform = 'translateX(-50%)';
-    notification.style.backgroundColor = 'var(--warning-color)';
-    notification.style.color = 'black';
-    notification.style.padding = '10px 20px';
-    notification.style.borderRadius = '5px';
-    notification.style.zIndex = '1000';
-    notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
-
-    document.body.appendChild(notification);
-
-    // Видаляємо повідомлення через 3 секунди
-    setTimeout(() => {
-        notification.style.opacity = '0';
-        notification.style.transition = 'opacity 0.5s';
-        setTimeout(() => {
-            document.body.removeChild(notification);
-        }, 500);
-    }, 3000);
-
-    console.log('[SCHEDULE] Фільтри скинуті і встановлена початкова дата на основі поточного дня');
+    console.log('[SCHEDULE] === Кінець скидання фільтрів ===');
 }
 
 // --- Функція експорту розкладу у PDF ---
@@ -1157,6 +1198,23 @@ async function exportScheduleToPDF() {
 // --- Ініціалізація ---
 document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('schedulesData', JSON.stringify(schedulesData));
+    
+    // Перевіряємо, чи є дані розкладу в localStorage і завантажуємо їх
+    const currentSchedule = localStorage.getItem('currentSchedule');
+    if (currentSchedule) {
+        try {
+            const scheduleData = JSON.parse(currentSchedule);
+            // Відновлюємо дані з currentSchedule (вони будуть завантажені в restoreState)
+            console.log('Завантажено збережений розклад');
+            
+            // Очищаємо дані сесії, щоб при поверненні на сторінку дані не зберігалися
+            localStorage.removeItem('currentSchedule');
+        } catch (error) {
+            console.error('Помилка при завантаженні збереженого розкладу:', error);
+            localStorage.removeItem('currentSchedule');
+        }
+    }
+    
     restoreState();
     initFaculties();
     collectAllTeachers();

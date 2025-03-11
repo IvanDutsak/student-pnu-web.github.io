@@ -32,47 +32,167 @@ body {
 
 /* Навігація */
 .main-nav {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    position: sticky; /* Залишаємо sticky для десктопів */
+    background-color: white;
+    padding: 0;
+    position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo i {
+    font-size: 1.5rem;
 }
 
 .nav-list {
     display: flex;
-    justify-content: center;
-    padding: 1rem 0;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
 }
 
 .nav-item {
-    margin: 0 1.5rem;
+    margin: 0;
 }
 
 .nav-link {
-    color: var(--dark-gray);
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    transition: all var(--transition-speed) ease;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link i {
+    font-size: 1.25rem;
+    color: var(--primary-color);
 }
 
 .nav-link:hover {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     color: white;
-    transform: translateY(-2px);
+}
+
+.nav-link:hover i {
+    color: white;
 }
 
 .nav-link.active {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link.active i {
+    color: white;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #4a5568;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Темна тема для навігації */
+[data-theme="dark"] .main-nav {
+    background-color: #1a202c;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .logo {
+    color: var(--primary-light);
+}
+
+[data-theme="dark"] .nav-link {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .nav-link i {
+    color: var(--primary-light);
+}
+
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+    background-color: var(--primary-light);
+    color: #1a202c;
+}
+
+[data-theme="dark"] .nav-link:hover i,
+[data-theme="dark"] .nav-link.active i {
+    color: #1a202c;
+}
+
+[data-theme="dark"] .mobile-menu-btn {
+    color: #e2e8f0;
+}
+
+/* Мобільна версія навігації */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0.5rem;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: white;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    [data-theme="dark"] .nav-list {
+        background-color: #1a202c;
+    }
 }
 
 /* Секції */
