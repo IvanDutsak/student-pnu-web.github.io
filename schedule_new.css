@@ -447,7 +447,7 @@ body {
 /* Стилі для кнопки зміни теми */
 .theme-toggle {
     position: fixed;
-    top: 10px;
+    top: 60px;
     right: 20px;
     width: 40px;
     height: 40px;
