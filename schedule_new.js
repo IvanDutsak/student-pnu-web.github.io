@@ -470,69 +470,100 @@ function showSchedule(groupKey) {
 
         // Проходимо по всіх парах (1-8)
         for (let lessonNumber = 1; lessonNumber <= 8; lessonNumber++) {
-            const lesson = (day.lessons || []).find(l =>
+            // Змінюємо find на filter, щоб отримати всі пари в цьому часовому слоті
+            const lessons = (day.lessons || []).filter(l =>
                 l.time && l.time.replace(/\s/g, "") === timeSlots[lessonNumber].replace(/\s/g, "")
-            ) || {};
+            );
 
-            // Визначаємо, чи відображати урок
-            const shouldDisplay = isShowingFullSchedule ? !!lesson.subject : shouldDisplayLesson(lesson);
-
-            // Створюємо рядок для уроку
-            const row = document.createElement('tr');
-            row.classList.toggle('empty-slot', !lesson.subject || !shouldDisplay);
-            lessonRows.push(row);
-
-            // Колонка часу
-            const timeCell = document.createElement('td');
-            timeCell.setAttribute('data-label', 'Час');
-            timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
-
-            // Колонки предмету, викладача та групи
-            const subjectCell = document.createElement('td');
-            subjectCell.setAttribute('data-label', 'Предмет');
-            const teacherCell = document.createElement('td');
-            teacherCell.setAttribute('data-label', 'Викладач');
-            const groupCell = document.createElement('td');
-            groupCell.setAttribute('data-label', 'Група');
-
-            // Якщо є предмет і він має відображатися
-            if (lesson.subject && shouldDisplay) {
-                // Перевіряємо фільтр за викладачем
-                if (teacherSearch && (!lesson.teacher || !lesson.teacher.toLowerCase().includes(teacherSearch.toLowerCase()))) {
-                    console.log(`[SCHEDULE] Урок ${lesson.subject} пропущено через фільтр викладача`);
-                    row.classList.add('empty-slot');
-                } else {
-                    // Оформлення для мобільного та десктопного вигляду
-                    if (isMobileView) {
-                        subjectCell.innerHTML = `<span class="mobile-label">Предмет: </span>${lesson.subject}`;
-                        if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
-                        if (lesson.link && lesson.link.trim() !== '') {
-                            subjectCell.innerHTML += `<br><small><a href="${lesson.link}" target="_blank" class="lesson-link">Посилання на відеоконференцію <i class="fas fa-external-link-alt"></i></a></small>`;
+            // Якщо немає пар в цьому часовому слоті, створюємо порожній рядок
+            if (lessons.length === 0) {
+                const row = document.createElement('tr');
+                row.classList.add('empty-slot');
+                
+                // Колонка часу
+                const timeCell = document.createElement('td');
+                timeCell.setAttribute('data-label', 'Час');
+                timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
+                
+                // Порожні колонки для предмету, викладача та групи
+                const subjectCell = document.createElement('td');
+                subjectCell.setAttribute('data-label', 'Предмет');
+                const teacherCell = document.createElement('td');
+                teacherCell.setAttribute('data-label', 'Викладач');
+                const groupCell = document.createElement('td');
+                groupCell.setAttribute('data-label', 'Група');
+                
+                // Додаємо колонки до рядка
+                row.appendChild(timeCell);
+                row.appendChild(subjectCell);
+                row.appendChild(teacherCell);
+                row.appendChild(groupCell);
+                fragment.appendChild(row);
+                lessonRows.push(row);
+            } else {
+                // Для кожної пари в цьому часовому слоті створюємо окремий рядок
+                lessons.forEach(lesson => {
+                    // Визначаємо, чи відображати урок
+                    const shouldDisplay = isShowingFullSchedule ? !!lesson.subject : shouldDisplayLesson(lesson);
+                    
+                    // Створюємо рядок для уроку
+                    const row = document.createElement('tr');
+                    row.classList.toggle('empty-slot', !lesson.subject || !shouldDisplay);
+                    lessonRows.push(row);
+                    
+                    // Колонка часу
+                    const timeCell = document.createElement('td');
+                    timeCell.setAttribute('data-label', 'Час');
+                    timeCell.innerHTML = `<span class="time-slot">${lessonNumber} пара ${timeSlots[lessonNumber]}</span>`;
+                    
+                    // Колонки предмету, викладача та групи
+                    const subjectCell = document.createElement('td');
+                    subjectCell.setAttribute('data-label', 'Предмет');
+                    const teacherCell = document.createElement('td');
+                    teacherCell.setAttribute('data-label', 'Викладач');
+                    const groupCell = document.createElement('td');
+                    groupCell.setAttribute('data-label', 'Група');
+                    
+                    // Якщо є предмет і він має відображатися
+                    if (lesson.subject && shouldDisplay) {
+                        // Перевіряємо фільтр за викладачем
+                        if (teacherSearch && (!lesson.teacher || !lesson.teacher.toLowerCase().includes(teacherSearch.toLowerCase()))) {
+                            console.log(`[SCHEDULE] Урок ${lesson.subject} пропущено через фільтр викладача`);
+                            row.classList.add('empty-slot');
+                        } else {
+                            // Оформлення для мобільного та десктопного вигляду
+                            if (isMobileView) {
+                                subjectCell.innerHTML = `<span class="mobile-label">Предмет: </span>${lesson.subject}`;
+                                if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
+                                if (lesson.link && lesson.link.trim() !== '') {
+                                    subjectCell.innerHTML += `<br><small><a href="${lesson.link}" target="_blank" class="lesson-link">Посилання на відеоконференцію <i class="fas fa-external-link-alt"></i></a></small>`;
+                                }
+                                teacherCell.innerHTML = `<span class="mobile-label">Викладач: </span>${lesson.teacher || ''}`;
+                                groupCell.innerHTML = `<span class="mobile-label">Група: </span>${lesson.group || groupKey}`;
+                            } else {
+                                subjectCell.textContent = lesson.subject;
+                                if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
+                                if (lesson.link && lesson.link.trim() !== '') {
+                                    subjectCell.innerHTML += `<br><small><a href="${lesson.link}" target="_blank" class="lesson-link">Посилання на відеоконференцію <i class="fas fa-external-link-alt"></i></a></small>`;
+                                }
+                                teacherCell.textContent = lesson.teacher || '';
+                                groupCell.textContent = lesson.group || groupKey;
+                            }
+                            
+                            // Додаємо класи для стилізації
+                            teacherCell.classList.add('lesson-cell', 'group-color');
+                            groupCell.classList.add('lesson-cell', 'group-color');
                         }
-                        teacherCell.innerHTML = `<span class="mobile-label">Викладач: </span>${lesson.teacher || ''}`;
-                        groupCell.innerHTML = `<span class="mobile-label">Група: </span>${lesson.group || groupKey}`;
-                    } else {
-                        subjectCell.textContent = lesson.subject;
-                        if (lesson.details) subjectCell.innerHTML += `<br><small>${lesson.details}</small>`;
-                        if (lesson.link && lesson.link.trim() !== '') {
-                            subjectCell.innerHTML += `<br><small><a href="${lesson.link}" target="_blank" class="lesson-link">Посилання на відеоконференцію <i class="fas fa-external-link-alt"></i></a></small>`;
-                        }
-                        teacherCell.textContent = lesson.teacher || '';
-                        groupCell.textContent = lesson.group || groupKey;
                     }
-
-                    // Додаємо класи для стилізації
-                    teacherCell.classList.add('lesson-cell', 'group-color');
-                    groupCell.classList.add('lesson-cell', 'group-color');
-                }
+                    
+                    // Додаємо колонки до рядка
+                    row.appendChild(timeCell);
+                    row.appendChild(subjectCell);
+                    row.appendChild(teacherCell);
+                    row.appendChild(groupCell);
+                    fragment.appendChild(row);
+                });
             }
-
-            // Додаємо колонки до рядка
-            row.appendChild(timeCell);
-            row.appendChild(subjectCell);
-            row.appendChild(teacherCell);
-            row.appendChild(groupCell);
-            fragment.appendChild(row);
         }
     });
 

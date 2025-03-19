@@ -38,38 +38,6 @@ const schedulesData =
                         "group": "КН(зб)2.25",
                         "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -96,7 +64,7 @@ const schedulesData =
                     {
                         "time": "12:20-13:40",
                         "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "КН-31, КН-32",
                         "details": "ауд. 301 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -110,35 +78,11 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "16:50-18:10",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
                         "teacher": "Горєлов В.О.",
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -194,22 +138,6 @@ const schedulesData =
                         "group": "КН(зб)2.21",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -246,39 +174,7 @@ const schedulesData =
                         "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
                         "group": "КН-31 (підгр. 1)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
+                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     }
                 ]
@@ -312,43 +208,11 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Практикум з програмування (ПрС)",
                         "teacher": "Ізмайлов А.В.",
                         "group": "",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -366,27 +230,11 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "12:20-13:40",
                         "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "КН-31, КН-32",
                         "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     },
                     {
@@ -395,30 +243,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.30",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -444,22 +268,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
                         "teacher": "Горєлов В.О.",
@@ -474,22 +282,6 @@ const schedulesData =
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -497,14 +289,6 @@ const schedulesData =
                 "date": "19.02.2025",
                 "day": "Середа",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "(підгр. 2)\nАналіз даних (Лаб)",
@@ -547,19 +331,11 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (Л)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (Л)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -584,14 +360,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "13:50-15:10",
                         "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
@@ -609,27 +377,19 @@ const schedulesData =
                     },
                     {
                         "time": "16:50-18:10",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
                         "teacher": "Дудкевич В.І.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://us05web.zoom.us/j/792269...",
                         "link": "https://us05web.zoom.us/j/7922695917?pwd=J7Xltt4n7aUKvfNYnxba8lRodSX0LD.1"
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
                         "teacher": "Дудкевич В.І.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://us05web.zoom.us/j/792269...",
                         "link": "https://us05web.zoom.us/j/7922695917?pwd=J7Xltt4n7aUKvfNYnxba8lRodSX0LD.1"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -668,38 +428,6 @@ const schedulesData =
                         "group": "КН-31 (підгр. 2)",
                         "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -707,14 +435,6 @@ const schedulesData =
                 "date": "24.02.2025",
                 "day": "Понеділок",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
@@ -726,7 +446,7 @@ const schedulesData =
                     {
                         "time": "12:20-13:40",
                         "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "",
                         "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -745,30 +465,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.31",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -802,14 +498,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
                         "teacher": "Горєлов В.О.",
@@ -823,22 +511,6 @@ const schedulesData =
                         "teacher": "Горєлов В.О.",
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -897,19 +569,11 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (Л)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (Л)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -946,40 +610,16 @@ const schedulesData =
                         "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
                         "group": "КН-31 (підгр. 1)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
+                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
                         "time": "16:50-18:10",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
                         "teacher": "Дудкевич В.І.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://us05web.zoom.us/j/792269...",
                         "link": "https://us05web.zoom.us/j/7922695917?pwd=J7Xltt4n7aUKvfNYnxba8lRodSX0LD.1"
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -1018,38 +658,6 @@ const schedulesData =
                         "group": "КН(зб)2.23",
                         "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -1058,35 +666,11 @@ const schedulesData =
                 "day": "Понеділок",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "12:20-13:40",
                         "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "КН-31, КН-32",
                         "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     },
                     {
@@ -1095,30 +679,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.30",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -1174,22 +734,6 @@ const schedulesData =
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -1197,14 +741,6 @@ const schedulesData =
                 "date": "05.03.2025",
                 "day": "Середа",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "(підгр. 2)\nАналіз даних (Лаб)",
@@ -1247,19 +783,11 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (Л)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (Л)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
                     }
                 ]
             },
@@ -1284,14 +812,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "13:50-15:10",
                         "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
@@ -1309,27 +829,19 @@ const schedulesData =
                     },
                     {
                         "time": "16:50-18:10",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
                         "teacher": "Дудкевич В.І.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://us05web.zoom.us/j/792269...",
                         "link": "https://us05web.zoom.us/j/7922695917?pwd=J7Xltt4n7aUKvfNYnxba8lRodSX0LD.1"
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -1368,38 +880,6 @@ const schedulesData =
                         "group": "КН-31 (підгр. 2)",
                         "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -1407,14 +887,6 @@ const schedulesData =
                 "date": "10.03.2025",
                 "day": "Понеділок",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
@@ -1426,7 +898,7 @@ const schedulesData =
                     {
                         "time": "12:20-13:40",
                         "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "",
                         "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -1445,30 +917,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.31",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -1494,14 +942,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "13:50-15:10",
                         "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
                         "teacher": "Ізмайлов А.В.",
@@ -1523,22 +963,6 @@ const schedulesData =
                         "teacher": "Горєлов В.О.",
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -1597,19 +1021,11 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
                     }
                 ]
             },
@@ -1646,40 +1062,24 @@ const schedulesData =
                         "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
                         "group": "КН-31 (підгр. 1)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
+                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
                         "time": "16:50-18:10",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
                         "teacher": "Дудкевич В.І.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://us05web.zoom.us/j/792269...",
                         "link": "https://us05web.zoom.us/j/7922695917?pwd=J7Xltt4n7aUKvfNYnxba8lRodSX0LD.1"
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -1718,38 +1118,6 @@ const schedulesData =
                         "group": "КН(зб)2.23",
                         "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -1758,25 +1126,9 @@ const schedulesData =
                 "day": "Понеділок",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "12:20-13:40",
                         "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "КН-31, КН-32",
                         "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -1795,30 +1147,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.30",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -1844,22 +1172,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
                         "teacher": "Горєлов В.О.",
@@ -1874,22 +1186,6 @@ const schedulesData =
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -1897,14 +1193,6 @@ const schedulesData =
                 "date": "19.03.2025",
                 "day": "Середа",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "(підгр. 2)\nАналіз даних (Лаб)",
@@ -1944,22 +1232,6 @@ const schedulesData =
                         "group": "КН(зб)2.21",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (Л)",
-                        "teacher": "Колєдіна К.О.",
-                        "group": "",
-                        "details": "http://meet.google.com/emj-cmiw-...\nдист.\nЗбірна група BE-зб5\nBusiness English (ПрС)\nТуровська Л.В.\nhttps://meet.google.com/mka-xhtg...",
-                        "link": "http://meet.google.com/emj-cmiw-tqm"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
                     }
                 ]
             },
@@ -1984,14 +1256,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "13:50-15:10",
                         "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
@@ -2009,27 +1273,19 @@ const schedulesData =
                     },
                     {
                         "time": "16:50-18:10",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (Л)",
                         "teacher": "Дудкевич В.І.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://us05web.zoom.us/j/792269...",
                         "link": "https://us05web.zoom.us/j/7922695917?pwd=J7Xltt4n7aUKvfNYnxba8lRodSX0LD.1"
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -2058,7 +1314,15 @@ const schedulesData =
                         "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
                         "teacher": "Ровінський В.А.",
                         "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57 (підгр. 1)\nКомп`ютерні мережі (Лаб)\nауд. 207 кор. Центральний корпус, Шевченка 57\nПревисокова Н.В.",
+                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                        "link": ""
+                    },
+                    {
+                        "time": "12:20-13:40",
+                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                        "teacher": "Превисокова Н.В.",
+                        "group": "КН-31 (підгр. 1)",
+                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
@@ -2070,34 +1334,10 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
                         "teacher": "Матвієнків С.М.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://meet.google.com/uvz-phzq...",
                         "link": "https://meet.google.com/uvz-phzq-qaf"
                     }
@@ -2107,14 +1347,6 @@ const schedulesData =
                 "date": "24.03.2025",
                 "day": "Понеділок",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
@@ -2126,7 +1358,7 @@ const schedulesData =
                     {
                         "time": "12:20-13:40",
                         "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "",
                         "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -2145,30 +1377,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.31",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -2194,22 +1402,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
                         "teacher": "Горєлов В.О.",
@@ -2223,22 +1415,6 @@ const schedulesData =
                         "teacher": "Горєлов В.О.",
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -2297,19 +1473,19 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (Л)",
+                        "teacher": "Колєдіна К.О.",
+                        "group": "ТМ-зб6",
+                        "details": "",
+                        "link": ""
                     }
                 ]
             },
@@ -2346,40 +1522,16 @@ const schedulesData =
                         "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
                         "group": "КН-31 (підгр. 1)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
+                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -2412,42 +1564,18 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
                         "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
                         "teacher": "Матвієнків С.М.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "",
                         "link": ""
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
                         "teacher": "Матвієнків С.М.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://meet.google.com/uvz-phzq...",
                         "link": "https://meet.google.com/uvz-phzq-qaf"
                     }
@@ -2458,25 +1586,9 @@ const schedulesData =
                 "day": "Понеділок",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "12:20-13:40",
                         "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "КН-31, КН-32",
                         "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -2495,30 +1607,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.30",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -2544,22 +1632,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
                         "teacher": "Горєлов В.О.",
@@ -2574,22 +1646,6 @@ const schedulesData =
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -2597,14 +1653,6 @@ const schedulesData =
                 "date": "02.04.2025",
                 "day": "Середа",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "(підгр. 2)\nАналіз даних (Лаб)",
@@ -2647,17 +1695,25 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (Л)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (Л)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
-                        "details": "http://meet.google.com/emj-cmiw-...\nдист.\nЗбірна група BE-зб5\nBusiness English (ПрС)\nТуровська Л.В.\nhttps://meet.google.com/mka-xhtg...",
+                        "group": "ТМ-зб6",
+                        "details": "http://meet.google.com/emj-cmiw-...\nдист.",
+                        "link": ""
+                    },
+                    {
+                        "time": "18:15-19:35",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                        "teacher": "Туровська Л.В.",
+                        "group": "BE-зб5",
+                        "details": "https://meet.google.com/mka-xhtg...",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
                     },
                     {
                         "time": "19:40-21:00",
                         "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
                         "teacher": "Туровська Л.В.",
-                        "group": "",
+                        "group": "BE-зб5",
                         "details": "",
                         "link": ""
                     }
@@ -2673,22 +1729,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.31",
                         "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     },
                     {
@@ -2708,28 +1748,12 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -2758,7 +1782,15 @@ const schedulesData =
                         "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
                         "teacher": "Ровінський В.А.",
                         "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57 (підгр. 1)\nКомп`ютерні мережі (Лаб)\nауд. 207 кор. Центральний корпус, Шевченка 57\nПревисокова Н.В.",
+                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                        "link": ""
+                    },
+                    {
+                        "time": "12:20-13:40",
+                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                        "teacher": "Превисокова Н.В.",
+                        "group": "КН-31 (підгр. 1)",
+                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
@@ -2770,34 +1802,10 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
                         "teacher": "Матвієнків С.М.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://meet.google.com/uvz-phzq...",
                         "link": "https://meet.google.com/uvz-phzq-qaf"
                     }
@@ -2807,14 +1815,6 @@ const schedulesData =
                 "date": "07.04.2025",
                 "day": "Понеділок",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
@@ -2846,30 +1846,6 @@ const schedulesData =
                         "group": "КН(зб)2.31",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -2894,22 +1870,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
                         "teacher": "Горєлов В.О.",
@@ -2923,22 +1883,6 @@ const schedulesData =
                         "teacher": "Горєлов В.О.",
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -2997,17 +1941,25 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                        "teacher": "Туровська Л.В.",
+                        "group": "BE-зб5",
+                        "details": "дист.",
+                        "link": ""
+                    },
+                    {
+                        "time": "18:15-19:35",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
                         "teacher": "Туровська Л.В.",
-                        "group": "",
+                        "group": "BE-зб5",
                         "details": "https://meet.google.com/mka-xhtg...",
                         "link": "https://meet.google.com/mka-xhtg-idk"
                     }
@@ -3046,40 +1998,16 @@ const schedulesData =
                         "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
                         "group": "КН-31 (підгр. 1)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
+                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -3112,42 +2040,18 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
                         "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
                         "teacher": "Матвієнків С.М.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "",
                         "link": ""
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
+                        "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
                         "teacher": "Матвієнків С.М.",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "https://meet.google.com/uvz-phzq...",
                         "link": "https://meet.google.com/uvz-phzq-qaf"
                     }
@@ -3158,66 +2062,26 @@ const schedulesData =
                 "day": "Середа",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
+                        "time": "18:15-19:35",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                        "teacher": "Туровська Л.В.",
+                        "group": "BE-зб5",
+                        "details": "дист.",
                         "link": ""
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (КСР)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (КСР)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
                         "teacher": "Туровська Л.В.",
-                        "group": "",
+                        "group": "BE-зб5",
                         "details": "https://meet.google.com/mka-xhtg...",
                         "link": "https://meet.google.com/mka-xhtg-idk"
                     }
@@ -3228,68 +2092,12 @@ const schedulesData =
                 "day": "Четвер",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -3297,14 +2105,6 @@ const schedulesData =
                 "date": "21.04.2025",
                 "day": "Понеділок",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
@@ -3316,7 +2116,7 @@ const schedulesData =
                     {
                         "time": "12:20-13:40",
                         "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "",
                         "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -3335,30 +2135,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.31",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -3392,14 +2168,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
                         "teacher": "Горєлов В.О.",
@@ -3413,22 +2181,6 @@ const schedulesData =
                         "teacher": "Горєлов В.О.",
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -3487,18 +2239,34 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/gqw-tsfv...\nдист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (ПрС)\nКолєдіна К.О.\nhttp://meet.google.com/emj-cmiw-...",
+                        "group": "РС-зб1",
+                        "details": "https://meet.google.com/gqw-tsfv...\nдист.",
+                        "link": ""
+                    },
+                    {
+                        "time": "18:15-19:35",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
+                        "teacher": "Колєдіна К.О.",
+                        "group": "ТМ-зб6",
+                        "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
                     },
                     {
                         "time": "19:40-21:00",
                         "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (Л)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
-                        "details": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)\nТуровська Л.В.\nhttps://meet.google.com/mka-xhtg...",
+                        "group": "ТМ-зб6",
+                        "details": "дист.",
+                        "link": ""
+                    },
+                    {
+                        "time": "19:40-21:00",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                        "teacher": "Туровська Л.В.",
+                        "group": "BE-зб5",
+                        "details": "https://meet.google.com/mka-xhtg...",
                         "link": "https://meet.google.com/mka-xhtg-idk"
                     }
                 ]
@@ -3536,40 +2304,16 @@ const schedulesData =
                         "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
                         "group": "КН-31 (підгр. 1)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
+                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -3602,42 +2346,10 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
                         "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
                         "teacher": "Матвієнків С.М.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "",
                         "link": ""
                     }
@@ -3648,25 +2360,9 @@ const schedulesData =
                 "day": "Понеділок",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "12:20-13:40",
                         "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "КН-31, КН-32",
                         "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -3674,7 +2370,7 @@ const schedulesData =
                     {
                         "time": "13:50-15:10",
                         "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "",
                         "details": "ауд. 324 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -3685,30 +2381,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.30",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -3734,22 +2406,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
                         "teacher": "Горєлов В.О.",
@@ -3764,22 +2420,6 @@ const schedulesData =
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -3787,14 +2427,6 @@ const schedulesData =
                 "date": "30.04.2025",
                 "day": "Середа",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "(підгр. 2)\nАналіз даних (Лаб)",
@@ -3809,14 +2441,6 @@ const schedulesData =
                         "teacher": "Никифорчин О.Р.",
                         "group": "КН(зб)2.28",
                         "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     },
                     {
@@ -3837,17 +2461,25 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
+                        "link": ""
+                    },
+                    {
+                        "time": "18:15-19:35",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                        "teacher": "Туровська Л.В.",
+                        "group": "BE-зб5",
+                        "details": "",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
                         "teacher": "Туровська Л.В.",
-                        "group": "",
+                        "group": "BE-зб5",
                         "details": "https://meet.google.com/mka-xhtg...",
                         "link": "https://meet.google.com/mka-xhtg-idk"
                     }
@@ -3874,14 +2506,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "13:50-15:10",
                         "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
@@ -3898,28 +2522,12 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -3948,7 +2556,15 @@ const schedulesData =
                         "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
                         "teacher": "Ровінський В.А.",
                         "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57 (підгр. 1)\nКомп`ютерні мережі (Лаб)\nауд. 207 кор. Центральний корпус, Шевченка 57\nПревисокова Н.В.",
+                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                        "link": ""
+                    },
+                    {
+                        "time": "12:20-13:40",
+                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                        "teacher": "Превисокова Н.В.",
+                        "group": "КН-31 (підгр. 1)",
+                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
@@ -3958,38 +2574,6 @@ const schedulesData =
                         "group": "КН-31 (підгр. 2)",
                         "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -3998,25 +2582,9 @@ const schedulesData =
                 "day": "Понеділок",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "12:20-13:40",
                         "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "",
                         "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -4035,30 +2603,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.31",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -4092,14 +2636,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
                         "teacher": "Горєлов В.О.",
@@ -4114,22 +2650,6 @@ const schedulesData =
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -4137,14 +2657,6 @@ const schedulesData =
                 "date": "07.05.2025",
                 "day": "Середа",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "(підгр. 1)\nАналіз даних (Лаб)",
@@ -4159,14 +2671,6 @@ const schedulesData =
                         "teacher": "Никифорчин О.Р.",
                         "group": "КН(зб)2.28",
                         "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     },
                     {
@@ -4187,17 +2691,33 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/gqw-tsfv...\nдист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (ПрС)\nКолєдіна К.О.\nhttp://meet.google.com/emj-cmiw-...",
+                        "group": "РС-зб1",
+                        "details": "https://meet.google.com/gqw-tsfv...\nдист.",
+                        "link": ""
+                    },
+                    {
+                        "time": "18:15-19:35",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
+                        "teacher": "Колєдіна К.О.",
+                        "group": "ТМ-зб6",
+                        "details": "http://meet.google.com/emj-cmiw-...",
+                        "link": ""
+                    },
+                    {
+                        "time": "18:15-19:35",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                        "teacher": "Туровська Л.В.",
+                        "group": "BE-зб5",
+                        "details": "",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
                         "teacher": "Туровська Л.В.",
-                        "group": "",
+                        "group": "BE-зб5",
                         "details": "https://meet.google.com/mka-xhtg...",
                         "link": "https://meet.google.com/mka-xhtg-idk"
                     }
@@ -4236,40 +2756,16 @@ const schedulesData =
                         "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
                         "group": "КН-31 (підгр. 1)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
+                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -4302,42 +2798,10 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
                         "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
                         "teacher": "Матвієнків С.М.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "",
                         "link": ""
                     }
@@ -4348,25 +2812,9 @@ const schedulesData =
                 "day": "Понеділок",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "12:20-13:40",
                         "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "КН-31, КН-32",
                         "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -4374,7 +2822,7 @@ const schedulesData =
                     {
                         "time": "13:50-15:10",
                         "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "",
                         "details": "ауд. 324 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -4385,30 +2833,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.30",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -4464,22 +2888,6 @@ const schedulesData =
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -4487,14 +2895,6 @@ const schedulesData =
                 "date": "14.05.2025",
                 "day": "Середа",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "(підгр. 2)\nАналіз даних (Лаб)",
@@ -4509,14 +2909,6 @@ const schedulesData =
                         "teacher": "Никифорчин О.Р.",
                         "group": "КН(зб)2.28",
                         "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     },
                     {
@@ -4537,17 +2929,25 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
+                        "link": ""
+                    },
+                    {
+                        "time": "18:15-19:35",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                        "teacher": "Туровська Л.В.",
+                        "group": "BE-зб5",
+                        "details": "",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
                         "teacher": "Туровська Л.В.",
-                        "group": "",
+                        "group": "BE-зб5",
                         "details": "https://meet.google.com/mka-xhtg...",
                         "link": "https://meet.google.com/mka-xhtg-idk"
                     }
@@ -4574,14 +2974,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "13:50-15:10",
                         "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
@@ -4590,36 +2982,12 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -4648,7 +3016,15 @@ const schedulesData =
                         "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
                         "teacher": "Ровінський В.А.",
                         "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57 (підгр. 1)\nКомп`ютерні мережі (Лаб)\nауд. 207 кор. Центральний корпус, Шевченка 57\nПревисокова Н.В.",
+                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                        "link": ""
+                    },
+                    {
+                        "time": "12:20-13:40",
+                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                        "teacher": "Превисокова Н.В.",
+                        "group": "КН-31 (підгр. 1)",
+                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
@@ -4658,38 +3034,6 @@ const schedulesData =
                         "group": "КН-31 (підгр. 2)",
                         "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -4697,22 +3041,6 @@ const schedulesData =
                 "date": "19.05.2025",
                 "day": "Понеділок",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "12:20-13:40",
                         "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
@@ -4735,30 +3063,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.31",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -4792,43 +3096,11 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "16:50-18:10",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
                         "teacher": "Горєлов В.О.",
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -4837,14 +3109,6 @@ const schedulesData =
                 "date": "21.05.2025",
                 "day": "Середа",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "(підгр. 1)\nАналіз даних (Лаб)",
@@ -4859,14 +3123,6 @@ const schedulesData =
                         "teacher": "Никифорчин О.Р.",
                         "group": "КН(зб)2.28",
                         "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     },
                     {
@@ -4887,17 +3143,25 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (ПрС)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/gqw-tsfv...\nдист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (ПрС)\nКолєдіна К.О.\nhttp://meet.google.com/emj-cmiw-...",
+                        "group": "РС-зб1",
+                        "details": "https://meet.google.com/gqw-tsfv...\nдист.",
+                        "link": ""
+                    },
+                    {
+                        "time": "18:15-19:35",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
+                        "teacher": "Колєдіна К.О.",
+                        "group": "ТМ-зб6",
+                        "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
                         "teacher": "Туровська Л.В.",
-                        "group": "",
+                        "group": "BE-зб5",
                         "details": "https://meet.google.com/mka-xhtg...",
                         "link": "https://meet.google.com/mka-xhtg-idk"
                     }
@@ -4936,39 +3200,7 @@ const schedulesData =
                         "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
                         "group": "КН-31 (підгр. 1)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
+                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     }
                 ]
@@ -5010,34 +3242,10 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
                         "subject": "Збірна група SS-зб4\nSoft skills у професійній діяльності (ПрС)",
                         "teacher": "Матвієнків С.М.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
+                        "group": "SS-зб4",
                         "details": "",
                         "link": ""
                     }
@@ -5048,33 +3256,9 @@ const schedulesData =
                 "day": "Понеділок",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "13:50-15:10",
                         "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
+                        "teacher": "Кушнір О.С.",
                         "group": "",
                         "details": "ауд. 324 кор. Центральний корпус, Шевченка 57",
                         "link": ""
@@ -5085,30 +3269,6 @@ const schedulesData =
                         "teacher": "Семаньків М.В.",
                         "group": "КН(зб)2.30",
                         "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -5142,14 +3302,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "15:20-16:40",
                         "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
                         "teacher": "Горєлов В.О.",
@@ -5164,22 +3316,6 @@ const schedulesData =
                         "group": "КН(зб)2.22",
                         "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -5187,14 +3323,6 @@ const schedulesData =
                 "date": "28.05.2025",
                 "day": "Середа",
                 "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
                     {
                         "time": "10:35-11:55",
                         "subject": "(підгр. 2)\nАналіз даних (Лаб)",
@@ -5209,14 +3337,6 @@ const schedulesData =
                         "teacher": "Никифорчин О.Р.",
                         "group": "КН(зб)2.28",
                         "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     },
                     {
@@ -5237,17 +3357,17 @@ const schedulesData =
                     },
                     {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
+                        "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (ПрС)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "http://meet.google.com/emj-cmiw-...",
                         "link": "http://meet.google.com/emj-cmiw-tqm"
                     },
                     {
                         "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
+                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
                         "teacher": "Туровська Л.В.",
-                        "group": "",
+                        "group": "BE-зб5",
                         "details": "https://meet.google.com/mka-xhtg...",
                         "link": "https://meet.google.com/mka-xhtg-idk"
                     }
@@ -5274,14 +3394,6 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "13:50-15:10",
                         "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
                         "teacher": "Никорак Я.Я.",
@@ -5290,36 +3402,12 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
+                        "subject": "Збірна група ІПтаРС-зб1\nІнноваційне підприємництво та розвиток стартапів (Л)",
                         "teacher": "Паска Ю.В.",
-                        "group": "",
+                        "group": "РС-зб1",
                         "details": "https://meet.google.com/gqw-tsfv...",
                         "link": "https://meet.google.com/gqw-tsfv-ntg"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -5348,7 +3436,15 @@ const schedulesData =
                         "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
                         "teacher": "Ровінський В.А.",
                         "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57 (підгр. 1)\nКомп`ютерні мережі (Лаб)\nауд. 207 кор. Центральний корпус, Шевченка 57\nПревисокова Н.В.",
+                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                        "link": ""
+                    },
+                    {
+                        "time": "12:20-13:40",
+                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                        "teacher": "Превисокова Н.В.",
+                        "group": "КН-31 (підгр. 1)",
+                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
                     },
                     {
@@ -5357,38 +3453,6 @@ const schedulesData =
                         "teacher": "Превисокова Н.В.",
                         "group": "КН-31 (підгр. 2)",
                         "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -5420,46 +3484,6 @@ const schedulesData =
                         "group": "КН(зб)2.26",
                         "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -5489,46 +3513,6 @@ const schedulesData =
                         "teacher": "Ізмайлов А.В.",
                         "group": "КН(зб)2.26",
                         "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -5562,42 +3546,10 @@ const schedulesData =
                         "link": ""
                     },
                     {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "18:15-19:35",
                         "subject": "Збірна група ТМ-зб6\nТайм-  менеджмент (КСР)",
                         "teacher": "Колєдіна К.О.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
+                        "group": "ТМ-зб6",
                         "details": "",
                         "link": ""
                     }
@@ -5630,46 +3582,6 @@ const schedulesData =
                         "group": "КН-31 (підгр. 2)",
                         "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
                         "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
                     }
                 ]
             },
@@ -5681,64 +3593,8 @@ const schedulesData =
                         "time": "09:00-10:20",
                         "subject": "Аналіз даних... Письм.Екз.- за групу (КЕк)",
                         "teacher": "Ізмайлов А.В.",
-                        "group": "",
+                        "group": "КЕк)",
                         "details": "ауд. 316 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -5748,22 +3604,6 @@ const schedulesData =
                 "day": "Понеділок",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "12:20-13:40",
                         "subject": "Аналіз даних... Письм.Екз.- за групу (Екз)",
                         "teacher": "Ізмайлов А.В.",
@@ -5775,40 +3615,8 @@ const schedulesData =
                         "time": "13:50-15:10",
                         "subject": "Практикум з програмування... Письм.Екз.- за групу (КЕк)",
                         "teacher": "Ізмайлов А.В.",
-                        "group": "",
+                        "group": "КЕк)",
                         "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -5829,56 +3637,8 @@ const schedulesData =
                         "time": "10:35-11:55",
                         "subject": "Комп`ютерні мережі... Письм.Екз.- за групу (КЕк)",
                         "teacher": "Превисокова Н.В.",
-                        "group": "",
+                        "group": "КЕк)",
                         "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -5888,67 +3648,11 @@ const schedulesData =
                 "day": "Середа",
                 "lessons": [
                     {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
                         "time": "10:35-11:55",
                         "subject": "Комп`ютерні мережі... Письм.Екз.- за групу (Екз)",
                         "teacher": "Превисокова Н.В.",
                         "group": "",
                         "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
                         "link": ""
                     }
                 ]
@@ -5956,6031 +3660,3547 @@ const schedulesData =
         ]
     },
 
-    "КН-32": {
-        "faculty": "КН",
-        "schedule": [
-            {
-                "date": "10.02.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "11.02.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 301 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "12.02.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "13.02.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.29",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 320а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "14.02.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "17.02.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.30",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "18.02.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "19.02.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "20.02.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 33 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 35 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 1)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "21.02.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "24.02.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.31",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "25.02.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "26.02.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "27.02.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.32",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.29",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група Уфсо-3зб\nСоціологія (Л)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/khj-wrua...",
-                        "link": "https://meet.google.com/khj-wrua-nrk"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "28.02.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "03.03.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.30",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "04.03.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 320а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "05.03.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "06.03.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.32",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 35 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 1)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "07.03.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "10.03.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.31",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "11.03.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "12.03.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "13.03.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.32",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.29",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "14.03.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "17.03.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.30",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "18.03.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "19.03.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "20.03.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.30",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 1)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "21.03.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "24.03.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.31",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "25.03.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "26.03.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "27.03.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.32",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.29",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "28.03.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "31.03.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.30",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "01.04.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 320а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "02.04.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "03.04.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.31",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 1)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "04.04.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "07.04.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.31",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "08.04.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "09.04.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "10.04.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.32",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.29",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "11.04.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "16.04.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "17.04.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "21.04.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.23",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.31",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "22.04.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "23.04.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.19",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "24.04.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.32",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.29",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "25.04.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "28.04.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.30",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "29.04.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "30.04.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "01.05.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 1)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "02.05.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "05.05.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.31",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "06.05.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "07.05.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "08.05.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.32",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.29",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "09.05.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "12.05.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "КН-31, КН-32",
-                        "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.30",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "13.05.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 112 кор. Гуманітарний корпус",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "14.05.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "",
-                        "details": "ауд. 232 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "15.05.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 1)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "16.05.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "19.05.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "",
-                        "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.31",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "20.05.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "21.05.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "22.05.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.32",
-                        "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 2)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 2)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "23.05.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "26.05.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
-                        "teacher": "Семаньків М.В.",
-                        "group": "КН(зб)2.30",
-                        "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "27.05.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 320 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.22",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "28.05.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
-                        "teacher": "Никифорчин О.Р.",
-                        "group": "КН(зб)2.28",
-                        "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Економіка (Сем)",
-                        "teacher": "Кушнір* О.С.",
-                        "group": "",
-                        "details": "ауд. 232 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.20",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
-                        "teacher": "Горєлов В.О.",
-                        "group": "КН(зб)2.21",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "дист.\nЗбірна група BE-зб5\nBusiness English (ПрС)",
-                        "teacher": "Туровська Л.В.",
-                        "group": "",
-                        "details": "https://meet.google.com/mka-xhtg...",
-                        "link": "https://meet.google.com/mka-xhtg-idk"
-                    }
-                ]
-            },
-            {
-                "date": "29.05.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 1)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
-                        "teacher": "Кучера І.В.",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "30.05.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
-                        "teacher": "Ровінський В.А.",
-                        "group": "КН(зб)2.27",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "02.06.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "03.06.2025",
-                "day": "Вівторок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "04.06.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.24",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.25",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН(зб)2.26",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "05.06.2025",
-                "day": "Четвер",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
-                        "teacher": "Никорак Я.Я.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "(підгр. 1)\nАналіз даних (Лаб)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "КН-32 (підгр. 1)",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "06.06.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Практикум з програмування (ПрС)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "Комп`ютерні мережі... Письм.Екз.- за групу (КЕк)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "11.06.2025",
-                "day": "Середа",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Комп`ютерні мережі... Письм.Екз.- за групу (Екз)",
-                        "teacher": "Превисокова Н.В.",
-                        "group": "",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "13.06.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Аналіз даних... Письм.Екз.- за групу (КЕк)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "16.06.2025",
-                "day": "Понеділок",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "Аналіз даних... Письм.Екз.- за групу (Екз)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Практикум з програмування... Письм.Екз.- за групу (КЕк)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            },
-            {
-                "date": "20.06.2025",
-                "day": "П'ятниця",
-                "lessons": [
-                    {
-                        "time": "09:00-10:20",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "10:35-11:55",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "12:20-13:40",
-                        "subject": "Практикум з програмування... Письм.Екз.- за групу (Екз)",
-                        "teacher": "Ізмайлов А.В.",
-                        "group": "",
-                        "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
-                        "link": ""
-                    },
-                    {
-                        "time": "13:50-15:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "15:20-16:40",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "16:50-18:10",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "18:15-19:35",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    },
-                    {
-                        "time": "19:40-21:00",
-                        "subject": "",
-                        "teacher": "",
-                        "group": "",
-                        "details": "",
-                        "link": ""
-                    }
-                ]
-            }
-        ]
-    },
+        "КН-32": {
+            "faculty": "КН",
+            "schedule": [
+                {
+                    "date": "10.02.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "11.02.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 301 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "12.02.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "13.02.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.29",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 320а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "14.02.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "17.02.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Економіка (Сем)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.30",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "18.02.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "19.02.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "20.02.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 33 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 35 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 1)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "21.02.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "24.02.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.31",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "25.02.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "26.02.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "27.02.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.32",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.29",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "https://meet.google.com/khj-wrua...",
+                            "link": "https://meet.google.com/khj-wrua-nrk"
+                        }
+                    ]
+                },
+                {
+                    "date": "28.02.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "03.03.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Економіка (Сем)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.30",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "04.03.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 320а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "05.03.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "06.03.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.32",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 35 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 1)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "07.03.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "10.03.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.31",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "11.03.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "12.03.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "13.03.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.32",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.29",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "14.03.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "17.03.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Економіка (Сем)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.30",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "18.03.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "19.03.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "20.03.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.30",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 1)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "21.03.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "24.03.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.31",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "25.03.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "26.03.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "27.03.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.32",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.29",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "28.03.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "31.03.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Економіка (Сем)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.30",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (Л)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "https://us02web.zoom.us/j/273464...",
+                            "link": "https://us02web.zoom.us/j/2734646154"
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (ПрС)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "01.04.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 320а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "02.04.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "https://meet.google.com/mka-xhtg...",
+                            "link": "https://meet.google.com/mka-xhtg-idk"
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "03.04.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.31",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 1)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (Л)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "04.04.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "07.04.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.31",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (ПрС)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "08.04.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (Л)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "09.04.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "https://meet.google.com/mka-xhtg...",
+                            "link": "https://meet.google.com/mka-xhtg-idk"
+                        }
+                    ]
+                },
+                {
+                    "date": "10.04.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.32",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.29",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "11.04.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "14.04.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (Л)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "https://us02web.zoom.us/j/273464...",
+                            "link": "https://us02web.zoom.us/j/2734646154"
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (ПрС)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "15.04.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (ПрС)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "16.04.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "https://meet.google.com/mka-xhtg...",
+                            "link": "https://meet.google.com/mka-xhtg-idk"
+                        }
+                    ]
+                },
+                {
+                    "date": "17.04.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "21.04.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.23\nWEB - програмування (JavaScript) (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.23",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.31",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (ПрС)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "22.04.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "23.04.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Потік КН-31, КН-32\nАналіз даних (Л)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.19\nТехнології проектування комп’ютерних ігор (Unity) (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.19",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (ПрС)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "https://meet.google.com/mka-xhtg...",
+                            "link": "https://meet.google.com/mka-xhtg-idk"
+                        }
+                    ]
+                },
+                {
+                    "date": "24.04.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.32",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.29",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "25.04.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "28.04.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.30",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (Л)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "https://us02web.zoom.us/j/273464...",
+                            "link": "https://us02web.zoom.us/j/2734646154"
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (ПрС)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "29.04.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "30.04.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "https://meet.google.com/mka-xhtg...",
+                            "link": "https://meet.google.com/mka-xhtg-idk"
+                        }
+                    ]
+                },
+                {
+                    "date": "01.05.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 1)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "02.05.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "05.05.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Економіка (Сем)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.31",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (ПрС)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "06.05.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "07.05.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Л)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "https://meet.google.com/mka-xhtg...",
+                            "link": "https://meet.google.com/mka-xhtg-idk"
+                        }
+                    ]
+                },
+                {
+                    "date": "08.05.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.32",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.29\nКрос-платформне програмування (Python) (Л)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.29",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nОпераційні системи (Л)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "(підгр. 2)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "09.05.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nКомп`ютерні мережі (Л)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "12.05.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Потік КН-31, КН-32\nЕкономіка (Л)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "КН-31, КН-32",
+                            "details": "ауд. 318 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.30",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (Л)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "https://us02web.zoom.us/j/273464...",
+                            "link": "https://us02web.zoom.us/j/2734646154"
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (ПрС)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "13.05.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 112 кор. Гуманітарний корпус",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "14.05.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 1)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Економіка (Сем)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "",
+                            "details": "ауд. 232 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "https://meet.google.com/mka-xhtg...",
+                            "link": "https://meet.google.com/mka-xhtg-idk"
+                        }
+                    ]
+                },
+                {
+                    "date": "15.05.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 322 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 1)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група ІПЗ(3‚4)зб\nЛідерство та ефективне управління (Л)",
+                            "teacher": "Мендела І.Я.",
+                            "group": "ПЗ(3",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "16.05.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "19.05.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Економіка (Сем)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "",
+                            "details": "ауд. 402 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.31\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.31",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "20.05.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "21.05.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "(підгр. 2)\nКомп`ютерні мережі (Лаб)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "https://meet.google.com/mka-xhtg...",
+                            "link": "https://meet.google.com/mka-xhtg-idk"
+                        }
+                    ]
+                },
+                {
+                    "date": "22.05.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.32\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.32",
+                            "details": "ауд. 234 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 2)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 2)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "23.05.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Л)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 310 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "26.05.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.30\nКрос-платформне програмування (Python) (Лаб)",
+                            "teacher": "Семаньків М.В.",
+                            "group": "КН(зб)2.30",
+                            "details": "ауд. 230 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "27.05.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 320 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Л)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.22\nТехнології розробки мобільних додатків (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.22",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "28.05.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.28\nАлгоритми на графах (Лаб)",
+                            "teacher": "Никифорчин О.Р.",
+                            "group": "КН(зб)2.28",
+                            "details": "ауд. 404 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Економіка (Сем)",
+                            "teacher": "Кушнір О.С.",
+                            "group": "",
+                            "details": "ауд. 232 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "15:20-16:40",
+                            "subject": "Збірна група КН(зб)2.20\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.20",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "16:50-18:10",
+                            "subject": "Збірна група КН(зб)2.21\nТехнології проектування комп’ютерних ігор (Unity) (Лаб)",
+                            "teacher": "Горєлов В.О.",
+                            "group": "КН(зб)2.21",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "19:40-21:00",
+                            "subject": "Збірна група BE-зб5\nBusiness English (ПрС)",
+                            "teacher": "Туровська Л.В.",
+                            "group": "BE-зб5",
+                            "details": "https://meet.google.com/mka-xhtg...",
+                            "link": "https://meet.google.com/mka-xhtg-idk"
+                        }
+                    ]
+                },
+                {
+                    "date": "29.05.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 309а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 1)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307а кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "18:15-19:35",
+                            "subject": "Збірна група Уфсо-3зб\nСоціологія (ПрС)",
+                            "teacher": "Кучера І.В.",
+                            "group": "",
+                            "details": "",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "30.05.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.27\nПрограмування iOS  (Лаб)",
+                            "teacher": "Ровінський В.А.",
+                            "group": "КН(зб)2.27",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "02.06.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "03.06.2025",
+                    "day": "Вівторок",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "04.06.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "Збірна група КН(зб)2.24\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.24",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Збірна група КН(зб)2.25\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.25",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Збірна група КН(зб)2.26\nWEB - програмування (JavaScript) (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН(зб)2.26",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "05.06.2025",
+                    "day": "Четвер",
+                    "lessons": [
+                        {
+                            "time": "09:00-10:20",
+                            "subject": "(підгр. 1)\nОпераційні системи (Лаб)",
+                            "teacher": "Никорак Я.Я.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "(підгр. 1)\nАналіз даних (Лаб)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КН-32 (підгр. 1)",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "06.06.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Практикум з програмування (ПрС)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 207 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "13:50-15:10",
+                            "subject": "Комп`ютерні мережі... Письм.Екз.- за групу (КЕк)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "КЕк)",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "11.06.2025",
+                    "day": "Середа",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Комп`ютерні мережі... Письм.Екз.- за групу (Екз)",
+                            "teacher": "Превисокова Н.В.",
+                            "group": "",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "13.06.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Аналіз даних... Письм.Екз.- за групу (КЕк)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КЕк)",
+                            "details": "ауд. 313 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "16.06.2025",
+                    "day": "Понеділок",
+                    "lessons": [
+                        {
+                            "time": "10:35-11:55",
+                            "subject": "Аналіз даних... Письм.Екз.- за групу (Екз)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 309 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        },
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Практикум з програмування... Письм.Екз.- за групу (КЕк)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "КЕк)",
+                            "details": "ауд. 306 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                },
+                {
+                    "date": "20.06.2025",
+                    "day": "П'ятниця",
+                    "lessons": [
+                        {
+                            "time": "12:20-13:40",
+                            "subject": "Практикум з програмування... Письм.Екз.- за групу (Екз)",
+                            "teacher": "Ізмайлов А.В.",
+                            "group": "",
+                            "details": "ауд. 307 кор. Центральний корпус, Шевченка 57",
+                            "link": ""
+                        }
+                    ]
+                }
+            ]
+        },
     
         "КН-23": {
             "faculty": "КН",
@@ -22996,3183 +18216,3367 @@ const schedulesData =
                 ]
             },
 
-                    "ПР-34": {
-                        "faculty": "ПР",
-                        "schedule": [
-                            {
-                                "date": "17.02.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "18.02.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 402 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "19.02.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "20.02.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 309 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "21.02.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 308 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 309 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "24.02.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "дист.\nЗбірна група ПР(квп)л\nКримінально-виконавче право (Л)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/smf-qirh-...",
-                                        "link": "http://meet.google.com/smf-qirh-bsu"
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а https://meet.google.com/imo-ubqj...",
-                                        "link": "https://meet.google.com/imo-ubqj-deu"
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "дист.\nЦивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "ауд. 210 кор. Шевченка, 44а https://meet.google.com/xsg-figs...",
-                                        "link": "https://meet.google.com/xsg-figs-sta"
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "дист.\nКримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "ауд. 103 кор. Шевченка, 44а https://meet.google.com/kka-yhcq...",
-                                        "link": "https://meet.google.com/kka-yhcq-zdj"
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "25.02.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "дист.\nЦивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 208 кор. Шевченка, 44а https://meet.google.com/ujs-muse...",
-                                        "link": "https://meet.google.com/ujs-muse-asm"
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 402 кор. Шевченка, 44а https://meet.google.com/bht-veak...",
-                                        "link": "https://meet.google.com/bht-veak-xce"
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/trk-hyds-...",
-                                        "link": "http://meet.google.com/trk-hyds-cvb"
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "26.02.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 406 кор. Шевченка, 44а https://meet.google.com/iog-jjji...",
-                                        "link": "https://meet.google.com/iog-jjji-jpk"
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "дист.\nКримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а https://teams.live.com/meet/9475...",
-                                        "link": "https://teams.live.com/meet/9475689210338?p=GTM9yrN2TMzpejehHN"
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "27.02.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "дист.\nЗбірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/vtx-pwtq-...",
-                                        "link": "http://meet.google.com/vtx-pwtq-yae"
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "дист.\nЗбірна група ПР(квп)л\nКримінально-виконавче право (Л)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/smf-qirh-...",
-                                        "link": "http://meet.google.com/smf-qirh-bsu"
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "дист.\nЗбірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "ПР(квп)2",
-                                        "details": "ауд. 103 кор. Шевченка, 44а http://meet.google.com/smf-qirh-...",
-                                        "link": "http://meet.google.com/smf-qirh-bsu"
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "28.02.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "дист.\nЗбірна група ПР(викпр)\nВиконавче провадження (ПрС)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 103 кор. Шевченка, 44а https://meet.google.com/xzw-mwwn...",
-                                        "link": "https://meet.google.com/xzw-mwwn-mkd"
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 402 кор. Шевченка, 44а https://meet.google.com/bht-veak...",
-                                        "link": "https://meet.google.com/bht-veak-xce"
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/trk-hyds-...",
-                                        "link": "http://meet.google.com/trk-hyds-cvb"
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "дист.\nКримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а https://teams.live.com/meet/9475...",
-                                        "link": "https://teams.live.com/meet/9475689210338?p=GTM9yrN2TMzpejehHN"
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "03.03.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Кримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "ауд. 113 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Збірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "04.03.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 209 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "05.03.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "ауд. 113 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Кримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "06.03.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 111 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "ПР(захтр)3",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "07.03.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 308 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "ауд. 0-102 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "ПР(псз)2",
-                                        "details": "ауд. 402 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "10.03.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 407 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Кримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "ауд. 309 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "ауд. 111 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "11.03.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 209 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 402 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "12.03.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "ПР(псз)2",
-                                        "details": "ауд. 407 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "13.03.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Збірна група ПР(квп)л\nКримінально-виконавче право (Л)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "ПР(квп)2",
-                                        "details": "ауд. 103 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "14.03.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 113 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "ПР(захтр)3",
-                                        "details": "ауд. 0-100 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "ауд. 113 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "17.03.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Кримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "18.03.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 209 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "19.03.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "20.03.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "ПР(псз)2",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Кримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "21.03.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 308 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "ауд. 0-102 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "24.03.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 407 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "25.03.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 209 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 402 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "26.03.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "ПР(захтр)3",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Кримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "ауд. 0-102 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "27.03.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Збірна група ПР(квп)л\nКримінально-виконавче право (Л)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "ПР(квп)2",
-                                        "details": "ауд. 103 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "28.03.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 113 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "ПР(псз)2",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Кримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "31.03.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Кримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "ауд. 308 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "01.04.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 209 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "02.04.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 407 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "03.04.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 111 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Кримінальне процесуальне право України (ПрС)",
-                                        "teacher": "Гнідан Р.М.",
-                                        "group": "",
-                                        "details": "ауд. 0-100 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "04.04.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 308 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "ауд. 107 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "07.04.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "08.04.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 209 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 402 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "09.04.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "10.04.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
-                                        "teacher": "Кохан Н.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Збірна група ПР(квп)л\nКримінально-виконавче право (Л)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "ПР(квп)2",
-                                        "details": "ауд. 103 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "11.04.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 113 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "21.04.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "22.04.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 209 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
-                                        "teacher": "Банасевич І.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 402 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "23.04.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "24.04.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "ПР(квп)2",
-                                        "details": "ауд. 103 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "25.04.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 308 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "28.04.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
-                                        "teacher": "Медицький І.Б.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "29.04.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 209 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
-                                        "teacher": "Микитин Ю.І.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 406 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "30.04.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
-                                        "teacher": "Кузьмич О.Я.",
-                                        "group": "ПР-31, ПР-32, ПР-33, ПР-34, ПР-35",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "01.05.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "Збірна група ПР(квп)л\nКримінально-виконавче право (Л)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "",
-                                        "details": "ауд. 404 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "02.05.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 308 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "05.05.2025",
-                                "day": "Понеділок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Цивільне процесуальне право України (ПрС)",
-                                        "teacher": "Петечел Н.М.",
-                                        "group": "",
-                                        "details": "ауд. 0-100 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "06.05.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 113 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "08.05.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "ПР(квп)2",
-                                        "details": "ауд. 103 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "09.05.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 111 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "13.05.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 208 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "14.05.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "15.05.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "ПР(квп)2",
-                                        "details": "ауд. 103 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "16.05.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 111 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "20.05.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 208 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "21.05.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "22.05.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "ПР(квп)2",
-                                        "details": "ауд. 103 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "23.05.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 111 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 304 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "27.05.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 208 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "28.05.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 210 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "29.05.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
-                                        "teacher": "Кернякевич-Танасійчук Ю.В.",
-                                        "group": "ПР(квп)2",
-                                        "details": "ауд. 103 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "30.05.2025",
-                                "day": "П'ятниця",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 111 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "03.06.2025",
-                                "day": "Вівторок",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Цивільне право України (ПрС)",
-                                        "teacher": "Схаб-Бучинська Т.Я.",
-                                        "group": "",
-                                        "details": "ауд. 208 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "04.06.2025",
-                                "day": "Середа",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "Кримінальне право України (ПрС)",
-                                        "teacher": "Шпіляревич В.В.",
-                                        "group": "",
-                                        "details": "ауд. 210 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "date": "05.06.2025",
-                                "day": "Четвер",
-                                "lessons": [
-                                    {
-                                        "time": "09:00-10:20",
-                                        "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
-                                        "teacher": "Логвінова М.В.",
-                                        "group": "",
-                                        "details": "ауд. 103 кор. Шевченка, 44а",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "10:35-11:55",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "12:20-13:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "13:50-15:10",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    },
-                                    {
-                                        "time": "15:20-16:40",
-                                        "subject": "",
-                                        "teacher": "",
-                                        "group": "",
-                                        "details": "",
-                                        "link": ""
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                };
+                "ПР-34": {
+                    "faculty": "КН",
+                    "schedule": [
+                        {
+                            "date": "17.02.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "18.02.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 402 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "19.02.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "20.02.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 309 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "21.02.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 308 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 309 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "24.02.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "дист.\nЗбірна група ПР(квп)л\nКримінально-виконавче право (Л)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/smf-qirh-...",
+                                    "link": "http://meet.google.com/smf-qirh-bsu"
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а https://meet.google.com/imo-ubqj...",
+                                    "link": "https://meet.google.com/imo-ubqj-deu"
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "дист.\nЦивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "ауд. 210 кор. Шевченка, 44а https://meet.google.com/xsg-figs...",
+                                    "link": "https://meet.google.com/xsg-figs-sta"
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "дист.\nКримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "ауд. 103 кор. Шевченка, 44а https://meet.google.com/kka-yhcq...",
+                                    "link": "https://meet.google.com/kka-yhcq-zdj"
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "25.02.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "дист.\nЦивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 208 кор. Шевченка, 44а https://meet.google.com/ujs-muse...",
+                                    "link": "https://meet.google.com/ujs-muse-asm"
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 402 кор. Шевченка, 44а https://meet.google.com/bht-veak...",
+                                    "link": "https://meet.google.com/bht-veak-xce"
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/trk-hyds-...",
+                                    "link": "http://meet.google.com/trk-hyds-cvb"
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "26.02.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 406 кор. Шевченка, 44а https://meet.google.com/iog-jjji...",
+                                    "link": "https://meet.google.com/iog-jjji-jpk"
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "дист.\nКримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а https://teams.live.com/meet/9475...",
+                                    "link": "https://teams.live.com/meet/9475689210338?p=GTM9yrN2TMzpejehHN"
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "27.02.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "дист.\nЗбірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/vtx-pwtq-...",
+                                    "link": "http://meet.google.com/vtx-pwtq-yae"
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "дист.\nЗбірна група ПР(квп)л\nКримінально-виконавче право (Л)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/smf-qirh-...",
+                                    "link": "http://meet.google.com/smf-qirh-bsu"
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "дист.\nЗбірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)2",
+                                    "details": "ауд. 103 кор. Шевченка, 44а http://meet.google.com/smf-qirh-...",
+                                    "link": "http://meet.google.com/smf-qirh-bsu"
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "28.02.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "дист.\nЗбірна група ПР(викпр)\nВиконавче провадження (ПрС)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 103 кор. Шевченка, 44а https://meet.google.com/xzw-mwwn...",
+                                    "link": "https://meet.google.com/xzw-mwwn-mkd"
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 402 кор. Шевченка, 44а https://meet.google.com/bht-veak...",
+                                    "link": "https://meet.google.com/bht-veak-xce"
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/trk-hyds-...",
+                                    "link": "http://meet.google.com/trk-hyds-cvb"
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "дист.\nКримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а https://teams.live.com/meet/9475...",
+                                    "link": "https://teams.live.com/meet/9475689210338?p=GTM9yrN2TMzpejehHN"
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "03.03.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а https://meet.google.com/imo-ubqj...",
+                                    "link": "https://meet.google.com/imo-ubqj-deu"
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "дист.\nКримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "ауд. 113 кор. Шевченка, 44а https://meet.google.com/kka-yhcq...",
+                                    "link": "https://meet.google.com/kka-yhcq-zdj"
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "дист.\nЗбірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/vtx-pwtq-...",
+                                    "link": "http://meet.google.com/vtx-pwtq-yae"
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "04.03.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "дист.\nЦивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 209 кор. Шевченка, 44а https://meet.google.com/ujs-muse...",
+                                    "link": "https://meet.google.com/ujs-muse-asm"
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а https://meet.google.com/bht-veak...",
+                                    "link": "https://meet.google.com/bht-veak-xce"
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а http://meet.google.com/trk-hyds-...",
+                                    "link": "http://meet.google.com/trk-hyds-cvb"
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "05.03.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "дист.\nЦивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "ауд. 113 кор. Шевченка, 44а https://meet.google.com/xsg-figs...",
+                                    "link": "https://meet.google.com/xsg-figs-sta"
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "дист.\nКримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "ауд. 406 кор. Шевченка, 44а https://meet.google.com/kka-yhcq...",
+                                    "link": "https://meet.google.com/kka-yhcq-zdj"
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "дист.\nПотік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 406 кор. Шевченка, 44а https://meet.google.com/iog-jjji...",
+                                    "link": "https://meet.google.com/iog-jjji-jpk"
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "06.03.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "дист.\nЦивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 111 кор. Шевченка, 44а https://meet.google.com/ujs-muse...",
+                                    "link": "https://meet.google.com/ujs-muse-asm"
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "дист.\nЗбірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)3",
+                                    "details": "ауд. 304 кор. Шевченка, 44а http://meet.google.com/vtx-pwtq-...",
+                                    "link": "http://meet.google.com/vtx-pwtq-yae"
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "07.03.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "дист.\nЗбірна група ПР(викпр)\nВиконавче провадження (Л)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 308 кор. Шевченка, 44а https://meet.google.com/xzw-mwwn...",
+                                    "link": "https://meet.google.com/xzw-mwwn-mkd"
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "дист.\nЦивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "ауд. 0-102 кор. Шевченка, 44а https://meet.google.com/xsg-figs...",
+                                    "link": "https://meet.google.com/xsg-figs-sta"
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "дист.\nЗбірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)2",
+                                    "details": "ауд. 402 кор. Шевченка, 44а http://meet.google.com/vtx-pwtq-...",
+                                    "link": "http://meet.google.com/vtx-pwtq-yae"
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "дист.\nКримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а https://teams.live.com/meet/9475...",
+                                    "link": "https://teams.live.com/meet/9475689210338?p=GTM9yrN2TMzpejehHN"
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "10.03.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)л",
+                                    "details": "ауд. 407 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "ауд. 309 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "ауд. 111 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "11.03.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 209 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 402 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "12.03.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)2",
+                                    "details": "ауд. 407 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "13.03.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(квп)л\nКримінально-виконавче право (Л)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)2",
+                                    "details": "ауд. 103 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "14.03.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 113 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)3",
+                                    "details": "ауд. 0-100 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "ауд. 113 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "17.03.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "18.03.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 209 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "19.03.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "20.03.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)2",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "21.03.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 308 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "ауд. 0-102 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "24.03.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)л",
+                                    "details": "ауд. 407 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "25.03.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 209 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 402 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "26.03.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)3",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "ауд. 0-102 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "27.03.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(квп)л\nКримінально-виконавче право (Л)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)2",
+                                    "details": "ауд. 103 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "28.03.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 113 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)2",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "31.03.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "ауд. 308 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "01.04.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 209 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "02.04.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)л",
+                                    "details": "ауд. 407 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "03.04.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 111 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "ауд. 0-100 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "04.04.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 308 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "ауд. 107 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)3",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "07.04.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(захтр)л\nЗахист трудових прав працівників (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)л",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "08.04.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 209 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 402 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "09.04.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "10.04.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(псз)л\nПраво соціального забезпечення (Л)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(квп)л\nКримінально-виконавче право (Л)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)2",
+                                    "details": "ауд. 103 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "11.04.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 113 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "21.04.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "22.04.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 209 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне право України (Л)",
+                                    "teacher": "Банасевич І.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 402 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "23.04.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)3",
+                                    "details": "ауд. 208 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "24.04.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)2",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)2",
+                                    "details": "ауд. 103 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "25.04.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 308 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "28.04.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне право України (Л)",
+                                    "teacher": "Медицький І.Б.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "29.04.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 209 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)2",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nКримінальне процесуальне право України (Л)",
+                                    "teacher": "Микитин Ю.І.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 406 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "30.04.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Потік ПР-31, ПР-32, ПР-33, ПР-34, ПР-35\nЦивільне процесуальне право України (Л)",
+                                    "teacher": "Кузьмич О.Я.",
+                                    "group": "ПР-31, ПР-32",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "01.05.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(квп)л\nКримінально-виконавче право (Л)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)л",
+                                    "details": "ауд. 404 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)3",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "02.05.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (Л)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 308 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "05.05.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "ауд. 0-100 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "06.05.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 113 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "07.05.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)3",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "08.05.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)2",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)2",
+                                    "details": "ауд. 103 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "09.05.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 111 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "12.05.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "13.05.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 208 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "14.05.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "15.05.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)2",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)2",
+                                    "details": "ауд. 103 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "16.05.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 111 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)3",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "19.05.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "20.05.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 208 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "21.05.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "22.05.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Збірна група ПР(псз)2\nПраво соціального забезпечення (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(псз)2",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)2",
+                                    "details": "ауд. 103 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "23.05.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 111 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(захтр)3\nЗахист трудових прав працівників (ПрС)",
+                                    "teacher": "Кохан Н.В.",
+                                    "group": "ПР(захтр)3",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 304 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "26.05.2025",
+                            "day": "Понеділок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "27.05.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 208 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "Кримінальне процесуальне право України (ПрС)",
+                                    "teacher": "Гнідан Р.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "28.05.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 210 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "29.05.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Збірна група ПР(квп)2\nКримінально-виконавче право (ПрС)",
+                                    "teacher": "Кернякевич-Танасійчук Ю.В.",
+                                    "group": "ПР(квп)2",
+                                    "details": "ауд. 103 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "30.05.2025",
+                            "day": "П'ятниця",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 111 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "03.06.2025",
+                            "day": "Вівторок",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Цивільне право України (ПрС)",
+                                    "teacher": "Схаб-Бучинська Т.Я.",
+                                    "group": "",
+                                    "details": "ауд. 208 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Цивільне процесуальне право України (ПрС)",
+                                    "teacher": "Петечел Н.М.",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "04.06.2025",
+                            "day": "Середа",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "Кримінальне право України (ПрС)",
+                                    "teacher": "Шпіляревич В.В.",
+                                    "group": "",
+                                    "details": "ауд. 210 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "date": "05.06.2025",
+                            "day": "Четвер",
+                            "lessons": [
+                                {
+                                    "time": "09:00-10:20",
+                                    "subject": "Збірна група ПР(викпр)\nВиконавче провадження (ПрС)",
+                                    "teacher": "Логвінова М.В.",
+                                    "group": "ПР(викпр)",
+                                    "details": "ауд. 103 кор. Шевченка, 44а",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "10:35-11:55",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "12:20-13:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "13:50-15:10",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                },
+                                {
+                                    "time": "15:20-16:40",
+                                    "subject": "",
+                                    "teacher": "",
+                                    "group": "",
+                                    "details": "",
+                                    "link": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
