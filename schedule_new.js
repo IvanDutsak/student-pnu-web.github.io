@@ -1149,14 +1149,6 @@ async function exportScheduleToPDF() {
         return;
     }
 
-    if (!document.getElementById('date-from').value &&
-        !document.getElementById('date-to').value &&
-        !document.getElementById('teacher-search').value) {
-        showFullSchedule();
-    } else {
-        applyFilters();
-    }
-
     await new Promise(resolve => setTimeout(resolve, 500));
 
     const scheduleTable = document.getElementById('scheduleTable');
