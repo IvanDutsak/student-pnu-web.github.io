@@ -1,7 +1,3 @@
-/**
- * rating_new.js
- * Модуль для розрахунку рейтингового балу студента
- */
 
 // База даних предметів: назва -> [кредити, тип оцінювання]
 const subjectsDatabase = {
@@ -185,7 +181,7 @@ function addSubject() {
     // Перевірка на дублювання предмета (враховуємо, що редагований предмет може бути замінений)
     const allSubjects = [...addedExamSubjects, ...addedCreditSubjects];
     const isAlreadyAdded = allSubjects.some(
-        subj => subj.name === subjectName && (!editingSubject || editingSubject.name !== subj.name)
+        subj => subj.name === subjectName && (!editingSubject || editingSubject.name !== subjectName)
     );
 
     if (isAlreadyAdded) {
@@ -205,15 +201,15 @@ function addSubject() {
         const list = editingIsExam ? addedExamSubjects : addedCreditSubjects;
         const index = list.findIndex(subj => subj.name === editingSubject.name);
         if (index !== -1) {
-            list[index] = { name: subjectName, score: subjectScore, credits, type };
+            list[index] = { name: subjectName, score: subjectScore, credits };
         }
         editingSubject = null; // Скидаємо editingSubject після редагування
     } else {
         // Додаємо новий предмет
         if (isExam) {
-            addedExamSubjects.push({ name: subjectName, score: subjectScore, credits, type });
+            addedExamSubjects.push({ name: subjectName, score: subjectScore, credits });
         } else {
-            addedCreditSubjects.push({ name: subjectName, score: subjectScore, credits, type });
+            addedCreditSubjects.push({ name: subjectName, score: subjectScore, credits });
         }
     }
 
@@ -224,6 +220,9 @@ function addSubject() {
 }
 
 function removeSubject(subjectName, isExam) {
+    // Розекрановуємо назву предмета (якщо вона була екранована)
+    subjectName = subjectName.replace(/\\'/g, "'");
+    
     if (isExam) {
         addedExamSubjects = addedExamSubjects.filter(subj => subj.name !== subjectName);
     } else {
@@ -246,6 +245,10 @@ function updateAddedSubjectsList() {
     addedExamSubjects.forEach(subject => {
         const li = document.createElement('li');
         li.classList.add('subject-item');
+        
+        // Екрануємо апострофи та інші спеціальні символи для безпечного використання в атрибуті onclick
+        const escapedName = subject.name.replace(/'/g, "\\'");
+        
         li.innerHTML = `
             <div class="subject-details">
                 <div class="subject-header">
@@ -264,10 +267,10 @@ function updateAddedSubjectsList() {
                 </div>
             </div>
             <div class="subject-actions">
-                <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, true)" title="Редагувати">
+                <button class="control-btn warning edit-btn" onclick="editSubject('${escapedName}', ${subject.score}, true)" title="Редагувати">
                     <i class="fas fa-edit"></i>
                 </button>
-                <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', true)" title="Видалити">
+                <button class="control-btn danger remove-btn" onclick="removeSubject('${escapedName}', true)" title="Видалити">
                     <i class="fas fa-trash"></i>
                 </button>
             </div>
@@ -278,6 +281,10 @@ function updateAddedSubjectsList() {
     addedCreditSubjects.forEach(subject => {
         const li = document.createElement('li');
         li.classList.add('subject-item');
+        
+        // Екрануємо апострофи та інші спеціальні символи для безпечного використання в атрибуті onclick
+        const escapedName = subject.name.replace(/'/g, "\\'");
+        
         li.innerHTML = `
             <div class="subject-details">
                 <div class="subject-header">
@@ -296,10 +303,10 @@ function updateAddedSubjectsList() {
                 </div>
             </div>
             <div class="subject-actions">
-                <button class="control-btn warning edit-btn" onclick="editSubject('${subject.name}', ${subject.score}, false)" title="Редагувати">
+                <button class="control-btn warning edit-btn" onclick="editSubject('${escapedName}', ${subject.score}, false)" title="Редагувати">
                     <i class="fas fa-edit"></i>
                 </button>
-                <button class="control-btn danger remove-btn" onclick="removeSubject('${subject.name}', false)" title="Видалити">
+                <button class="control-btn danger remove-btn" onclick="removeSubject('${escapedName}', false)" title="Видалити">
                     <i class="fas fa-trash"></i>
                 </button>
             </div>
@@ -309,6 +316,9 @@ function updateAddedSubjectsList() {
 }
 
 function editSubject(subjectName, currentScore, isExam) {
+    // Розекрановуємо назву предмета (якщо вона була екранована)
+    subjectName = subjectName.replace(/\\'/g, "'");
+    
     document.getElementById('subjectName').value = subjectName;
     document.getElementById('subjectScore').value = currentScore;
     editingSubject = { name: subjectName, isExam: isExam };
