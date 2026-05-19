@@ -271,13 +271,13 @@ function renderDiffView(dayData) {
     const added = dayData.added || [];
     const modified = dayData.modified || [];
 
-    const removedTimes = new Set(removed.map(l => l.time + '|' + l.subject));
-    const addedTimes = new Set(added.map(l => l.time + '|' + l.subject));
-    const modOldTimes = new Set(modified.map(m => m.old.time + '|' + m.old.subject));
-    const modNewTimes = new Set(modified.map(m => m.new.time + '|' + m.new.subject));
+    const removedTimes = new Set(removed.map(l => l.time + '|' + l.subject + '|' + (l.teacher || '') + '|' + (l.details || '')));
+    const addedTimes = new Set(added.map(l => l.time + '|' + l.subject + '|' + (l.teacher || '') + '|' + (l.details || '')));
+    const modOldTimes = new Set(modified.map(m => m.old.time + '|' + m.old.subject + '|' + (m.old.teacher || '') + '|' + (m.old.details || '')));
+    const modNewTimes = new Set(modified.map(m => m.new.time + '|' + m.new.subject + '|' + (m.new.teacher || '') + '|' + (m.new.details || '')));
 
     let oldHtml = oldLessons.map(l => {
-        const key = l.time + '|' + l.subject;
+        const key = l.time + '|' + l.subject + '|' + (l.teacher || '') + '|' + (l.details || '');
         if (removedTimes.has(key)) return renderLessonItem(l, 'removed');
         if (modOldTimes.has(key)) return renderLessonItem(l, 'modified-old');
         return renderLessonItem(l, 'unchanged');
@@ -292,7 +292,7 @@ function renderDiffView(dayData) {
         </div>`;
     } else {
         newHtml = newLessons.map(l => {
-            const key = l.time + '|' + l.subject;
+            const key = l.time + '|' + l.subject + '|' + (l.teacher || '') + '|' + (l.details || '');
             if (addedTimes.has(key)) return renderLessonItem(l, 'added');
             if (modNewTimes.has(key)) return renderLessonItem(l, 'modified-new');
             return renderLessonItem(l, 'unchanged');
